@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+
+@NgModule({
+  declarations: [],
+  imports: [],
+  providers: []
+})
 
 @Component({
   moduleId: module.id,

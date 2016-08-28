@@ -44,7 +44,8 @@ const barrels: string[] = [
     'app/header',
     'app/footer',
     'app/main',
-    /** @cli-barrel */
+    'app/home/summary',
+  /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages: any = {};

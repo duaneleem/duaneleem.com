@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import { HeaderComponent } from './header';
 import { FooterComponent } from './footer';
 import { MainComponent } from './home/main/main.component';
@@ -9,11 +9,19 @@ import { MainComponent } from './home/main/main.component';
 declare var jQuery:any;
 declare var revslider_showDoubleJqueryError:any;
 
+@NgModule({
+    declarations: [HeaderComponent, FooterComponent, MainComponent],
+    imports: [],
+    providers: []
+})
+
 @Component({
     moduleId: module.id,
     selector: 'app-root',
     templateUrl: 'app.component.html',
     styleUrls: ['app.component.css'],
+    
+    // This will be deprecated on Angular 2 final.
     directives: [HeaderComponent, MainComponent, FooterComponent]
 })
 

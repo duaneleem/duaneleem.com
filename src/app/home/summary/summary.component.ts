@@ -1,10 +1,6 @@
-import { Component, NgModule, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@NgModule({
-  declarations: [],
-  imports: [],
-  providers: []
-})
+declare var jQuery:any;
 
 @Component({
   moduleId: module.id,
@@ -12,6 +8,7 @@ import { Component, NgModule, OnInit } from '@angular/core';
   templateUrl: 'summary.component.html',
   styleUrls: ['summary.component.css']
 })
+
 export class SummaryComponent implements OnInit {
 
   constructor() { }

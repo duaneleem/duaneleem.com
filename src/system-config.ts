@@ -45,6 +45,7 @@ const barrels: string[] = [
     'app/footer',
     'app/main',
     'app/home/summary',
+  'app/home/summary/timeline',
   /** @cli-barrel */
 ];
 

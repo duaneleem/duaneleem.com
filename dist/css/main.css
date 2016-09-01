@@ -1,0 +1,10 @@
+
+/* ============================================================
+    Generic Styles
+============================================================ */
+/* Color */
+.text-white { color: #fff; }
+.text-bold { font-weight: bold; }
+
+/* Margins */
+.margin-right-5p { margin-right: 5px; }

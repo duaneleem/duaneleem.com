@@ -12,8 +12,6 @@ var core_1 = require('@angular/core');
 var TimelineComponent = (function () {
     function TimelineComponent() {
     }
-    TimelineComponent.prototype.ngOnInit = function () {
-    };
     TimelineComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

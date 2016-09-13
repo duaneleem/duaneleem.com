@@ -7,13 +7,18 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-    'jquery': 'vendor/jquery/dist'
+    'jquery': 'vendor/jquery/dist',
+    "ng2-modal": "node_modules/ng2-modal"
 };
 /** User packages configuration. */
 var packages = {
     'jquery': { main: 'jquery.min',
         format: 'global',
         defaultExtension: 'js'
+    },
+    "ng2-modal": {
+        "main": "index.js",
+        "defaultExtension": "js"
     }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40,6 +45,8 @@ var barrels = [
     'app/main',
     'app/home/summary',
     'app/home/summary/timeline',
+    'app/home/summary/about',
+    'app/home/summary/timeline/timeline-item',
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {

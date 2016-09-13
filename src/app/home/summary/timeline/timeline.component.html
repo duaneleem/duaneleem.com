@@ -1,311 +1,119 @@
-<!-- Timeline -->
-<div class="timeline">
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="timeline timeline-line-dotted">
+                <!-- =======================================================
+                    Today
+                ======================================================= -->
+                <span class="timeline-label">
+                    <span class="label label-primary">Today</span>
+                </span>
 
-    <!-- Line component -->
-    <div class="line text-muted"></div>
+                <!-- Full Stack MEAN Developer -->
+                <app-timeline-item class="timeline-item"
+                    [objAchievement] = "{
+                        'modalID': '201606',
+                        'title': 'Full Stack MEAN Developer',
+                        'provider': 'Hong Kong University CST',
+                        'finishedDate': 'June 2016',
+                        'imgSrc': './images/achievements/201606-fullstack.jpg',
+                        'description': '
+                            Full Stack Web Development program taught by Hong Kong University of Science and Technology through the Coursera 
+                            platform trains students on Front-End, Back-End, and Hybrid Mobile development using HTML/CSS/JS, AngularJS, NodeJS, 
+                            MongoDB, and the Ionic Framework.
+                        '
+                    }"
+                ></app-timeline-item>
 
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2016</time>
+                <app-timeline-item class="timeline-item"
+                    [objAchievement]="{
+                        'modalID': '201605',
+                        'title': 'Advanced Java Programming',
+                        'provider': 'Diablo Valley College | ATC',
+                        'finishedDate': 'May 2016',
+                        'imgSrc': './images/achievements/201606-fullstack.jpg',
+                        'description': null
+                    }"
+                ></app-timeline-item>
+
+                <app-timeline-item class="timeline-item"
+                    [objAchievement]="{
+                        'modalID': '201602',
+                        'title': 'AWS Certified Developer',
+                        'provider': 'Amazon Web Services',
+                        'finishedDate': 'February 2016',
+                        'imgSrc': './images/achievements/201606-fullstack.jpg',
+                        'description': null
+                    }"
+                ></app-timeline-item>
+
+                
+
+                <!-- =======================================================
+                    Year 2010
+                ======================================================= -->
+                <span class="timeline-label">
+                    <span class="label label-primary">2010</span>
+                </span>
+
+                <!-- Directory of Technology at StagedHomes.com -->
+                <div class="timeline-item">
+                    <div class="timeline-point timeline-point-warning">
+                        <i class="fa fa-certificate"></i>
+                    </div>
+
+                    <div class="timeline-event timeline-event-warning">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-8" style="vertical-align: middle;">
+                                        <h3 class="panel-title"><strong>Director of Technology</strong></h3>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <span class="pull-right"><a class="btn btn-warning btn-xs color-white" data-toggle="modal" data-target=".modelSHCDirectorTech">View</a></span>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade modelSHCDirectorTech" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <h4 class="modal-title" id="myModalLabel">Director of Technology | StagedHomes.com</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary color-white" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /row -->
+                            </div>
+                            <div class="panel-body">
+                                Full Stack Web Development program taught by Hong Kong University of Science and Technology through the Coursera 
+                                platform trains students on Front-End, Back-End, and Hybrid Mobile development using HTML/CSS/JS, AngularJS, NodeJS, 
+                                MongoDB, and the Ionic Framework.
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        StagedHomes.com
+                                    </div>
+
+                                    <div class="col-xs-5 text-right">
+                                        December 2010
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <!-- /Separator -->
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Full Stack MEAN Developer</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Advanced Java</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">AWS Certified Developer</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2014</time>
-    </div>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Master of Science in IT Management</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">R Programming</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Certified Scrum Master (CSM)</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2010-2013</time>
-    </div>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Project Management Professional (PMP&reg;)</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">IT Infrastructure Library (ITIL v3)</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-        <!-- /Icon -->
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">StagedHomes.com | Director of Technology</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-        <!-- /Heading -->
-    </article>
-
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2006</time>
-    </div>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-        <!-- /Icon -->
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">StagedHomes.com | Full Stack Web Developer</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-        <!-- /Heading -->
-    </article>
-
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2006</time>
-    </div>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">Bachelor of Science in Information Technology</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-    
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">StagedHomes.com | Network Administrator</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Separator -->
-    <div class="separator text-muted">
-        <time>Year 2005+</time>
-    </div>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">Vodafone | Help Desk Analyst</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">AT&T | Technical Support Representative II</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">@Com Technology | Technical Support Engineer</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">Bank of America | Technical Support Analyst</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-success">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-star"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading text-bold">
-            <h3 class="panel-title pull-left">Verio | Technical Support Engineer</h3>
-            <a href="" class="btn btn-success btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-
-    <!-- Panel -->
-    <article class="panel panel-warning">
-        <!-- Icon -->
-        <div class="panel-heading icon">
-            <i class="glyphicon glyphicon-education"></i>
-        </div>
-
-        <!-- Heading -->
-        <div class="panel-heading">
-            <h3 class="panel-title pull-left">AAS in Computer Technology</h3>
-            <a href="" class="btn btn-warning btn-sm pull-right">View</a>
-            <div class="clearfix"></div>
-        </div>
-    </article>
-</div><!-- /Timeline -->
+</div>

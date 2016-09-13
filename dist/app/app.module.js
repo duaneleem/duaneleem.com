@@ -14,9 +14,12 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var header_1 = require("./header");
 var footer_1 = require("./footer");
+// Homepage
 var main_component_1 = require("./home/main/main.component");
 var summary_component_1 = require("./home/summary/summary.component");
+var about_component_1 = require("./home/summary/about/about.component");
 var timeline_component_1 = require("./home/summary/timeline/timeline.component");
+var timeline_item_component_1 = require("./home/summary/timeline/timeline-item/timeline-item.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,9 +29,12 @@ var AppModule = (function () {
                 app_component_1.AppComponent,
                 header_1.HeaderComponent,
                 footer_1.FooterComponent,
+                // Homepage
                 main_component_1.MainComponent,
                 summary_component_1.SummaryComponent,
-                timeline_component_1.TimelineComponent
+                about_component_1.AboutComponent,
+                timeline_component_1.TimelineComponent,
+                timeline_item_component_1.TimelineItemComponent
             ],
             imports: [platform_browser_1.BrowserModule],
             bootstrap: [app_component_1.AppComponent],

@@ -1,0 +1,53 @@
+<div class="timeline-point timeline-point-success">
+    <i class="fa fa-graduation-cap"></i>
+</div>
+
+<div class="timeline-event timeline-event-primary">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+                <div class="col-xs-8" style="vertical-align: middle;">
+                    <h3 class="panel-title"><strong>{{objAchievement.title}}</strong></h3>
+                </div>
+
+                <div class="col-xs-4">
+                    <!-- Button for Modal Popup -->
+                    <span class="pull-right">
+                        <a class="btn btn-primary btn-xs color-white" data-toggle="modal" data-target="#myModal_{{objAchievement.modalID}}">
+                            View
+                        </a>
+                    </span>
+
+                    <!-- Modal Popup -->
+                    <div id="myModal_{{objAchievement.modalID}}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="{{objAchievement.imgSrc}}" class="img-responsive" alt="{{objAchievement.title}}" />
+                                </div><!-- /modal-body -->
+                                <div class="modal-footer">
+                                    <div class="pull-left">
+                                        {{objAchievement.title}}
+                                    </div>
+
+                                    <div class="pull-right">
+                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div><!-- /modal-content -->
+                        </div><!-- /modal-dialog -->
+                    </div><!-- /modalMEAN -->
+                </div>
+            </div><!-- /row -->
+        </div><!-- /panel-heading -->
+        <div class="panel-body">
+            {{objAchievement.description}}
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-7">{{objAchievement.provider}}</div>
+                <div class="col-xs-5 text-right">{{objAchievement.finishedDate}}</div>
+            </div>
+        </div>
+    </div><!-- /panel -->
+</div><!-- /timeline-event -->

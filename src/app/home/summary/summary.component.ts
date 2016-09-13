@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TimelineComponent } from "./timeline/timeline.component";
+import { AboutComponent } from "./about/about.component";
 
 declare var jQuery:any;
 

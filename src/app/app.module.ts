@@ -5,18 +5,26 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer";
+
+// Homepage
 import { MainComponent } from "./home/main/main.component";
 import { SummaryComponent } from "./home/summary/summary.component";
+import { AboutComponent } from "./home/summary/about/about.component";
 import { TimelineComponent } from "./home/summary/timeline/timeline.component";
+    import { TimelineItemComponent } from "./home/summary/timeline/timeline-item/timeline-item.component";
 
 @NgModule({
     declarations: [
-        AppComponent, 
-        HeaderComponent, 
-        FooterComponent, 
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        
+        // Homepage
         MainComponent, 
         SummaryComponent,
-        TimelineComponent
+        AboutComponent,
+        TimelineComponent,
+            TimelineItemComponent
     ], // declarations
     imports:      [BrowserModule],
     bootstrap:    [AppComponent],

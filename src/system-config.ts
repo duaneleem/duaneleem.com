@@ -9,14 +9,19 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
-    'jquery': 'vendor/jquery/dist'
+    'jquery': 'vendor/jquery/dist',
+    "ng2-modal": "node_modules/ng2-modal"
 };
 
 /** User packages configuration. */
 const packages: any = {
-    'jquery':{ main: 'jquery.min',
+    'jquery': { main: 'jquery.min',
         format: 'global',
         defaultExtension: 'js'
+    },
+    "ng2-modal": { 
+        "main": "index.js", 
+        "defaultExtension": "js" 
     }
 };
 
@@ -45,7 +50,9 @@ const barrels: string[] = [
     'app/footer',
     'app/main',
     'app/home/summary',
-  'app/home/summary/timeline',
+    'app/home/summary/timeline',
+    'app/home/summary/about',
+    'app/home/summary/timeline/timeline-item',
   /** @cli-barrel */
 ];
 

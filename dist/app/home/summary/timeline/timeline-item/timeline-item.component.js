@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var TimelineItemComponent = (function () {
     function TimelineItemComponent() {
+        this.strType = this.objAchievement;
+        this.strModalcolor = "";
     }
     __decorate([
         core_1.Input(), 

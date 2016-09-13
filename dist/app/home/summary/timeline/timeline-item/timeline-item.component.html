@@ -1,5 +1,8 @@
-<div class="timeline-point timeline-point-success">
-    <i class="fa fa-graduation-cap"></i>
+<div class="timeline-point timeline-point-success" [ngSwitch]="objAchievement.type">
+    <i class="fa fa-graduation-cap" *ngSwitchCase="'certificate'"></i>
+    <i class="fa fa-certificate" *ngSwitchCase="'certification'"></i>
+    <i class="fa fa-briefcase" *ngSwitchCase="'position'"></i>
+    <i class="fa fa-certificate" *ngSwitchDefault></i>
 </div>
 
 <div class="timeline-event timeline-event-primary">
@@ -13,13 +16,13 @@
                 <div class="col-xs-4">
                     <!-- Button for Modal Popup -->
                     <span class="pull-right">
-                        <a class="btn btn-primary btn-xs color-white" data-toggle="modal" data-target="#myModal_{{objAchievement.modalID}}">
+                        <a class="btn btn-primary btn-xs color-white" data-toggle="modal" [attr.data-target]="'.modal-' + objAchievement.modalID">
                             View
                         </a>
                     </span>
 
                     <!-- Modal Popup -->
-                    <div id="myModal_{{objAchievement.modalID}}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal fade modal-{{objAchievement.modalID}}" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-body">
@@ -40,7 +43,7 @@
                 </div>
             </div><!-- /row -->
         </div><!-- /panel-heading -->
-        <div class="panel-body">
+        <div class="panel-body" *ngIf="objAchievement.description != null">
             {{objAchievement.description}}
         </div>
         <div class="panel-footer">

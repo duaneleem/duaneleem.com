@@ -7,18 +7,13 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 var map = {
-    'jquery': 'vendor/jquery/dist',
-    "ng2-modal": "node_modules/ng2-modal"
+    'jquery': 'vendor/jquery/dist'
 };
 /** User packages configuration. */
 var packages = {
     'jquery': { main: 'jquery.min',
         format: 'global',
         defaultExtension: 'js'
-    },
-    "ng2-modal": {
-        "main": "index.js",
-        "defaultExtension": "js"
     }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////

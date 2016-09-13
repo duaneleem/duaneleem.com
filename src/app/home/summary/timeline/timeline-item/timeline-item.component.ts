@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
     styleUrls: ['timeline-item.component.css']
 })
 export class TimelineItemComponent {
-    id: string;
     @Input() objAchievement;
+
+    strType = this.objAchievement;
+    strModalcolor = "";
 }

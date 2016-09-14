@@ -11,9 +11,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var TimelineItemComponent = (function () {
     function TimelineItemComponent() {
-        this.strType = this.objAchievement;
-        this.strModalcolor = "";
     }
+    // Retrieve modal type.
+    TimelineItemComponent.prototype.getModalType = function () {
+        if (this.objAchievement.type == "position") {
+            return "warning";
+        }
+        else {
+            return "primary";
+        } // if
+    }; // getModalType()
+    // Retrieve timeline types.
+    TimelineItemComponent.prototype.getTimeLinePointType = function () {
+        if (this.objAchievement.type == "position") {
+            return "warning";
+        }
+        else {
+            return "success";
+        } // if
+    }; // getTimeLinePointType()
+    // Disable if no image or description.
+    TimelineItemComponent.prototype.mtdDisabled_btnView = function () {
+        if (this.objAchievement.description_full == null && this.objAchievement.imgSrc == null) {
+            return "disabled";
+        }
+        else {
+        } // if
+    }; // isDisabled_btnView()
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Object)

@@ -5,7 +5,6 @@ import { AboutComponent } from "./about/about.component";
 declare var jQuery:any;
 
 @Component({
-  moduleId: module.id,
   selector: 'app-summary',
   templateUrl: 'summary.component.html',
   styleUrls: ['summary.component.css']

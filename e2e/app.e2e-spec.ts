@@ -1,10 +1,10 @@
-import { DuaneleemWebPage } from './app.po';
+import { MigrationProjectPage } from './app.po';
 
-describe('duaneleem-web App', function() {
-  let page: DuaneleemWebPage;
+describe('migration-project App', function() {
+  let page: MigrationProjectPage;
 
   beforeEach(() => {
-    page = new DuaneleemWebPage();
+    page = new MigrationProjectPage();
   });
 
   it('should display message saying app works', () => {

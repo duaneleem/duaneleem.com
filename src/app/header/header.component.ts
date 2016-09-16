@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 declare var jQuery: any;
 
 @Component({
-    moduleId: module.id,
     selector: 'app-header',
     templateUrl: 'header.component.html',
     styleUrls: ['header.component.css']
@@ -11,7 +10,7 @@ declare var jQuery: any;
 
 export class HeaderComponent {
     // Logo Configuration
-    $strLogo = "images/logo.png";
+    $strLogo = "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo.png";
 
     ngOnInit() {
         /* =========================================================

@@ -1,4 +1,6 @@
-export class DuaneleemWebPage {
+import { browser, element, by } from 'protractor/globals';
+
+export class MigrationProjectPage {
   navigateTo() {
     return browser.get('/');
   }

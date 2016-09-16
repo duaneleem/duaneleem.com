@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 
+// Global Variables
+import { GLOBALS } from "../globals";
+
 // Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./header";

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { GLOBALS } from "../../../shared/globals";
 
 @Component({
     selector: 'app-timeline',

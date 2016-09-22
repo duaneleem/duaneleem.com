@@ -1,12 +1,26 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, AfterViewInit } from '@angular/core';
+declare var $:any; // Enables jQuery
+
+// Global Variables
+import { GLOBALS } from "../../../../shared/globals";
 
 @Component({
     selector: 'app-timeline-item',
     templateUrl: 'timeline-item.component.html',
     styleUrls: ['timeline-item.component.css']
 })
-export class TimelineItemComponent {
+export class TimelineItemComponent implements AfterViewInit {
+    // Pull data from calling source.
     @Input() objAchievement;
+    @Input() modalID: string;
+
+    // Variables from external TS.
+    arrGlobals = GLOBALS;
+
+    ngAfterViewInit() {
+        // Moves modal to #modal-section
+        $(".modal").appendTo("#modal-section");
+    }
     
     // Retrieve modal type.
     private getModalType(): string {
@@ -29,10 +43,9 @@ export class TimelineItemComponent {
     // Disable if no image or description.
     private mtdDisabled_btnView(): string {
         if(this.objAchievement.description_full == null && this.objAchievement.imgSrc == null) {
-            return "disabled";
+            return "hidden";
         } else {
             // do nothing
         } // if
     } // isDisabled_btnView()
 }
-

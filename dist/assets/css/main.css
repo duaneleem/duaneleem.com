@@ -1,10 +1,17 @@
 
+
 /* ============================================================
     Generic Styles
 ============================================================ */
+/* Font Sizes */
+.font-size-12 { font-size: 12px; }
+
 /* Color */
 .color-white { color: #fff; }
 .text-bold { font-weight: bold; }
 
 /* Margins */
+.space-top-5 { margin-top: 5px; }
 .margin-right-5p { margin-right: 5px; }
+
+.padding-remove { padding: 0px; }

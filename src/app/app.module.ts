@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 
 // Global Variables
-import { GLOBALS } from "../globals";
+import { GLOBALS } from "./shared/globals";
 
 // Components
 import { AppComponent } from './app.component';
@@ -32,4 +32,7 @@ import { TimelineComponent } from "./home/summary/timeline/timeline.component";
     imports:      [BrowserModule],
     bootstrap:    [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+    // Variables from external TS.
+    arrGlobals = GLOBALS;
+}

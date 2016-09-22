@@ -1,3 +1,27 @@
+.panel-heading {
+    padding: 7px 15px 7px 15px;
+}
+
 .panel-body {
+    padding: 7px 15px 7px 15px;
+}
+
+
+/* ============================================================
+    References
+============================================================ */
+#social-links {
+    margin-bottom: 0;
+}
+
+#social-links > li {
+    font-size: smaller;
+}
+
+
+/* ============================================================
+    Panel Footer
+============================================================ */
+.panel-footer {
     padding: 5px 15px 5px 15px;
 }

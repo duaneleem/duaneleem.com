@@ -9,43 +9,66 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="row">
-                <div class="col-xs-8" style="vertical-align: middle;">
+                <div class="col-xs-12 col-sm-10" style="vertical-align: middle;">
                     <h3 class="panel-title"><strong>{{objAchievement.title}}</strong></h3>
                 </div>
 
-                <div class="col-xs-4">
+                <div class="col-xs-12 col-sm-2">
                     <!-- Button for Modal Popup -->
                     <span class="pull-right">
-                        <a class="btn btn-{{getModalType()}} btn-xs color-white {{mtdDisabled_btnView()}}" data-toggle="modal" [attr.data-target]="'.modal-' + objAchievement.modalID">
+                        <a class="btn btn-{{getModalType()}} btn-xs color-white {{mtdDisabled_btnView()}}" data-toggle="modal" [attr.data-target]="'#modal-' + objAchievement.modalID">
                             View
                         </a>
-                    </span>
-
-                    <!-- Modal Popup -->
-                    <div class="modal fade modal-{{objAchievement.modalID}}" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{objAchievement.imgSrc}}" class="img-responsive" alt="{{objAchievement.title}}" />
-                                </div><!-- /modal-body -->
-                                <div class="modal-footer">
-                                    <div class="pull-left">
-                                        {{objAchievement.title}}
-                                    </div>
-
-                                    <div class="pull-right">
-                                        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div><!-- /modal-content -->
-                        </div><!-- /modal-dialog -->
-                    </div><!-- /modalMEAN -->
-                </div>
+                    </span> 
+                </div><!-- /col -->
             </div><!-- /row -->
         </div><!-- /panel-heading -->
-        <div class="panel-body">
-            <div class="pull-left">{{objAchievement.provider}}</div>
-            <div class="pull-right">{{objAchievement.finishedDate}}</div>
+        <div class="panel-body" *ngIf="objAchievement.description != null">
+            <div>{{objAchievement.description}}</div>
+            <ul id="social-links" class="space-top-5 list-inline" *ngIf="objAchievement.socialLinks != null">
+                <li *ngIf="objAchievement.socialLinks.website != null"><a href="{{objAchievement.socialLinks.website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
+                <li *ngIf="objAchievement.socialLinks.facebook != null"><a href="{{objAchievement.socialLinks.facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+                <li *ngIf="objAchievement.socialLinks.coursera != null"><a href="{{objAchievement.socialLinks.coursera}}" target="_blank"><i class="fa fa-certificate" aria-hidden="true"></i> Coursera</a></li>
+            </ul>
+        </div>
+
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 left font-size-12">
+                    {{objAchievement.provider}}
+                </div><!-- /col -->
+                <div class="col-xs-12 col-sm-4 text-right font-size-12">
+                    {{objAchievement.finishedDate}}
+                </div><!-- /col -->
+            </div><!-- /row -->
         </div>
     </div><!-- /panel -->
 </div><!-- /timeline-event -->
+
+<!-- =========================================================
+    Place in main app.component on generation.
+========================================================= -->
+<div id="modal-{{objAchievement.modalID}}" class="modal fade padding-remove" tabindex="-1" role="dialog" aria-hidden="true" *ngIf="mtdDisabled_btnView() != 'disabled'">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="{{arrGlobals.strPublicAssets + objAchievement.imgSrc}}" 
+                    class = "img-responsive" 
+                    alt = "{{objAchievement.title}}"
+                    *ngIf = "objAchievement.imgSrc != null"
+                />
+
+                <p *ngIf="objAchievement.description_full != null"></p>
+            </div><!-- /modal-body -->
+            <div class="modal-footer">
+                <div class="pull-left">
+                    {{objAchievement.title}}
+                </div>
+
+                <div class="pull-right">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /modal-footer -->
+        </div><!-- /modal-content -->
+    </div><!-- /modal-dialog -->
+</div><!-- /modal -->

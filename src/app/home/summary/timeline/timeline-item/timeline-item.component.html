@@ -28,7 +28,9 @@
             <ul id="social-links" class="space-top-5 list-inline" *ngIf="objAchievement.socialLinks != null">
                 <li *ngIf="objAchievement.socialLinks.website != null"><a href="{{objAchievement.socialLinks.website}}" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i> Website</a></li>
                 <li *ngIf="objAchievement.socialLinks.facebook != null"><a href="{{objAchievement.socialLinks.facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-                <li *ngIf="objAchievement.socialLinks.coursera != null"><a href="{{objAchievement.socialLinks.coursera}}" target="_blank"><i class="fa fa-certificate" aria-hidden="true"></i> Coursera</a></li>
+                <li *ngIf="objAchievement.socialLinks.certificationDescription != null"><a href="{{objAchievement.socialLinks.certificationDescription}}" target="_blank"><i class="fa fa-star" aria-hidden="true"></i> Certification Information</a></li>
+                <li *ngIf="objAchievement.socialLinks.programDescription != null"><a href="{{objAchievement.socialLinks.programDescription}}" target="_blank"><i class="fa fa-star" aria-hidden="true"></i> Program Description</a></li>
+                <li *ngIf="objAchievement.socialLinks.degreeDescription != null"><a href="{{objAchievement.socialLinks.degreeDescription}}" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Degree Description</a></li>
             </ul>
         </div>
 

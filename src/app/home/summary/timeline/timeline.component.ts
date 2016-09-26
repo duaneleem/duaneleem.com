@@ -7,5 +7,6 @@ import { GLOBALS } from "../../../shared/globals";
     styleUrls: ['timeline.component.css']
 })
 export class TimelineComponent {
-    
+    // Variables from external TS.
+    private arrGlobals = GLOBALS;
 }

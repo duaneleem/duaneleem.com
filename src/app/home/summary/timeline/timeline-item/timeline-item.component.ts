@@ -12,10 +12,19 @@ import { GLOBALS } from "../../../../shared/globals";
 export class TimelineItemComponent implements AfterViewInit {
     // Pull data from calling source.
     @Input() objAchievement;
-    @Input() modalID: string;
+    @Input() strFullDescription;
 
     // Variables from external TS.
-    arrGlobals = GLOBALS;
+    private arrGlobals = GLOBALS;
+
+    private getDescriptionFull() {
+        // Sanitize the HTML given by objAchievement.
+        if(this.strFullDescription != null) {
+            return this.strFullDescription;
+        } else {
+            return null;
+        }
+    }
 
     ngAfterViewInit() {
         // Moves modal to #modal-section
@@ -42,7 +51,7 @@ export class TimelineItemComponent implements AfterViewInit {
 
     // Disable if no image or description.
     private mtdDisabled_btnView(): string {
-        if(this.objAchievement.description_full == null && this.objAchievement.imgSrc == null) {
+        if(this.getDescriptionFull() == null && this.objAchievement.imgSrc == null) {
             return "hidden";
         } else {
             // do nothing

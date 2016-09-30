@@ -7,7 +7,6 @@ import { GLOBALS } from "./shared/globals";
 // Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./header";
-import { FooterComponent } from "./footer";
 
 // Homepage
 import { MainComponent } from "./home/main/main.component";
@@ -20,7 +19,6 @@ import { TimelineComponent } from "./home/summary/timeline/timeline.component";
     declarations: [
         AppComponent,
         HeaderComponent,
-        FooterComponent,
         
         // Homepage
         MainComponent, 

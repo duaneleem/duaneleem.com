@@ -14,6 +14,8 @@ import { SummaryComponent } from "./home/summary/summary.component";
 import { AboutComponent } from "./home/summary/about/about.component";
 import { TimelineComponent } from "./home/summary/timeline/timeline.component";
     import { TimelineItemComponent } from "./home/summary/timeline/timeline-item/timeline-item.component";
+import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +27,9 @@ import { TimelineComponent } from "./home/summary/timeline/timeline.component";
         SummaryComponent,
         AboutComponent,
         TimelineComponent,
-            TimelineItemComponent
+            TimelineItemComponent,
+            TestimonialsComponent,
+            PortfolioComponent
     ], // declarations
     imports:      [BrowserModule],
     bootstrap:    [AppComponent],

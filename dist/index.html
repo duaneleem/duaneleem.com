@@ -13,6 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
+    <!-- Facebook Open Graph -->
+    <meta property="fb:app_id" content="1808361502709557" /> 
+    <meta property="og:type"   content="website" /> 
+    <meta property="og:url"    content="http://www.duaneleem.com" /> 
+    <meta property="og:title"  content="Duane Leem" /> 
+    <meta property="og:image"  content="https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/opengraph.jpg" /> 
+
     <!-- WEB FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
 
@@ -41,10 +48,29 @@
     <!-- Website Specific -->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
 
-    <!-- Morenizr -->
+    <!-- Modernizr -->
     <script type="text/javascript" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/template/plugins/modernizr.min.js"></script>
 </head>
 <body>
+    <!-- Facebook SDK -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '1808361502709557',
+            xfbml      : true,
+            version    : 'v2.7'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <!-- ===========================================================================================
         Section: Header & Main
     =========================================================================================== -->

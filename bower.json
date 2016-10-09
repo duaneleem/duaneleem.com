@@ -1,0 +1,19 @@
+{
+  "name": "DuaneLeem.com",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Duane Leem <duaneleem@alumni.ggu.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.duaneleem.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

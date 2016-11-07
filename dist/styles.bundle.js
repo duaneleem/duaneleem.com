@@ -1,15 +1,15 @@
 webpackJsonp([1,2],{
 
-/***/ 280:
+/***/ 310:
 /***/ function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(535);
+var content = __webpack_require__(572);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(565)(content, {});
+var update = __webpack_require__(605)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27,22 +27,22 @@ if(false) {
 
 /***/ },
 
-/***/ 535:
+/***/ 572:
 /***/ function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(536)();
+exports = module.exports = __webpack_require__(573)();
 // imports
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */", ""]);
+exports.push([module.i, "\n/* ============================================================\n    Modal | All listings.\n============================================================ */\n#social-links li {\n    color: #000;\n}\n\n#modal-section li {\n    color: #000;\n}\n\n/* ============================================================\n    Visual Fixes\n============================================================ */\n/* Color fix before Summary section. */\napp-main div.tp-bannershadow.tp-shadow1 {\n    background-color: #e8eaee;\n}\n\n/* ============================================================\n    Generic Styles\n============================================================ */\n/* Width */\n.width-60p { width: 60px; }\n\n/* Font Sizes */\n.font-size-12 { font-size: 12px; }\n.font-size-larger { font-size: larger; }\n.font-size-x-large { font-size: x-large; }\n.text-bold { font-weight: bold; }\n\n/* Alignment */\n.text-align-left { text-align: left; }\n\n/* Color */\n.color-white { color: #fff; }\n.color-black { color: #000 !important; }\n\n/* Margins */\n.space-top-5 { margin-top: 5px; }\n.space-top-20 { margin-top: 20px }\n.margin-left-20p { margin-left: 20px; }\n.margin-right-5p { margin-right: 5px; }\n\n.padding-remove { padding: 0px; }", ""]);
 
 // exports
 
 
 /***/ },
 
-/***/ 536:
+/***/ 573:
 /***/ function(module, exports) {
 
 /*
@@ -99,7 +99,7 @@ module.exports = function() {
 
 /***/ },
 
-/***/ 565:
+/***/ 605:
 /***/ function(module, exports) {
 
 /*
@@ -352,13 +352,13 @@ function updateLink(linkElement, obj) {
 
 /***/ },
 
-/***/ 568:
+/***/ 608:
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(280);
+module.exports = __webpack_require__(310);
 
 
 /***/ }
 
-},[568]);
+},[608]);
 //# sourceMappingURL=styles.map

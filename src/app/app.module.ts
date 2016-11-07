@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 // Global Variables
 import { GLOBALS } from "./shared/globals";
@@ -7,6 +8,7 @@ import { GLOBALS } from "./shared/globals";
 // Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from "./header";
+import { FooterComponent } from "./footer/footer.component";
 
 // Homepage
 import { MainComponent } from "./home/main/main.component";
@@ -21,6 +23,7 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
     declarations: [
         AppComponent,
         HeaderComponent,
+        FooterComponent,
         
         // Homepage
         MainComponent, 
@@ -31,7 +34,7 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
             TestimonialsComponent,
             PortfolioComponent
     ], // declarations
-    imports:      [BrowserModule],
+    imports:      [BrowserModule, FormsModule],
     bootstrap:    [AppComponent],
 })
 export class AppModule {

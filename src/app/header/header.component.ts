@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute} from '@angular/router';
 
 declare var $: any;
 declare var jQuery: any;
@@ -12,6 +13,17 @@ declare var jQuery: any;
 export class HeaderComponent {
     // Logo Configuration
     $strLogo = "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo.png";
+    $isShown;
+    
+    constructor(private router: Router, private activatedRoute: ActivatedRoute,) {
+        this.router.events.subscribe((objURL) => {
+            if (objURL.url != "/") {
+                this.$isShown = true;
+            } else {
+                this.$isShown = false;
+            }
+        });
+    }
 
     ngOnInit() {
         /* =========================================================

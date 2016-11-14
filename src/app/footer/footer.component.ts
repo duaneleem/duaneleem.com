@@ -46,6 +46,7 @@ import { Contact } from "./contact";
                                 </ul>
                             </address>
 
+                            <div><a class="toTop" href="#topNav" routerLink="/support"><i class="fa fa-medkit fa-lg" aria-hidden="true" style="margin: 0px 10px 0px 2px;"></i>Remote Assistance</a></div>
                         </div>
                         <!-- /FOOTER CONTACT INFO -->
 

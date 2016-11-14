@@ -3,12 +3,21 @@ import { Component, OnInit } from "@angular/core";
 @Component({
     selector: 'app-support',
     template: `
+        <!-- PAGE TITLE -->
+        <header id="page-title">
+            <div class="container">
+                <h1>Customer Support</h1>
+
+                <ul class="breadcrumb">
+                    <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li class="active">Customer Support</li>
+                </ul>
+            </div>
+        </header>
+                    
         <section class="container space-top-40">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1 class="text-center">Customer Support</h1>
-                    <div class="divider half-margins"><i class="fa fa-star"></i></div>
-
                     <div class="space-bottom-40">
                         <h2 class="space-bottom-10">Remote Support</h2>
                         <p class="lead">URL for remote support assistance.</p>

@@ -3,6 +3,7 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 // Routing
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { RouterModule } from '@angular/router';
 import { AppComponents, AppRoutes } from "./app.routes";
 
@@ -47,6 +48,9 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
         RouterModule.forRoot(AppRoutes)
     ],
     bootstrap: [AppComponent],
+    providers: [
+        {provide: LocationStrategy, useClass: HashLocationStrategy}
+    ]
 })
 export class AppModule {
     // Variables from external TS.

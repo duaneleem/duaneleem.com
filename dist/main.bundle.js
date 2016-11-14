@@ -4203,7 +4203,7 @@ module.exports = !__webpack_require__(5)(function(){
 "use strict";
 "use strict";
 var root_1 = __webpack_require__(55);
-var toSubscriber_1 = __webpack_require__(652);
+var toSubscriber_1 = __webpack_require__(653);
 var observable_1 = __webpack_require__(208);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
@@ -5890,7 +5890,7 @@ var SetWrapper = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(649);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(22);
@@ -6070,7 +6070,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(339);
 var Subscription_1 = __webpack_require__(203);
-var Observer_1 = __webpack_require__(638);
+var Observer_1 = __webpack_require__(639);
 var rxSubscriber_1 = __webpack_require__(209);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -6847,7 +6847,7 @@ var NavigationCancelingError = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_concatAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__ = __webpack_require__(336);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__ = __webpack_require__(646);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_last__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -7004,7 +7004,7 @@ var ctx      = __webpack_require__(70)
   , IObject  = __webpack_require__(85)
   , toObject = __webpack_require__(32)
   , toLength = __webpack_require__(28)
-  , asc      = __webpack_require__(484);
+  , asc      = __webpack_require__(485);
 module.exports = function(TYPE, $create){
   var IS_MAP        = TYPE == 1
     , IS_FILTER     = TYPE == 2
@@ -7068,7 +7068,7 @@ module.exports = __webpack_require__(19) ? function(object, key, value){
 var Map     = __webpack_require__(320)
   , $export = __webpack_require__(1)
   , shared  = __webpack_require__(128)('metadata')
-  , store   = shared.store || (shared.store = new (__webpack_require__(605)));
+  , store   = shared.store || (shared.store = new (__webpack_require__(606)));
 
 var getOrCreateMetadataMap = function(target, targetKey, create){
   var targetMetadata = store.get(target);
@@ -10495,7 +10495,7 @@ var Observable_1 = __webpack_require__(20);
 var Subscriber_1 = __webpack_require__(37);
 var Subscription_1 = __webpack_require__(203);
 var ObjectUnsubscribedError_1 = __webpack_require__(337);
-var SubjectSubscription_1 = __webpack_require__(639);
+var SubjectSubscription_1 = __webpack_require__(640);
 var rxSubscriber_1 = __webpack_require__(209);
 /**
  * @class SubjectSubscriber<T>
@@ -18498,7 +18498,7 @@ var DOCUMENT = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* OpaqueToke
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__ = __webpack_require__(648);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__apply_redirects__ = __webpack_require__(441);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__config__ = __webpack_require__(442);
@@ -28791,11 +28791,11 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 "use strict";
 var isArray_1 = __webpack_require__(211);
-var isObject_1 = __webpack_require__(650);
+var isObject_1 = __webpack_require__(651);
 var isFunction_1 = __webpack_require__(339);
-var tryCatch_1 = __webpack_require__(653);
+var tryCatch_1 = __webpack_require__(654);
 var errorObject_1 = __webpack_require__(338);
-var UnsubscriptionError_1 = __webpack_require__(649);
+var UnsubscriptionError_1 = __webpack_require__(650);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -29369,7 +29369,7 @@ var isArray_1 = __webpack_require__(211);
 var isPromise_1 = __webpack_require__(340);
 var Observable_1 = __webpack_require__(20);
 var iterator_1 = __webpack_require__(207);
-var InnerSubscriber_1 = __webpack_require__(636);
+var InnerSubscriber_1 = __webpack_require__(637);
 var observable_1 = __webpack_require__(208);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
@@ -41784,8 +41784,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(627),
-            styles: [__webpack_require__(618)]
+            template: __webpack_require__(628),
+            styles: [__webpack_require__(619)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -41870,7 +41870,7 @@ module.exports = function(that, callbackfn, aLen, memo, isRight){
 'use strict';
 var aFunction  = __webpack_require__(59)
   , isObject   = __webpack_require__(8)
-  , invoke     = __webpack_require__(488)
+  , invoke     = __webpack_require__(489)
   , arraySlice = [].slice
   , factories  = {};
 
@@ -42633,9 +42633,9 @@ var global         = __webpack_require__(12)
   , uid            = __webpack_require__(89)
   , wks            = __webpack_require__(10)
   , wksExt         = __webpack_require__(317)
-  , wksDefine      = __webpack_require__(492)
-  , keyOf          = __webpack_require__(489)
-  , enumKeys       = __webpack_require__(487)
+  , wksDefine      = __webpack_require__(493)
+  , keyOf          = __webpack_require__(490)
+  , enumKeys       = __webpack_require__(488)
   , isArray        = __webpack_require__(190)
   , anObject       = __webpack_require__(4)
   , toIObject      = __webpack_require__(31)
@@ -42951,7 +42951,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(20);
 var ScalarObservable_1 = __webpack_require__(333);
 var EmptyObservable_1 = __webpack_require__(331);
-var isScheduler_1 = __webpack_require__(651);
+var isScheduler_1 = __webpack_require__(652);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -43343,7 +43343,7 @@ exports.ScalarObservable = ScalarObservable;
 
 "use strict";
 "use strict";
-var FromObservable_1 = __webpack_require__(641);
+var FromObservable_1 = __webpack_require__(642);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
@@ -43561,11 +43561,11 @@ webpackEmptyContext.id = 341;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(422);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(464);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(462);
 
 
@@ -54566,11 +54566,11 @@ function sanitizeStyle(value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__ = __webpack_require__(644);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__ = __webpack_require__(335);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__ = __webpack_require__(645);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_operator_first__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_map__);
@@ -55835,16 +55835,19 @@ var AppModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_home_component__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__support_support_component__ = __webpack_require__(463);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return AppRoutes; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponents; });
 
+
 var AppRoutes = [
     { path: "", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] },
-    { path: "Home", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] },
-    { path: "**", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] }
+    { path: "home", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] },
+    { path: "support", component: __WEBPACK_IMPORTED_MODULE_1__support_support_component__["a" /* SupportComponent */] }
 ];
 var AppComponents = [
-    __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */]
+    __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */],
+    __WEBPACK_IMPORTED_MODULE_1__support_support_component__["a" /* SupportComponent */]
 ];
 
 
@@ -55937,8 +55940,8 @@ var HeaderComponent = (function () {
     HeaderComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-header',
-            template: __webpack_require__(628),
-            styles: [__webpack_require__(619)]
+            template: __webpack_require__(629),
+            styles: [__webpack_require__(620)]
         }), 
         __metadata('design:paramtypes', [])
     ], HeaderComponent);
@@ -56185,8 +56188,8 @@ var MainComponent = (function () {
     MainComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-main',
-            template: __webpack_require__(629),
-            styles: [__webpack_require__(620)]
+            template: __webpack_require__(630),
+            styles: [__webpack_require__(621)]
         }), 
         __metadata('design:paramtypes', [])
     ], MainComponent);
@@ -56222,8 +56225,8 @@ var PortfolioComponent = (function () {
         // Enables jQuery
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-portfolio',
-            template: __webpack_require__(630),
-            styles: [__webpack_require__(621)]
+            template: __webpack_require__(631),
+            styles: [__webpack_require__(622)]
         }), 
         __metadata('design:paramtypes', [])
     ], PortfolioComponent);
@@ -56256,8 +56259,8 @@ var AboutComponent = (function () {
     AboutComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-about',
-            template: __webpack_require__(631),
-            styles: [__webpack_require__(622)]
+            template: __webpack_require__(632),
+            styles: [__webpack_require__(623)]
         }), 
         __metadata('design:paramtypes', [])
     ], AboutComponent);
@@ -56290,8 +56293,8 @@ var SummaryComponent = (function () {
     SummaryComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-summary',
-            template: __webpack_require__(632),
-            styles: [__webpack_require__(623)]
+            template: __webpack_require__(633),
+            styles: [__webpack_require__(624)]
         }), 
         __metadata('design:paramtypes', [])
     ], SummaryComponent);
@@ -56373,8 +56376,8 @@ var TimelineItemComponent = (function () {
     TimelineItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-timeline-item',
-            template: __webpack_require__(633),
-            styles: [__webpack_require__(624)]
+            template: __webpack_require__(634),
+            styles: [__webpack_require__(625)]
         }), 
         __metadata('design:paramtypes', [])
     ], TimelineItemComponent);
@@ -56409,8 +56412,8 @@ var TimelineComponent = (function () {
     TimelineComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-timeline',
-            template: __webpack_require__(634),
-            styles: [__webpack_require__(625)]
+            template: __webpack_require__(635),
+            styles: [__webpack_require__(626)]
         }), 
         __metadata('design:paramtypes', [])
     ], TimelineComponent);
@@ -56443,8 +56446,8 @@ var TestimonialsComponent = (function () {
     TestimonialsComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-testimonials',
-            template: __webpack_require__(635),
-            styles: [__webpack_require__(626)]
+            template: __webpack_require__(636),
+            styles: [__webpack_require__(627)]
         }), 
         __metadata('design:paramtypes', [])
     ], TestimonialsComponent);
@@ -56470,10 +56473,32 @@ var TestimonialsComponent = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-var environment = {
-    production: true
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SupportComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SupportComponent = (function () {
+    function SupportComponent() {
+    }
+    SupportComponent.prototype.ngOnInit = function () {
+    };
+    SupportComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
+            selector: 'app-support',
+            template: "\n        <section class=\"container space-top-40\">\n            <div class=\"row\">\n                <div class=\"col-xs-12\">\n                    <h1 class=\"text-center\">Customer Support</h1>\n                    <div class=\"divider half-margins\"><i class=\"fa fa-star\"></i></div>\n\n                    <div class=\"space-bottom-40\">\n                        <h2 class=\"space-bottom-10\">Remote Support</h2>\n                        <p class=\"lead\">URL for remote support assistance.</p>\n                        <ul class=\"list-inline\">\n                            <li><a class=\"btn btn-primary\" href=\"http://center.leemtek.com:8040/\" target=\"_blank\"><i class=\"fa fa-medkit\" aria-hidden=\"true\"></i> Remote Support</a></li>\n                        </ul>\n                    </div>\n\n                    <div>\n                        <h2 class=\"space-bottom-10\">ScreenConnect</h2>\n                        <p class=\"lead\">Download links for StagedHomes &amp; LeemTek ScreenConnect Software</p>\n                        <ul class=\"list-inline\">\n                            <li><a class=\"btn btn-primary\" href=\"https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.exe\"><i class=\"fa fa-windows\" aria-hidden=\"true\"></i> Windows</a></li>\n                            <li><a class=\"btn btn-primary\" href=\"https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.pkg\"><i class=\"fa fa-apple\" aria-hidden=\"true\"></i> Mac OS</a></li>\n                        </ul>\n                    </div>\n                </div><!-- /col -->\n            </div><!-- /row -->\n        </section>\n    "
+        }), 
+        __metadata('design:paramtypes', [])
+    ], SupportComponent);
+    return SupportComponent;
+}());
 
 
 /***/ },
@@ -56481,37 +56506,48 @@ var environment = {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(478);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+var environment = {
+    production: true
+};
+
+
+/***/ },
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(479);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(472);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(468);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(473);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(474);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(473);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(471);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(470);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(477);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(478);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(467);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(475);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(476);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(469);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(476);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(477);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(474);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(475);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(479);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(480);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(655);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(656);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -56532,55 +56568,55 @@ var environment = {
 
 
 /***/ },
-/* 465 */
-/***/ function(module, exports, __webpack_require__) {
-
-__webpack_require__(131);
-__webpack_require__(502);
-__webpack_require__(500);
-__webpack_require__(506);
-__webpack_require__(503);
-__webpack_require__(509);
-__webpack_require__(511);
-__webpack_require__(499);
-__webpack_require__(505);
-__webpack_require__(496);
-__webpack_require__(510);
-__webpack_require__(494);
-__webpack_require__(508);
-__webpack_require__(507);
-__webpack_require__(501);
-__webpack_require__(504);
-__webpack_require__(493);
-__webpack_require__(495);
-__webpack_require__(498);
-__webpack_require__(497);
-__webpack_require__(512);
-__webpack_require__(319);
-module.exports = __webpack_require__(11).Array;
-
-/***/ },
 /* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(131);
+__webpack_require__(503);
+__webpack_require__(501);
+__webpack_require__(507);
+__webpack_require__(504);
+__webpack_require__(510);
+__webpack_require__(512);
+__webpack_require__(500);
+__webpack_require__(506);
+__webpack_require__(497);
+__webpack_require__(511);
+__webpack_require__(495);
+__webpack_require__(509);
+__webpack_require__(508);
+__webpack_require__(502);
+__webpack_require__(505);
+__webpack_require__(494);
+__webpack_require__(496);
+__webpack_require__(499);
+__webpack_require__(498);
 __webpack_require__(513);
-__webpack_require__(515);
-__webpack_require__(514);
-__webpack_require__(517);
-__webpack_require__(516);
-module.exports = Date;
+__webpack_require__(319);
+module.exports = __webpack_require__(11).Array;
 
 /***/ },
 /* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(514);
+__webpack_require__(516);
+__webpack_require__(515);
 __webpack_require__(518);
-__webpack_require__(520);
-__webpack_require__(519);
-module.exports = __webpack_require__(11).Function;
+__webpack_require__(517);
+module.exports = Date;
 
 /***/ },
 /* 468 */
+/***/ function(module, exports, __webpack_require__) {
+
+__webpack_require__(519);
+__webpack_require__(521);
+__webpack_require__(520);
+module.exports = __webpack_require__(11).Function;
+
+/***/ },
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(130);
@@ -56590,10 +56626,9 @@ __webpack_require__(320);
 module.exports = __webpack_require__(11).Map;
 
 /***/ },
-/* 469 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(521);
 __webpack_require__(522);
 __webpack_require__(523);
 __webpack_require__(524);
@@ -56610,16 +56645,16 @@ __webpack_require__(534);
 __webpack_require__(535);
 __webpack_require__(536);
 __webpack_require__(537);
+__webpack_require__(538);
 module.exports = __webpack_require__(11).Math;
 
 /***/ },
-/* 470 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(538);
-__webpack_require__(548);
-__webpack_require__(549);
 __webpack_require__(539);
+__webpack_require__(549);
+__webpack_require__(550);
 __webpack_require__(540);
 __webpack_require__(541);
 __webpack_require__(542);
@@ -56628,73 +56663,74 @@ __webpack_require__(544);
 __webpack_require__(545);
 __webpack_require__(546);
 __webpack_require__(547);
+__webpack_require__(548);
 module.exports = __webpack_require__(11).Number;
-
-/***/ },
-/* 471 */
-/***/ function(module, exports, __webpack_require__) {
-
-__webpack_require__(327);
-__webpack_require__(551);
-__webpack_require__(553);
-__webpack_require__(552);
-__webpack_require__(555);
-__webpack_require__(557);
-__webpack_require__(562);
-__webpack_require__(556);
-__webpack_require__(554);
-__webpack_require__(564);
-__webpack_require__(563);
-__webpack_require__(559);
-__webpack_require__(560);
-__webpack_require__(558);
-__webpack_require__(550);
-__webpack_require__(561);
-__webpack_require__(565);
-__webpack_require__(130);
-
-module.exports = __webpack_require__(11).Object;
 
 /***/ },
 /* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(327);
+__webpack_require__(552);
+__webpack_require__(554);
+__webpack_require__(553);
+__webpack_require__(556);
+__webpack_require__(558);
+__webpack_require__(563);
+__webpack_require__(557);
+__webpack_require__(555);
+__webpack_require__(565);
+__webpack_require__(564);
+__webpack_require__(560);
+__webpack_require__(561);
+__webpack_require__(559);
+__webpack_require__(551);
+__webpack_require__(562);
 __webpack_require__(566);
-module.exports = __webpack_require__(11).parseFloat;
+__webpack_require__(130);
+
+module.exports = __webpack_require__(11).Object;
 
 /***/ },
 /* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(567);
-module.exports = __webpack_require__(11).parseInt;
+module.exports = __webpack_require__(11).parseFloat;
 
 /***/ },
 /* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(568);
-__webpack_require__(569);
-__webpack_require__(570);
-__webpack_require__(571);
-__webpack_require__(572);
-__webpack_require__(575);
-__webpack_require__(573);
-__webpack_require__(574);
-__webpack_require__(576);
-__webpack_require__(577);
-__webpack_require__(578);
-__webpack_require__(579);
-__webpack_require__(581);
-__webpack_require__(580);
-module.exports = __webpack_require__(11).Reflect;
+module.exports = __webpack_require__(11).parseInt;
 
 /***/ },
 /* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(569);
+__webpack_require__(570);
+__webpack_require__(571);
+__webpack_require__(572);
+__webpack_require__(573);
+__webpack_require__(576);
+__webpack_require__(574);
+__webpack_require__(575);
+__webpack_require__(577);
+__webpack_require__(578);
+__webpack_require__(579);
+__webpack_require__(580);
 __webpack_require__(582);
+__webpack_require__(581);
+module.exports = __webpack_require__(11).Reflect;
+
+/***/ },
+/* 476 */
+/***/ function(module, exports, __webpack_require__) {
+
 __webpack_require__(583);
+__webpack_require__(584);
 __webpack_require__(321);
 __webpack_require__(322);
 __webpack_require__(323);
@@ -56703,7 +56739,7 @@ __webpack_require__(325);
 module.exports = __webpack_require__(11).RegExp;
 
 /***/ },
-/* 476 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(130);
@@ -56713,31 +56749,31 @@ __webpack_require__(326);
 module.exports = __webpack_require__(11).Set;
 
 /***/ },
-/* 477 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(593);
-__webpack_require__(597);
-__webpack_require__(604);
-__webpack_require__(131);
-__webpack_require__(588);
-__webpack_require__(589);
 __webpack_require__(594);
 __webpack_require__(598);
-__webpack_require__(600);
-__webpack_require__(584);
+__webpack_require__(605);
+__webpack_require__(131);
+__webpack_require__(589);
+__webpack_require__(590);
+__webpack_require__(595);
+__webpack_require__(599);
+__webpack_require__(601);
 __webpack_require__(585);
 __webpack_require__(586);
 __webpack_require__(587);
-__webpack_require__(590);
+__webpack_require__(588);
 __webpack_require__(591);
 __webpack_require__(592);
-__webpack_require__(595);
+__webpack_require__(593);
 __webpack_require__(596);
-__webpack_require__(599);
-__webpack_require__(601);
+__webpack_require__(597);
+__webpack_require__(600);
 __webpack_require__(602);
 __webpack_require__(603);
+__webpack_require__(604);
 __webpack_require__(322);
 __webpack_require__(323);
 __webpack_require__(324);
@@ -56745,7 +56781,7 @@ __webpack_require__(325);
 module.exports = __webpack_require__(11).String;
 
 /***/ },
-/* 478 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(327);
@@ -56753,23 +56789,23 @@ __webpack_require__(130);
 module.exports = __webpack_require__(11).Symbol;
 
 /***/ },
-/* 479 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(606);
 __webpack_require__(607);
-__webpack_require__(609);
 __webpack_require__(608);
-__webpack_require__(611);
 __webpack_require__(610);
+__webpack_require__(609);
 __webpack_require__(612);
+__webpack_require__(611);
 __webpack_require__(613);
 __webpack_require__(614);
+__webpack_require__(615);
 module.exports = __webpack_require__(11).Reflect;
 
 
 /***/ },
-/* 480 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56801,7 +56837,7 @@ module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0,
 };
 
 /***/ },
-/* 481 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56822,7 +56858,7 @@ module.exports = function fill(value /*, start = 0, end = @length */){
 };
 
 /***/ },
-/* 482 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 var forOf = __webpack_require__(124);
@@ -56835,7 +56871,7 @@ module.exports = function(iter, ITERATOR){
 
 
 /***/ },
-/* 483 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(8)
@@ -56856,18 +56892,18 @@ module.exports = function(original){
 };
 
 /***/ },
-/* 484 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(483);
+var speciesConstructor = __webpack_require__(484);
 
 module.exports = function(original, length){
   return new (speciesConstructor(original))(length);
 };
 
 /***/ },
-/* 485 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56956,7 +56992,7 @@ module.exports = {
 };
 
 /***/ },
-/* 486 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56971,7 +57007,7 @@ module.exports = function(hint){
 };
 
 /***/ },
-/* 487 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -56991,7 +57027,7 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 488 */
+/* 489 */
 /***/ function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -57012,7 +57048,7 @@ module.exports = function(fn, args, that){
 };
 
 /***/ },
-/* 489 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(72)
@@ -57027,7 +57063,7 @@ module.exports = function(object, el){
 };
 
 /***/ },
-/* 490 */
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all object keys, includes non-enumerable and symbols
@@ -57042,7 +57078,7 @@ module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
 };
 
 /***/ },
-/* 491 */
+/* 492 */
 /***/ function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -57051,7 +57087,7 @@ module.exports = Object.is || function is(x, y){
 };
 
 /***/ },
-/* 492 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global         = __webpack_require__(12)
@@ -57065,18 +57101,18 @@ module.exports = function(name){
 };
 
 /***/ },
-/* 493 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {copyWithin: __webpack_require__(480)});
+$export($export.P, 'Array', {copyWithin: __webpack_require__(481)});
 
 __webpack_require__(84)('copyWithin');
 
 /***/ },
-/* 494 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57092,18 +57128,18 @@ $export($export.P + $export.F * !__webpack_require__(30)([].every, true), 'Array
 });
 
 /***/ },
-/* 495 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {fill: __webpack_require__(481)});
+$export($export.P, 'Array', {fill: __webpack_require__(482)});
 
 __webpack_require__(84)('fill');
 
 /***/ },
-/* 496 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57119,7 +57155,7 @@ $export($export.P + $export.F * !__webpack_require__(30)([].filter, true), 'Arra
 });
 
 /***/ },
-/* 497 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57139,7 +57175,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(84)(KEY);
 
 /***/ },
-/* 498 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57159,7 +57195,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(84)(KEY);
 
 /***/ },
-/* 499 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57176,7 +57212,7 @@ $export($export.P + $export.F * !STRICT, 'Array', {
 });
 
 /***/ },
-/* 500 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57220,7 +57256,7 @@ $export($export.S + $export.F * !__webpack_require__(306)(function(iter){ Array.
 
 
 /***/ },
-/* 501 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57241,7 +57277,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(30)($nati
 });
 
 /***/ },
-/* 502 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -57250,7 +57286,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Array', {isArray: __webpack_require__(190)});
 
 /***/ },
-/* 503 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57268,7 +57304,7 @@ $export($export.P + $export.F * (__webpack_require__(85) != Object || !__webpack
 });
 
 /***/ },
-/* 504 */
+/* 505 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57296,7 +57332,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(30)($nati
 });
 
 /***/ },
-/* 505 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57312,7 +57348,7 @@ $export($export.P + $export.F * !__webpack_require__(30)([].map, true), 'Array',
 });
 
 /***/ },
-/* 506 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57337,7 +57373,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 507 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57353,7 +57389,7 @@ $export($export.P + $export.F * !__webpack_require__(30)([].reduceRight, true), 
 });
 
 /***/ },
-/* 508 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57369,7 +57405,7 @@ $export($export.P + $export.F * !__webpack_require__(30)([].reduce, true), 'Arra
 });
 
 /***/ },
-/* 509 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57403,7 +57439,7 @@ $export($export.P + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 510 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57419,7 +57455,7 @@ $export($export.P + $export.F * !__webpack_require__(30)([].some, true), 'Array'
 });
 
 /***/ },
-/* 511 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57448,13 +57484,13 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 512 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(198)('Array');
 
 /***/ },
-/* 513 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.3.3.1 / 15.9.4.4 Date.now()
@@ -57463,7 +57499,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
-/* 514 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57497,7 +57533,7 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 515 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57517,16 +57553,16 @@ $export($export.P + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 516 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 var TO_PRIMITIVE = __webpack_require__(10)('toPrimitive')
   , proto        = Date.prototype;
 
-if(!(TO_PRIMITIVE in proto))__webpack_require__(46)(proto, TO_PRIMITIVE, __webpack_require__(486));
+if(!(TO_PRIMITIVE in proto))__webpack_require__(46)(proto, TO_PRIMITIVE, __webpack_require__(487));
 
 /***/ },
-/* 517 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 var DateProto    = Date.prototype
@@ -57542,7 +57578,7 @@ if(new Date(NaN) + '' != INVALID_DATE){
 }
 
 /***/ },
-/* 518 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
@@ -57551,7 +57587,7 @@ var $export = __webpack_require__(1);
 $export($export.P, 'Function', {bind: __webpack_require__(295)});
 
 /***/ },
-/* 519 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57570,7 +57606,7 @@ if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(16).f(FunctionProto, HAS
 }});
 
 /***/ },
-/* 520 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 var dP         = __webpack_require__(16).f
@@ -57600,7 +57636,7 @@ NAME in FProto || __webpack_require__(19) && dP(FProto, NAME, {
 });
 
 /***/ },
-/* 521 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.3 Math.acosh(x)
@@ -57623,7 +57659,7 @@ $export($export.S + $export.F * !($acosh
 });
 
 /***/ },
-/* 522 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.5 Math.asinh(x)
@@ -57638,7 +57674,7 @@ function asinh(x){
 $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
-/* 523 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.7 Math.atanh(x)
@@ -57653,7 +57689,7 @@ $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
 });
 
 /***/ },
-/* 524 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.9 Math.cbrt(x)
@@ -57667,7 +57703,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 525 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.11 Math.clz32(x)
@@ -57680,7 +57716,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 526 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.12 Math.cosh(x)
@@ -57694,7 +57730,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 527 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.14 Math.expm1(x)
@@ -57704,7 +57740,7 @@ var $export = __webpack_require__(1)
 $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
-/* 528 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.16 Math.fround(x)
@@ -57735,7 +57771,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 529 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -57765,7 +57801,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 530 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.18 Math.imul(x, y)
@@ -57787,7 +57823,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 531 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.21 Math.log10(x)
@@ -57800,7 +57836,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 532 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.20 Math.log1p(x)
@@ -57809,7 +57845,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {log1p: __webpack_require__(308)});
 
 /***/ },
-/* 533 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.22 Math.log2(x)
@@ -57822,7 +57858,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 534 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.28 Math.sign(x)
@@ -57831,7 +57867,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {sign: __webpack_require__(195)});
 
 /***/ },
-/* 535 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.30 Math.sinh(x)
@@ -57851,7 +57887,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 536 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.33 Math.tanh(x)
@@ -57868,7 +57904,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 537 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.34 Math.trunc(x)
@@ -57881,7 +57917,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 538 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57956,7 +57992,7 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
 }
 
 /***/ },
-/* 539 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.1 Number.EPSILON
@@ -57965,7 +58001,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
-/* 540 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.2 Number.isFinite(number)
@@ -57979,7 +58015,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 541 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -57988,7 +58024,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {isInteger: __webpack_require__(303)});
 
 /***/ },
-/* 542 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.4 Number.isNaN(number)
@@ -58001,7 +58037,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 543 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.5 Number.isSafeInteger(number)
@@ -58016,7 +58052,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 544 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -58025,7 +58061,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
-/* 545 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -58034,7 +58070,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
-/* 546 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -58043,7 +58079,7 @@ var $export     = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
-/* 547 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -58052,7 +58088,7 @@ var $export   = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
-/* 548 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58171,7 +58207,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 });
 
 /***/ },
-/* 549 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58195,7 +58231,7 @@ $export($export.P + $export.F * ($fails(function(){
 });
 
 /***/ },
-/* 550 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
@@ -58204,7 +58240,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F, 'Object', {assign: __webpack_require__(309)});
 
 /***/ },
-/* 551 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1)
@@ -58212,7 +58248,7 @@ var $export = __webpack_require__(1)
 $export($export.S, 'Object', {create: __webpack_require__(71)});
 
 /***/ },
-/* 552 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -58220,7 +58256,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(310)});
 
 /***/ },
-/* 553 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -58228,7 +58264,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperty: __webpack_require__(16).f});
 
 /***/ },
-/* 554 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.5 Object.freeze(O)
@@ -58242,7 +58278,7 @@ __webpack_require__(36)('freeze', function($freeze){
 });
 
 /***/ },
-/* 555 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -58256,7 +58292,7 @@ __webpack_require__(36)('getOwnPropertyDescriptor', function(){
 });
 
 /***/ },
-/* 556 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
@@ -58265,7 +58301,7 @@ __webpack_require__(36)('getOwnPropertyNames', function(){
 });
 
 /***/ },
-/* 557 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
@@ -58279,7 +58315,7 @@ __webpack_require__(36)('getPrototypeOf', function(){
 });
 
 /***/ },
-/* 558 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.11 Object.isExtensible(O)
@@ -58292,7 +58328,7 @@ __webpack_require__(36)('isExtensible', function($isExtensible){
 });
 
 /***/ },
-/* 559 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.12 Object.isFrozen(O)
@@ -58305,7 +58341,7 @@ __webpack_require__(36)('isFrozen', function($isFrozen){
 });
 
 /***/ },
-/* 560 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.13 Object.isSealed(O)
@@ -58318,15 +58354,15 @@ __webpack_require__(36)('isSealed', function($isSealed){
 });
 
 /***/ },
-/* 561 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.10 Object.is(value1, value2)
 var $export = __webpack_require__(1);
-$export($export.S, 'Object', {is: __webpack_require__(491)});
+$export($export.S, 'Object', {is: __webpack_require__(492)});
 
 /***/ },
-/* 562 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
@@ -58340,7 +58376,7 @@ __webpack_require__(36)('keys', function(){
 });
 
 /***/ },
-/* 563 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.15 Object.preventExtensions(O)
@@ -58354,7 +58390,7 @@ __webpack_require__(36)('preventExtensions', function($preventExtensions){
 });
 
 /***/ },
-/* 564 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.17 Object.seal(O)
@@ -58368,7 +58404,7 @@ __webpack_require__(36)('seal', function($seal){
 });
 
 /***/ },
-/* 565 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -58376,7 +58412,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(197).set});
 
 /***/ },
-/* 566 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -58385,7 +58421,7 @@ var $export     = __webpack_require__(1)
 $export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
-/* 567 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -58394,7 +58430,7 @@ var $export   = __webpack_require__(1)
 $export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
-/* 568 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -58415,7 +58451,7 @@ $export($export.S + $export.F * !__webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 569 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
@@ -58467,7 +58503,7 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 });
 
 /***/ },
-/* 570 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -58494,7 +58530,7 @@ $export($export.S + $export.F * __webpack_require__(5)(function(){
 });
 
 /***/ },
-/* 571 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.4 Reflect.deleteProperty(target, propertyKey)
@@ -58510,7 +58546,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 572 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58542,7 +58578,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 573 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
@@ -58557,7 +58593,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 574 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.8 Reflect.getPrototypeOf(target)
@@ -58572,7 +58608,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 575 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -58598,7 +58634,7 @@ function get(target, propertyKey/*, receiver*/){
 $export($export.S, 'Reflect', {get: get});
 
 /***/ },
-/* 576 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.9 Reflect.has(target, propertyKey)
@@ -58611,7 +58647,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 577 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.10 Reflect.isExtensible(target)
@@ -58627,16 +58663,16 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 578 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(1);
 
-$export($export.S, 'Reflect', {ownKeys: __webpack_require__(490)});
+$export($export.S, 'Reflect', {ownKeys: __webpack_require__(491)});
 
 /***/ },
-/* 579 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.12 Reflect.preventExtensions(target)
@@ -58657,7 +58693,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 580 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -58677,7 +58713,7 @@ if(setProto)$export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 581 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -58713,7 +58749,7 @@ function set(target, propertyKey, V/*, receiver*/){
 $export($export.S, 'Reflect', {set: set});
 
 /***/ },
-/* 582 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global            = __webpack_require__(12)
@@ -58761,7 +58797,7 @@ if(__webpack_require__(19) && (!CORRECT_NEW || __webpack_require__(5)(function()
 __webpack_require__(198)('RegExp');
 
 /***/ },
-/* 583 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58792,7 +58828,7 @@ if(__webpack_require__(5)(function(){ return $toString.call({source: 'a', flags:
 }
 
 /***/ },
-/* 584 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58805,7 +58841,7 @@ __webpack_require__(26)('anchor', function(createHTML){
 });
 
 /***/ },
-/* 585 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58818,7 +58854,7 @@ __webpack_require__(26)('big', function(createHTML){
 });
 
 /***/ },
-/* 586 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58831,7 +58867,7 @@ __webpack_require__(26)('blink', function(createHTML){
 });
 
 /***/ },
-/* 587 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58844,7 +58880,7 @@ __webpack_require__(26)('bold', function(createHTML){
 });
 
 /***/ },
-/* 588 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58859,7 +58895,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 589 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58885,7 +58921,7 @@ $export($export.P + $export.F * __webpack_require__(187)(ENDS_WITH), 'String', {
 });
 
 /***/ },
-/* 590 */
+/* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58898,7 +58934,7 @@ __webpack_require__(26)('fixed', function(createHTML){
 });
 
 /***/ },
-/* 591 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58911,7 +58947,7 @@ __webpack_require__(26)('fontcolor', function(createHTML){
 });
 
 /***/ },
-/* 592 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58924,7 +58960,7 @@ __webpack_require__(26)('fontsize', function(createHTML){
 });
 
 /***/ },
-/* 593 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export        = __webpack_require__(1)
@@ -58952,7 +58988,7 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
 });
 
 /***/ },
-/* 594 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58970,7 +59006,7 @@ $export($export.P + $export.F * __webpack_require__(187)(INCLUDES), 'String', {
 });
 
 /***/ },
-/* 595 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58983,7 +59019,7 @@ __webpack_require__(26)('italics', function(createHTML){
 });
 
 /***/ },
-/* 596 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58996,7 +59032,7 @@ __webpack_require__(26)('link', function(createHTML){
 });
 
 /***/ },
-/* 597 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -59019,7 +59055,7 @@ $export($export.S, 'String', {
 });
 
 /***/ },
-/* 598 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -59030,7 +59066,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 599 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59043,7 +59079,7 @@ __webpack_require__(26)('small', function(createHTML){
 });
 
 /***/ },
-/* 600 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59067,7 +59103,7 @@ $export($export.P + $export.F * __webpack_require__(187)(STARTS_WITH), 'String',
 });
 
 /***/ },
-/* 601 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59080,7 +59116,7 @@ __webpack_require__(26)('strike', function(createHTML){
 });
 
 /***/ },
-/* 602 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59093,7 +59129,7 @@ __webpack_require__(26)('sub', function(createHTML){
 });
 
 /***/ },
-/* 603 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59106,7 +59142,7 @@ __webpack_require__(26)('sup', function(createHTML){
 });
 
 /***/ },
-/* 604 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59119,7 +59155,7 @@ __webpack_require__(129)('trim', function($trim){
 });
 
 /***/ },
-/* 605 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59128,7 +59164,7 @@ var each         = __webpack_require__(44)(0)
   , redefine     = __webpack_require__(25)
   , meta         = __webpack_require__(53)
   , assign       = __webpack_require__(309)
-  , weak         = __webpack_require__(485)
+  , weak         = __webpack_require__(486)
   , isObject     = __webpack_require__(8)
   , getWeak      = meta.getWeak
   , isExtensible = Object.isExtensible
@@ -59181,7 +59217,7 @@ if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
 }
 
 /***/ },
-/* 606 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(47)
@@ -59194,7 +59230,7 @@ metadata.exp({defineMetadata: function defineMetadata(metadataKey, metadataValue
 }});
 
 /***/ },
-/* 607 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(47)
@@ -59214,11 +59250,11 @@ metadata.exp({deleteMetadata: function deleteMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 608 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 var Set                     = __webpack_require__(326)
-  , from                    = __webpack_require__(482)
+  , from                    = __webpack_require__(483)
   , metadata                = __webpack_require__(47)
   , anObject                = __webpack_require__(4)
   , getPrototypeOf          = __webpack_require__(48)
@@ -59238,7 +59274,7 @@ metadata.exp({getMetadataKeys: function getMetadataKeys(target /*, targetKey */)
 }});
 
 /***/ },
-/* 609 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(47)
@@ -59260,7 +59296,7 @@ metadata.exp({getMetadata: function getMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 610 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                = __webpack_require__(47)
@@ -59273,7 +59309,7 @@ metadata.exp({getOwnMetadataKeys: function getOwnMetadataKeys(target /*, targetK
 }});
 
 /***/ },
-/* 611 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(47)
@@ -59287,7 +59323,7 @@ metadata.exp({getOwnMetadata: function getOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 612 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(47)
@@ -59308,7 +59344,7 @@ metadata.exp({hasMetadata: function hasMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 613 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(47)
@@ -59322,7 +59358,7 @@ metadata.exp({hasOwnMetadata: function hasOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 614 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(47)
@@ -59342,9 +59378,9 @@ metadata.exp({metadata: function metadata(metadataKey, metadataValue){
 }});
 
 /***/ },
-/* 615 */,
 /* 616 */,
-/* 617 */
+/* 617 */,
+/* 618 */
 /***/ function(module, exports) {
 
 // shim for using process in browser
@@ -59530,34 +59566,28 @@ process.umask = function() { return 0; };
 
 
 /***/ },
-/* 618 */
-/***/ function(module, exports) {
-
-module.exports = ""
-
-/***/ },
 /* 619 */
 /***/ function(module, exports) {
 
-module.exports = "/* LinkedIn Button */\n#btn-linkedin {\n    display: inline-block;\n    font-family: FontAwesome;\n    font-style: normal;\n    font-weight: normal;\n    line-height: 1;\n    position:relative;\n\n    cursor:pointer;\n    background:rgba(0,0,0,0.5);\n    line-height:40px;\n    width:40px; height:40px;\n    text-align:center;\n    font-size:17px;\n    margin-left:10px !important;\n\n    -webkit-border-radius: 4px;\n        -moz-border-radius: 4px;\n            border-radius: 4px;\n}\n#btn-linkedin:before {\n    content: \"\\f0e1\";\n    color: #fff;\n}\n\n/* Google URL to Resume */\n#btn-googleResume {\n    display: inline-block;\n    font-family: FontAwesome;\n    font-style: normal;\n    font-weight: normal;\n    line-height: 1;\n    position:relative;\n\n    cursor:pointer;\n    background:rgba(0,0,0,0.5);\n    line-height:40px;\n    width:40px; height:40px;\n    text-align:center;\n    font-size:17px;\n    margin-left:10px !important;\n\n    -webkit-border-radius: 4px;\n        -moz-border-radius: 4px;\n            border-radius: 4px;\n}\n#btn-googleResume:before {\n    content: \"\\f1c1\";\n    color: #fff;\n}\n\n"
+module.exports = ""
 
 /***/ },
 /* 620 */
 /***/ function(module, exports) {
 
-module.exports = ".image-sample {\n    width: 140px;\n    height: auto;\n}"
+module.exports = "/* LinkedIn Button */\n#btn-linkedin {\n    display: inline-block;\n    font-family: FontAwesome;\n    font-style: normal;\n    font-weight: normal;\n    line-height: 1;\n    position:relative;\n\n    cursor:pointer;\n    background:rgba(0,0,0,0.5);\n    line-height:40px;\n    width:40px; height:40px;\n    text-align:center;\n    font-size:17px;\n    margin-left:10px !important;\n\n    -webkit-border-radius: 4px;\n        -moz-border-radius: 4px;\n            border-radius: 4px;\n}\n#btn-linkedin:before {\n    content: \"\\f0e1\";\n    color: #fff;\n}\n\n/* Google URL to Resume */\n#btn-googleResume {\n    display: inline-block;\n    font-family: FontAwesome;\n    font-style: normal;\n    font-weight: normal;\n    line-height: 1;\n    position:relative;\n\n    cursor:pointer;\n    background:rgba(0,0,0,0.5);\n    line-height:40px;\n    width:40px; height:40px;\n    text-align:center;\n    font-size:17px;\n    margin-left:10px !important;\n\n    -webkit-border-radius: 4px;\n        -moz-border-radius: 4px;\n            border-radius: 4px;\n}\n#btn-googleResume:before {\n    content: \"\\f1c1\";\n    color: #fff;\n}\n\n"
 
 /***/ },
 /* 621 */
 /***/ function(module, exports) {
 
-module.exports = ".item-box-desc > h4 {\n    font-size: smaller;\n}\n\n/* Included CSS is autogenerating additional padding-top.  This\n    will fix it. */\n.modal {\n    padding-top: 0px;\n}"
+module.exports = ".image-sample {\n    width: 140px;\n    height: auto;\n}"
 
 /***/ },
 /* 622 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".item-box-desc > h4 {\n    font-size: smaller;\n}\n\n/* Included CSS is autogenerating additional padding-top.  This\n    will fix it. */\n.modal {\n    padding-top: 0px;\n}"
 
 /***/ },
 /* 623 */
@@ -59569,76 +59599,82 @@ module.exports = ""
 /* 624 */
 /***/ function(module, exports) {
 
-module.exports = ".panel-heading {\n    padding: 7px 15px 7px 15px;\n}\n\n.panel-body {\n    padding: 7px 15px 7px 15px;\n}\n\n\n/* ============================================================\n    References\n============================================================ */\n#social-links {\n    margin-bottom: 0;\n}\n\n#social-links > li {\n    font-size: smaller;\n}\n\n\n/* ============================================================\n    Panel Footer\n============================================================ */\n.panel-footer {\n    padding: 5px 15px 5px 15px;\n}"
+module.exports = ""
 
 /***/ },
 /* 625 */
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".panel-heading {\n    padding: 7px 15px 7px 15px;\n}\n\n.panel-body {\n    padding: 7px 15px 7px 15px;\n}\n\n\n/* ============================================================\n    References\n============================================================ */\n#social-links {\n    margin-bottom: 0;\n}\n\n#social-links > li {\n    font-size: smaller;\n}\n\n\n/* ============================================================\n    Panel Footer\n============================================================ */\n.panel-footer {\n    padding: 5px 15px 5px 15px;\n}"
 
 /***/ },
 /* 626 */
 /***/ function(module, exports) {
 
-module.exports = ".testimonial > p {\n    line-height: 35px;\n}"
+module.exports = ""
 
 /***/ },
 /* 627 */
 /***/ function(module, exports) {
 
-module.exports = "<div id=\"modal-section\"></div>\n\n<!-- ===========================================================================================\n    Header\n=========================================================================================== -->\n<app-header>Loading Header...</app-header>\n\n<!-- ===========================================================================================\n    Body Wrapper\n=========================================================================================== -->\n<div id=\"wrapper\">\n    <app-home>Loading Homepage...</app-home>\n</div>\n\n<!-- ===========================================================================================\n    Section: Footer\n=========================================================================================== -->\n<app-footer>Loading: Footer...</app-footer>\n"
+module.exports = ".testimonial > p {\n    line-height: 35px;\n}"
 
 /***/ },
 /* 628 */
 /***/ function(module, exports) {
 
-module.exports = "<header id=\"topNav\">\n    <div class=\"container\">\n\n        <!-- Mobile Menu Button -->\n        <button class=\"btn btn-mobile\" data-toggle=\"collapse\" data-target=\".nav-main-collapse\">\n            <i class=\"fa fa-bars\"></i>\n        </button>\n\n        <!-- Logo text or image -->\n        <a class=\"logo scrollTo\" href=\"#wrapper\">\n            <img src=\"{{ $strLogo }}\" alt=\"Duane Leem\" />\n        </a>\n\n        <!-- Top Nav -->\n        <div class=\"navbar-collapse nav-main-collapse collapse pull-right\">\n            <nav class=\"nav-main mega-menu\">\n                <ul class=\"nav nav-pills nav-main scroll-menu\" id=\"topMain\">\n                    <li class=\"active\"><a href=\"#wrapper\">Home</a></li>\n                    <li><a id=\"linkSummary\" href=\"#summary\">Career Summary</a></li>\n                    <li><a id=\"linkPortfolio\" href=\"#portfolio\">Portfolio</a></li>\n                    <li><a href=\"#sectionFooter\">Contact</a></li>\n                    <li id=\"btn-linkedin\" class=\"visible-md visible-lg\" onclick=\"window.open('http://www.linkedin.com/in/duaneleem', '_blank')\"></li>\n                    <li id=\"btn-googleResume\" class=\"visible-md visible-lg\" onclick=\"window.open('https://docs.google.com/document/d/1bvakr9gKH-lk7mX_VRstMJ-3Vv3tJLSQuiHWkOdnrUs/edit?usp=sharing', '_blank')\"></li>\n                    <li class=\"visible-xs visible-sm\"><a href=\"http://www.linkedin.com/in/duaneleem\" target=\"_blank\"><i class=\"fa fa-external-link-square\" aria-hidden=\"true\"></i> LinkedIn</a></li>\n                    <li class=\"visible-xs visible-sm\"><a href=\"https://docs.google.com/document/d/1bvakr9gKH-lk7mX_VRstMJ-3Vv3tJLSQuiHWkOdnrUs/edit?usp=sharing\" target=\"_blank\"><i class=\"fa fa-external-link-square\" aria-hidden=\"true\"></i> Google Document Resume</a></li>\n                </ul>\n            </nav>\n        </div>\n        <!-- /Top Nav -->\n\n    </div>\n</header>\n"
+module.exports = "<div id=\"modal-section\"></div>\n\n<!-- ===========================================================================================\n    Header\n=========================================================================================== -->\n<app-header>Loading Header...</app-header>\n\n<!-- ===========================================================================================\n    Body Wrapper\n=========================================================================================== -->\n<div id=\"wrapper\">\n    <router-outlet></router-outlet>\n</div>\n\n<!-- ===========================================================================================\n    Section: Footer\n=========================================================================================== -->\n<app-footer>Loading: Footer...</app-footer>\n"
 
 /***/ },
 /* 629 */
 /***/ function(module, exports) {
 
-module.exports = "<!-- REVOLUTION SLIDER -->\n<div class=\"fullwidthbanner-container roundedcorners\">\n    <div class=\"fullwidthbanner\">\n        <ul>\t\n\n            <!-- SLIDE  -->\n            <li data-transition=\"boxslide\" data-slotamount=\"5\" data-slideindex=\"back\">\n\n                <!-- COVER IMAGE -->\n                <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/home-data-center.jpg\" alt=\"Data Center\" data-bgfit=\"cover\" data-bgposition=\"left top\" data-bgrepeat=\"no-repeat\" />\n\n                <div class=\"tp-caption largegreenbg very_large_text lfl stl\" style=\"padding: 0px 20px 0px 20px;\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"220\"\n                    data-speed=\"300\"\n                    data-start=\"500\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        Duane Leem\n                </div>\n\n                <div class=\"tp-caption large_bold_grey medium_bg_darkblue lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"283\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        Full Stack Development | LAMP & MEAN\n                </div>\n\n                <div class=\"tp-caption large_bold_grey medium_bg_darkblue lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"320\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        IT Project Management | PMI-PMP & Scrum Master\n                </div>\n\n                <div class=\"tp-caption large_bold_grey lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"345\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        <a type=\"button\" class=\"btn btn-success btn-xs\" onclick=\"document.getElementById('linkSummary').click();\"><i class=\"fa fa-briefcase\" aria-hidden=\"true\"></i>Career Timeline</a>\n                        <a type=\"button\" class=\"btn btn-success btn-xs\" onclick=\"document.getElementById('linkPortfolio').click();\"><i class=\"fa fa-heart\" aria-hidden=\"true\"></i>Projects</a>\n                </div>\n\n                <!-- Mini Images -->\n                <div>\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"48\"\n                        data-y=\"131\"\n                        data-speed=\"600\"\n                        data-start=\"1100\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg\" class=\"image-sample\" alt=\"Certified Scrum Master\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"90\"\n                        data-y=\"206\"\n                        data-speed=\"600\"\n                        data-start=\"1200\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" class=\"image-sample\" alt=\"IAHSP Convention and Expo 2017\"/>\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"205\"\n                        data-y=\"140\"\n                        data-speed=\"600\"\n                        data-start=\"1300\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" class=\"image-sample\" alt=\"Barb-Schwarz.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"188\"\n                        data-y=\"246\"\n                        data-speed=\"300\"\n                        data-start=\"1400\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" class=\"image-sample\" alt=\"Masters of Science in Information Technology Management\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"55\"\n                        data-y=\"316\"\n                        data-speed=\"600\"\n                        data-start=\"1500\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" width=\"140\" height=\"140\" alt=\"GetRedBox.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"173\"\n                        data-y=\"329\"\n                        data-speed=\"300\"\n                        data-start=\"1600\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201312-pmp.jpg\" class=\"image-sample\" alt=\"Project Management Professional\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"255\"\n                        data-y=\"294\"\n                        data-speed=\"300\"\n                        data-start=\"1700\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" class=\"image-sample\" alt=\"Masters of Science in Information Technology Management\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"275\"\n                        data-y=\"166\"\n                        data-speed=\"300\"\n                        data-start=\"1800\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201602-aws-developer.jpg\" class=\"image-sample\" alt=\"Certified AWS Developer\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"84\"\n                        data-y=\"113\"\n                        data-speed=\"300\"\n                        data-start=\"1900\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201606-fullstack.jpg\" class=\"image-sample\" alt=\"Full Stack Development\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"26\"\n                        data-y=\"225\"\n                        data-speed=\"300\"\n                        data-start=\"2000\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" class=\"image-sample\" alt=\"ROSI Calculator\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"110\"\n                        data-y=\"187\"\n                        data-speed=\"300\"\n                        data-start=\"2100\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" class=\"image-sample\" alt=\"EastBayKarate-Do.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"183\"\n                        data-y=\"221\"\n                        data-speed=\"300\"\n                        data-start=\"2200\"\n                        data-easing=\"easeOutExpo\">\n                    <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" class=\"image-sample\" alt=\"StagedHomes.com\" />\n                    </div>\n                </div>\n            </li>\n\n        </ul>\n        <div class=\"tp-bannertimer\"></div>\n    </div>\n</div>\n<!-- /REVOLUTION SLIDER -->"
+module.exports = "<header id=\"topNav\">\n    <div class=\"container\">\n\n        <!-- Mobile Menu Button -->\n        <button class=\"btn btn-mobile\" data-toggle=\"collapse\" data-target=\".nav-main-collapse\">\n            <i class=\"fa fa-bars\"></i>\n        </button>\n\n        <!-- Logo text or image -->\n        <a class=\"logo scrollTo\" href=\"#wrapper\">\n            <img src=\"{{ $strLogo }}\" alt=\"Duane Leem\" />\n        </a>\n\n        <!-- Top Nav -->\n        <div class=\"navbar-collapse nav-main-collapse collapse pull-right\">\n            <nav class=\"nav-main mega-menu\">\n                <ul class=\"nav nav-pills nav-main scroll-menu\" id=\"topMain\">\n                    <li class=\"active\"><a href=\"#wrapper\">Home</a></li>\n                    <li><a id=\"linkSummary\" href=\"#summary\">Career Summary</a></li>\n                    <li><a id=\"linkPortfolio\" href=\"#portfolio\">Portfolio</a></li>\n                    <li><a href=\"#sectionFooter\">Contact</a></li>\n                    <li id=\"btn-linkedin\" class=\"visible-md visible-lg\" onclick=\"window.open('http://www.linkedin.com/in/duaneleem', '_blank')\"></li>\n                    <li id=\"btn-googleResume\" class=\"visible-md visible-lg\" onclick=\"window.open('https://docs.google.com/document/d/1bvakr9gKH-lk7mX_VRstMJ-3Vv3tJLSQuiHWkOdnrUs/edit?usp=sharing', '_blank')\"></li>\n                    <li class=\"visible-xs visible-sm\"><a href=\"http://www.linkedin.com/in/duaneleem\" target=\"_blank\"><i class=\"fa fa-external-link-square\" aria-hidden=\"true\"></i> LinkedIn</a></li>\n                    <li class=\"visible-xs visible-sm\"><a href=\"https://docs.google.com/document/d/1bvakr9gKH-lk7mX_VRstMJ-3Vv3tJLSQuiHWkOdnrUs/edit?usp=sharing\" target=\"_blank\"><i class=\"fa fa-external-link-square\" aria-hidden=\"true\"></i> Google Document Resume</a></li>\n                </ul>\n            </nav>\n        </div>\n        <!-- /Top Nav -->\n\n    </div>\n</header>\n"
 
 /***/ },
 /* 630 */
 /***/ function(module, exports) {
 
-module.exports = "<!-- PORTFOLIO -->\n<section id=\"portfolio\" class=\"container padding100\">\n    <h1 class=\"text-center\">\n        <strong>Portfolio</strong>\n        <span class=\"subtitle\">A FEW OF THE PROJECTS I'VE COMPLETED :)</span>\n    </h1>\n\n    <p class=\"lead\">\n        Thank you so much for viewing a few of my work that I've worked on.  I really appreciate your time.  I'm a believer in continuous\n        education and putting theory into practice.  Listed below are some of my work and achievements I've done.  For those involved in the projects\n        listed below, I am truly grateful for your contribution and I am glad you are a part of my team :)    \n    </p>\n    \n    <ul class=\"nav nav-pills isotope-filter isotope-filter\" data-sort-id=\"isotope-list\" data-option-key=\"filter\">\n        <li data-option-value=\"*\" class=\"active\"><a href=\"#\">Show All</a></li>\n        <li data-option-value=\".web-development\"><a href=\"#\">Web Development</a></li>\n        <li data-option-value=\".mobile-development\"><a href=\"#\">Mobile Development</a></li>\n        <li data-option-value=\".professional-training\"><a href=\"#\">Professional Training</a></li>\n    </ul>\n\n    <div class=\"row\">\n        <ul class=\"sort-destination isotope\" data-sort-id=\"isotope-list\">\n            <!-- ======================================================================\n                Web Development\n            ======================================================================= -->\n            <!-- Project: StagedHomes.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-stagedhomescom'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"StagedHomes.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>StagedHomes.com</h4>\n                        <small class=\"styleColor\">September 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-stagedhomescom\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-stagedhomescom\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: StagedHomes.com | Revamp</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" alt=\"StagedHomes.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Design and Responsive</h4>\n                                        <p>\n                                            Our website needed a major upgrade.  Search engines started favoring websites that can adapt to all\n                                            screen sizes.  My team and I redesigned the website so that it has an excellent view no matter what\n                                            screen size our Accredited Staging Professionals (ASP) have.\n                                        </p>\n                                        <p>\n                                            We used Bootstrap 3 for our Front-End responsive framework.  I eliminated several of the custom forms\n                                            dependant on PHP, redesigned them, and completely reprogrammed the forms to use AngularJS / ExpressJS\n                                            (REST API).\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Sketch (UX/UI Design),\n                                            Amazon AWS, CloudFlare, PHP/MySQL\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.stagedhomes.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: IAHSPConExpo.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-iahspconexpo'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"IAHSPConExpo.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>IAHSPConExpo.com</h4>\n                        <small class=\"styleColor\">September 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-iahspconexpo\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-iahspconexpo\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: IAHSPConExpo.com | Revamp</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" alt=\"IAHSPConExpo.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Responsive Website using AngularJS and ExpressJS</h4>\n                                        <p>\n                                            I built our IAHSP&reg; Convention Expo using modern web technologies as listed below.  Tested on\n                                            all major modern web browsers and with the help of GitHub Pages and Amazon AWS S3 web hosting, \n                                            our website is served up and outputs fast!\n                                        </p>\n                                        <p>\n                                            I built the form using Angular error checking and when the form data submits, it sends the payload\n                                            as a JSON object to the Express REST backend to process the email submission.  I've architected\n                                            the website this way so that the only time the back-end server is used is when someone actually\n                                            submits an email.  The rest of the website processing is handled by GitHub pages and AWS S3.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Sketch (UX/UI Design),\n                                            Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.iahspconexpo.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: Barb-Schwarz.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-barbschwarzcom'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"StagedHomes.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Barb-Schwarz.com</h4>\n                        <small class=\"styleColor\">September 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-barbschwarzcom\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-barbschwarzcom\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: Barb-Schwarz.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" alt=\"Barb-Schwarz.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Website using WordPress</h4>\n                                        <p>\n                                            Barb wanted a new website that will enable her to communicate with everyone.  One of her requirements\n                                            was to have the ability to update the website.  She wants to convey her thoughts and would like to be\n                                            able to tell that to everyone on a daily basis.  She also wanted a blog in addition to this.\n                                        </p>\n                                        <p>\n                                            I put together a front-end webpage for her and coded that design into WordPress.  By using WordPress,\n                                            she can now update the website daily on her own and also manage her own blog.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, WordPress, Amazon AWS,\n                                            CloudFlare, PHP/MySQL\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.barb-schwarz.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: GetRedBox.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-getredbox'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"GetRedBox.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>GetRedBox.com</h4>\n                        <small class=\"styleColor\">September 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-getredbox\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-getredbox\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: GetRedBox.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" alt=\"GetRedBox.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Website using One Page Responsive Design</h4>\n                                        <p>\n                                            I created GetRedBox.com as a one page responsive website using Bootstrap framework.  Rendering is fast;\n                                            compatible with modern web browsers; and takes advantage of GitHub pages to minimize hosting costs for \n                                            the website owner.\n                                        </p>\n                                        <p>\n                                            GetRedBox.com is a local IT/Telecommunications provider in the San Francisco East Bay.  Visit their new\n                                            website today!\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.getredbox.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: EastBayKarate-Do.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-ebkd'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"EastBayKarate-Do.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>EastBayKarate-Do.com</h4>\n                        <small class=\"styleColor\">October 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-ebkd\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-ebkd\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: EastBayKarate-Do.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" alt=\"EastBayKarate-Do.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Redesigned Website and New Back-End Technology (NodeJS/Express)</h4>\n                                        <p>\n                                            East Bay Karate-Do had an older design and requested a new design to be developed.  I created them\n                                            a responsive website using your usual Bootstrap, HTML/CSS/JS stack.  In addition, I've implemented\n                                            the website to using Jade (Express).  The results was greater overall control of the web application\n                                            and faster rendering by the Node server.\n                                        </p>\n                                        <p>\n                                            East Bay Karate-Do is a provider of Okinawa Uechi-Ryu Martial Arts, and also has fitness programs.\n                                            I'm also a proud karateka student at East Bay Karate-Do :)\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.eastbaykarate-do.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: HairSalonStudio.info -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-hairsalonstudio'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/hairsalonstudio.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"HairSalonStudio.info\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>HairSalonStudio.info</h4>\n                        <small class=\"styleColor\">May 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-hairsalonstudio\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-hairsalonstudio\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: HairSalonStudio.info</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/hairsalonstudio.jpg\" alt=\"HairSalonStudio.info\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Redesigned Website and New Back-End Technology (NodeJS/Express)</h4>\n                                        <p>\n                                            I helped my local hair salon with a new website using modern web technology.  I used Bootstrap for\n                                            the front-end to be responsive; and ExpressJS as the server component (using JADE as the view engine).\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.hairsalonstudio.info\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- ======================================================================\n                Mobile Development\n            ======================================================================= -->\n            <!-- Project: Home Staging Calculator -->\n            <li class=\"isotope-item col-sm-6 col-md-3 mobile-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-homestagingcalculator'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Home Staging Calculator\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Home Staging Calculator</h4>\n                        <small class=\"styleColor\">May 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-homestagingcalculator\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-homestagingcalculator\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: Home Staging Calculator</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" alt=\"Home Staging Calculator\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Cordova Mobile Application using Intel XDK</h4>\n                                        <p>\n                                            To help our Accredited Staging Professionals (ASP&reg;), I've taken our spreadsheet calculator and reprogrammed\n                                            it as a mobile application for both iOS and Android.  This will give our ASP&reg;'s a handy application they can\n                                            use to calculator their Return on Staging Investment (ROSI&reg;).\n                                        </p>\n                                        <p>\n                                            The new version of the Home Staging Calculator is redeveloped using the Ionic Framework to make use of the built\n                                            in support for Angular.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.stagedhomes.com/public/calculator.php\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n            \n            <!-- ======================================================================\n                Professional Training | Achievements\n            ======================================================================= -->\n            <!-- Full Stack Web Development -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-mean'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATE</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201606-fullstack.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"\">\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Full Stack Web Development</h4>\n                        <small class=\"styleColor\">June 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n            </li>\n\n            <!-- AWS Certified Developer -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-awsdeveloper'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201602-aws-developer.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"\">\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>AWS Certified Developer</h4>\n                        <small class=\"styleColor\">February 2016</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Master of Science in Information Technology Management -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-msitm'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>DEGREE</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Master of Science in Information Technology Management\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Master of Science in IT Management</h4>\n                        <small class=\"styleColor\">April 2014</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project Management Professional -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-pmi-pmp'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201312-pmp.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Project Management Professional PMP\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Project Management Professional</h4>\n                        <small class=\"styleColor\">December 2013</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Certified Scrum Master -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-scrummaster'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Certified Scrum Master CSM\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Certified Scrum Master</h4>\n                        <small class=\"styleColor\">April 2014</small>\n                    </div>\n                </div>\n            </li>\n        </ul>\n    </div><!-- /row -->\n</section><!-- /container -->\n<!-- /PORTFOLIO -->"
+module.exports = "<!-- REVOLUTION SLIDER -->\n<div class=\"fullwidthbanner-container roundedcorners\">\n    <div class=\"fullwidthbanner\">\n        <ul>\t\n\n            <!-- SLIDE  -->\n            <li data-transition=\"boxslide\" data-slotamount=\"5\" data-slideindex=\"back\">\n\n                <!-- COVER IMAGE -->\n                <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/home-data-center.jpg\" alt=\"Data Center\" data-bgfit=\"cover\" data-bgposition=\"left top\" data-bgrepeat=\"no-repeat\" />\n\n                <div class=\"tp-caption largegreenbg very_large_text lfl stl\" style=\"padding: 0px 20px 0px 20px;\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"220\"\n                    data-speed=\"300\"\n                    data-start=\"500\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        Duane Leem\n                </div>\n\n                <div class=\"tp-caption large_bold_grey medium_bg_darkblue lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"283\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        Full Stack Development | LAMP & MEAN\n                </div>\n\n                <div class=\"tp-caption large_bold_grey medium_bg_darkblue lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"320\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        IT Project Management | PMI-PMP & Scrum Master\n                </div>\n\n                <div class=\"tp-caption large_bold_grey lfl stl\"\n                    data-x=\"right\" data-hoffset=\"-30\"\n                    data-y=\"345\"\n                    data-speed=\"300\"\n                    data-start=\"800\"\n                    data-easing=\"easeOutExpo\" \n                    data-endspeed=\"300\" \n                    data-endeasing=\"easeInSine\">\n                        <a type=\"button\" class=\"btn btn-success btn-xs\" onclick=\"document.getElementById('linkSummary').click();\"><i class=\"fa fa-briefcase\" aria-hidden=\"true\"></i>Career Timeline</a>\n                        <a type=\"button\" class=\"btn btn-success btn-xs\" onclick=\"document.getElementById('linkPortfolio').click();\"><i class=\"fa fa-heart\" aria-hidden=\"true\"></i>Projects</a>\n                </div>\n\n                <!-- Mini Images -->\n                <div>\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"48\"\n                        data-y=\"131\"\n                        data-speed=\"600\"\n                        data-start=\"1100\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg\" class=\"image-sample\" alt=\"Certified Scrum Master\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"90\"\n                        data-y=\"206\"\n                        data-speed=\"600\"\n                        data-start=\"1200\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" class=\"image-sample\" alt=\"IAHSP Convention and Expo 2017\"/>\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"205\"\n                        data-y=\"140\"\n                        data-speed=\"600\"\n                        data-start=\"1300\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" class=\"image-sample\" alt=\"Barb-Schwarz.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"188\"\n                        data-y=\"246\"\n                        data-speed=\"300\"\n                        data-start=\"1400\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" class=\"image-sample\" alt=\"Masters of Science in Information Technology Management\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"55\"\n                        data-y=\"316\"\n                        data-speed=\"600\"\n                        data-start=\"1500\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" width=\"140\" height=\"140\" alt=\"GetRedBox.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"173\"\n                        data-y=\"329\"\n                        data-speed=\"300\"\n                        data-start=\"1600\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201312-pmp.jpg\" class=\"image-sample\" alt=\"Project Management Professional\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"255\"\n                        data-y=\"294\"\n                        data-speed=\"300\"\n                        data-start=\"1700\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" class=\"image-sample\" alt=\"Masters of Science in Information Technology Management\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"275\"\n                        data-y=\"166\"\n                        data-speed=\"300\"\n                        data-start=\"1800\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201602-aws-developer.jpg\" class=\"image-sample\" alt=\"Certified AWS Developer\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"84\"\n                        data-y=\"113\"\n                        data-speed=\"300\"\n                        data-start=\"1900\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201606-fullstack.jpg\" class=\"image-sample\" alt=\"Full Stack Development\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"26\"\n                        data-y=\"225\"\n                        data-speed=\"300\"\n                        data-start=\"2000\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" class=\"image-sample\" alt=\"ROSI Calculator\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"110\"\n                        data-y=\"187\"\n                        data-speed=\"300\"\n                        data-start=\"2100\"\n                        data-easing=\"easeOutExpo\">\n                        <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" class=\"image-sample\" alt=\"EastBayKarate-Do.com\" />\n                    </div>\n\n                    <div class=\"tp-caption randomrotate\"\n                        data-x=\"183\"\n                        data-y=\"221\"\n                        data-speed=\"300\"\n                        data-start=\"2200\"\n                        data-easing=\"easeOutExpo\">\n                    <img src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" class=\"image-sample\" alt=\"StagedHomes.com\" />\n                    </div>\n                </div>\n            </li>\n\n        </ul>\n        <div class=\"tp-bannertimer\"></div>\n    </div>\n</div>\n<!-- /REVOLUTION SLIDER -->"
 
 /***/ },
 /* 631 */
 /***/ function(module, exports) {
 
-module.exports = "<p>\n    I've worked for corporations such as Bank of America where I have provided support to my business partners with their \n    banking information systems. I've also worked for telecommunications corporations, Vodafone Americas Inc and AT&T, where \n    I have provided IT support to many of my business partners. I've also worked for many dental companies and help achieve \n    their IT goals by enabling their business with the required IT infrastructure to help them achieve their business mission.\n</p>\n\n<p>\n    I currently work at the leading Home Staging education company in the world, Staged Homes, as the Director of IT where I am \n    responsible for the IT operations and ensuring that our customers, our Accredited Staging Professionals, achieve their Home \n    Staging and business goals through the use of our systems. I was hired as a Network Administrator in 2006 to assist my business \n    partners with their network and computer problems. Today, my responsibilities are to develop web applications, manage our servers, \n    and essentially execute IT projects that achieve our organization's goals.\n</p>\n\n<p>\n    I attained my ITIL Foundation v3 (IT Service Management) certification in July 2013; Project Management Professional \n    certification in December 2013; my Scrum Master (agile development) certificate in April 2014; and my Masters degree in IT management \n    from Golden Gate University (Ageno School of Business) in August 2014 for the ultimate goal to provide the highest level of IT \n    management and support to all my business partners and especially to my valued customers.\n</p>"
+module.exports = "<!-- PORTFOLIO -->\n<section id=\"portfolio\" class=\"container padding100\">\n    <h1 class=\"text-center\">\n        <strong>Portfolio</strong>\n        <span class=\"subtitle\">A FEW OF THE PROJECTS I'VE COMPLETED :)</span>\n    </h1>\n\n    <p class=\"lead\">\n        Thank you so much for viewing a few of my work that I've worked on.  I really appreciate your time.  I'm a believer in continuous\n        education and putting theory into practice.  Listed below are some of my work and achievements I've done.  For those involved in the projects\n        listed below, I am truly grateful for your contribution and I am glad you are a part of my team :)    \n    </p>\n    \n    <ul class=\"nav nav-pills isotope-filter isotope-filter\" data-sort-id=\"isotope-list\" data-option-key=\"filter\">\n        <li data-option-value=\"*\" class=\"active\"><a href=\"#\">Show All</a></li>\n        <li data-option-value=\".web-development\"><a href=\"#\">Web Development</a></li>\n        <li data-option-value=\".mobile-development\"><a href=\"#\">Mobile Development</a></li>\n        <li data-option-value=\".professional-training\"><a href=\"#\">Professional Training</a></li>\n    </ul>\n\n    <div class=\"row\">\n        <ul class=\"sort-destination isotope\" data-sort-id=\"isotope-list\">\n            <!-- ======================================================================\n                Web Development\n            ======================================================================= -->\n            <!-- Project: StagedHomes.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-stagedhomescom'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"StagedHomes.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>StagedHomes.com</h4>\n                        <small class=\"styleColor\">September 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-stagedhomescom\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-stagedhomescom\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: StagedHomes.com | Revamp</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg\" alt=\"StagedHomes.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Design and Responsive</h4>\n                                        <p>\n                                            Our website needed a major upgrade.  Search engines started favoring websites that can adapt to all\n                                            screen sizes.  My team and I redesigned the website so that it has an excellent view no matter what\n                                            screen size our Accredited Staging Professionals (ASP) have.\n                                        </p>\n                                        <p>\n                                            We used Bootstrap 3 for our Front-End responsive framework.  I eliminated several of the custom forms\n                                            dependant on PHP, redesigned them, and completely reprogrammed the forms to use AngularJS / ExpressJS\n                                            (REST API).\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Sketch (UX/UI Design),\n                                            Amazon AWS, CloudFlare, PHP/MySQL\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.stagedhomes.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: IAHSPConExpo.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-iahspconexpo'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"IAHSPConExpo.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>IAHSPConExpo.com</h4>\n                        <small class=\"styleColor\">September 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-iahspconexpo\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-iahspconexpo\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: IAHSPConExpo.com | Revamp</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg\" alt=\"IAHSPConExpo.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Responsive Website using AngularJS and ExpressJS</h4>\n                                        <p>\n                                            I built our IAHSP&reg; Convention Expo using modern web technologies as listed below.  Tested on\n                                            all major modern web browsers and with the help of GitHub Pages and Amazon AWS S3 web hosting, \n                                            our website is served up and outputs fast!\n                                        </p>\n                                        <p>\n                                            I built the form using Angular error checking and when the form data submits, it sends the payload\n                                            as a JSON object to the Express REST backend to process the email submission.  I've architected\n                                            the website this way so that the only time the back-end server is used is when someone actually\n                                            submits an email.  The rest of the website processing is handled by GitHub pages and AWS S3.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Sketch (UX/UI Design),\n                                            Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.iahspconexpo.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: Barb-Schwarz.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-barbschwarzcom'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"StagedHomes.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Barb-Schwarz.com</h4>\n                        <small class=\"styleColor\">September 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-barbschwarzcom\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-barbschwarzcom\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: Barb-Schwarz.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg\" alt=\"Barb-Schwarz.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Website using WordPress</h4>\n                                        <p>\n                                            Barb wanted a new website that will enable her to communicate with everyone.  One of her requirements\n                                            was to have the ability to update the website.  She wants to convey her thoughts and would like to be\n                                            able to tell that to everyone on a daily basis.  She also wanted a blog in addition to this.\n                                        </p>\n                                        <p>\n                                            I put together a front-end webpage for her and coded that design into WordPress.  By using WordPress,\n                                            she can now update the website daily on her own and also manage her own blog.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, WordPress, Amazon AWS,\n                                            CloudFlare, PHP/MySQL\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.barb-schwarz.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: GetRedBox.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-getredbox'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"GetRedBox.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>GetRedBox.com</h4>\n                        <small class=\"styleColor\">September 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-getredbox\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-getredbox\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\" id=\"myModalLabel\">Project: GetRedBox.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg\" alt=\"GetRedBox.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>New Website using One Page Responsive Design</h4>\n                                        <p>\n                                            I created GetRedBox.com as a one page responsive website using Bootstrap framework.  Rendering is fast;\n                                            compatible with modern web browsers; and takes advantage of GitHub pages to minimize hosting costs for \n                                            the website owner.\n                                        </p>\n                                        <p>\n                                            GetRedBox.com is a local IT/Telecommunications provider in the San Francisco East Bay.  Visit their new\n                                            website today!\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.getredbox.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: EastBayKarate-Do.com -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-ebkd'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"EastBayKarate-Do.com\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>EastBayKarate-Do.com</h4>\n                        <small class=\"styleColor\">October 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-ebkd\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-ebkd\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: EastBayKarate-Do.com</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg\" alt=\"EastBayKarate-Do.com\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Redesigned Website and New Back-End Technology (NodeJS/Express)</h4>\n                                        <p>\n                                            East Bay Karate-Do had an older design and requested a new design to be developed.  I created them\n                                            a responsive website using your usual Bootstrap, HTML/CSS/JS stack.  In addition, I've implemented\n                                            the website to using Jade (Express).  The results was greater overall control of the web application\n                                            and faster rendering by the Node server.\n                                        </p>\n                                        <p>\n                                            East Bay Karate-Do is a provider of Okinawa Uechi-Ryu Martial Arts, and also has fitness programs.\n                                            I'm also a proud karateka student at East Bay Karate-Do :)\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.eastbaykarate-do.com\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project: HairSalonStudio.info -->\n            <li class=\"isotope-item col-sm-6 col-md-3 web-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-hairsalonstudio'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/hairsalonstudio.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"HairSalonStudio.info\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>HairSalonStudio.info</h4>\n                        <small class=\"styleColor\">May 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-hairsalonstudio\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-hairsalonstudio\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: HairSalonStudio.info</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/hairsalonstudio.jpg\" alt=\"HairSalonStudio.info\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Redesigned Website and New Back-End Technology (NodeJS/Express)</h4>\n                                        <p>\n                                            I helped my local hair salon with a new website using modern web technology.  I used Bootstrap for\n                                            the front-end to be responsive; and ExpressJS as the server component (using JADE as the view engine).\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"http://www.hairsalonstudio.info\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n\n            <!-- ======================================================================\n                Mobile Development\n            ======================================================================= -->\n            <!-- Project: Home Staging Calculator -->\n            <li class=\"isotope-item col-sm-6 col-md-3 mobile-development\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-project-homestagingcalculator'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>PROJECT</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Home Staging Calculator\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Home Staging Calculator</h4>\n                        <small class=\"styleColor\">May 2015</small>\n                    </div>\n                </div><!-- /item-box -->\n\n                <!-- Modal -->\n                <div class=\"modal fade\" id=\"modal-project-homestagingcalculator\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myModal-project-homestagingcalculator\">\n                    <div class=\"modal-dialog modal-lg\" role=\"document\">\n                        <div class=\"modal-content\">\n                            <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n                                <h4 class=\"modal-title\">Project: Home Staging Calculator</h4>\n                            </div>\n                            <div class=\"modal-body\">\n                                <div class=\"row\">\n                                    <!-- Image -->\n                                    <div class=\"col-xs-12 col-md-4\">\n                                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg\" alt=\"Home Staging Calculator\" />\n                                    </div><!-- /col -->\n\n                                    <!-- Verbiage -->\n                                    <div class=\"col-xs-12 col-md-8\">\n                                        <h4>Cordova Mobile Application using Intel XDK</h4>\n                                        <p>\n                                            To help our Accredited Staging Professionals (ASP&reg;), I've taken our spreadsheet calculator and reprogrammed\n                                            it as a mobile application for both iOS and Android.  This will give our ASP&reg;'s a handy application they can\n                                            use to calculator their Return on Staging Investment (ROSI&reg;).\n                                        </p>\n                                        <p>\n                                            The new version of the Home Staging Calculator is redeveloped using the Ionic Framework to make use of the built\n                                            in support for Angular.\n                                        </p>\n                                        <p>\n                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android\n                                        </p>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div>\n                            <div class=\"modal-footer\">\n                                <a type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</a>\n                                <a type=\"button\" class=\"btn btn-primary\" href=\"https://www.stagedhomes.com/public/calculator.php\" target=\"_blank\">Visit Website</a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </li>\n            \n            <!-- ======================================================================\n                Professional Training | Achievements\n            ======================================================================= -->\n            <!-- Full Stack Web Development -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-mean'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATE</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201606-fullstack.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"\">\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Full Stack Web Development</h4>\n                        <small class=\"styleColor\">June 2016</small>\n                    </div>\n                </div><!-- /item-box -->\n            </li>\n\n            <!-- AWS Certified Developer -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-awsdeveloper'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201602-aws-developer.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"\">\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>AWS Certified Developer</h4>\n                        <small class=\"styleColor\">February 2016</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Master of Science in Information Technology Management -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-msitm'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>DEGREE</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Master of Science in Information Technology Management\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Master of Science in IT Management</h4>\n                        <small class=\"styleColor\">April 2014</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Project Management Professional -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-pmi-pmp'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201312-pmp.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Project Management Professional PMP\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Project Management Professional</h4>\n                        <small class=\"styleColor\">December 2013</small>\n                    </div>\n                </div>\n            </li>\n\n            <!-- Certified Scrum Master -->\n            <li class=\"isotope-item col-sm-6 col-md-3 professional-training\">\n                <div class=\"item-box\">\n                    <figure>\n                        <a class=\"item-hover\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-scrummaster'\">\n                            <span class=\"overlay color2\"></span>\n                            <span class=\"inner\">\n                                <span class=\"block fa fa-plus fsize20\"></span>\n                                <strong>CERTIFICATION</strong> DETAIL\n                            </span>\n                        </a>\n                        <img class=\"img-responsive\" src=\"https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg\" style=\"width: 100%; height: auto; border: 0;\" alt=\"Certified Scrum Master CSM\" />\n                    </figure>\n                    <div class=\"item-box-desc\">\n                        <h4>Certified Scrum Master</h4>\n                        <small class=\"styleColor\">April 2014</small>\n                    </div>\n                </div>\n            </li>\n        </ul>\n    </div><!-- /row -->\n</section><!-- /container -->\n<!-- /PORTFOLIO -->"
 
 /***/ },
 /* 632 */
 /***/ function(module, exports) {
 
-module.exports = "<section id=\"summary\" class=\"padding100 special-row\">\n    <div class=\"container\">\n        <h1 class=\"text-center\"><strong>Career</strong> Summary</h1>\n\n        <p class=\"lead\">\n            Since 2000, I've been supporting business partners and clients; managed systems and networks; and \n            developed many applications.  My IT career emphasis is in Software Engineering and Project Management.  \n            I've put together a timeline below that summarizes my experience in the IT domain.\n        </p>\n        \n        <!-- Timeline -->\n        <div class=\"row\">\n            <div class=\"col-xs-12 col-lg-12\">\n                <app-timeline></app-timeline>\n            </div><!-- /col -->\n        </div><!-- /row -->\n    </div><!-- /container -->\n</section>"
+module.exports = "<p>\n    I've worked for corporations such as Bank of America where I have provided support to my business partners with their \n    banking information systems. I've also worked for telecommunications corporations, Vodafone Americas Inc and AT&T, where \n    I have provided IT support to many of my business partners. I've also worked for many dental companies and help achieve \n    their IT goals by enabling their business with the required IT infrastructure to help them achieve their business mission.\n</p>\n\n<p>\n    I currently work at the leading Home Staging education company in the world, Staged Homes, as the Director of IT where I am \n    responsible for the IT operations and ensuring that our customers, our Accredited Staging Professionals, achieve their Home \n    Staging and business goals through the use of our systems. I was hired as a Network Administrator in 2006 to assist my business \n    partners with their network and computer problems. Today, my responsibilities are to develop web applications, manage our servers, \n    and essentially execute IT projects that achieve our organization's goals.\n</p>\n\n<p>\n    I attained my ITIL Foundation v3 (IT Service Management) certification in July 2013; Project Management Professional \n    certification in December 2013; my Scrum Master (agile development) certificate in April 2014; and my Masters degree in IT management \n    from Golden Gate University (Ageno School of Business) in August 2014 for the ultimate goal to provide the highest level of IT \n    management and support to all my business partners and especially to my valued customers.\n</p>"
 
 /***/ },
 /* 633 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"timeline-point timeline-point-{{getTimeLinePointType()}}\" [ngSwitch]=\"objAchievement.type\">\n    <i class=\"fa fa-graduation-cap\" *ngSwitchCase=\"'certificate'\"></i>\n    <i class=\"fa fa-certificate\" *ngSwitchCase=\"'certification'\"></i>\n    <i class=\"fa fa-briefcase\" *ngSwitchCase=\"'position'\"></i>\n    <i class=\"fa fa-certificate\" *ngSwitchDefault></i>\n</div>\n\n<div class=\"timeline-event timeline-event-{{getModalType()}}\">\n    <div class=\"panel panel-default\">\n        <div class=\"panel-heading\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-11 col-lg-11\" style=\"vertical-align: middle;\">\n                    <h3 class=\"panel-title\"><strong>{{objAchievement.title}}</strong></h3>\n                </div>\n\n                <div class=\"col-xs-12 col-sm-1 col-lg-1\">\n                    <!-- Button for Modal Popup -->\n                    <span class=\"pull-right\">\n                        <a class=\"btn btn-{{getModalType()}} btn-xs color-white {{mtdDisabled_btnView()}}\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-' + objAchievement.modalID\">\n                            View\n                        </a>\n                    </span> \n                </div><!-- /col -->\n            </div><!-- /row -->\n        </div><!-- /panel-heading -->\n        <div class=\"panel-body\" *ngIf=\"objAchievement.description != null\">\n            <div class=\"color-black\">{{objAchievement.description}}</div>\n            <ul id=\"social-links\" class=\"space-top-5 list-inline\" *ngIf=\"objAchievement.socialLinks != null\">\n                <li *ngIf=\"objAchievement.socialLinks.website != null\"><a href=\"{{objAchievement.socialLinks.website}}\" target=\"_blank\"><i class=\"fa fa-globe\" aria-hidden=\"true\"></i> Website</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.facebook != null\"><a href=\"{{objAchievement.socialLinks.facebook}}\" target=\"_blank\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i> Facebook</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.certificationDescription != null\"><a href=\"{{objAchievement.socialLinks.certificationDescription}}\" target=\"_blank\"><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Certification Information</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.programDescription != null\"><a href=\"{{objAchievement.socialLinks.programDescription}}\" target=\"_blank\"><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Program Description</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.degreeDescription != null\"><a href=\"{{objAchievement.socialLinks.degreeDescription}}\" target=\"_blank\"><i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i> Degree Description</a></li>\n            </ul>\n        </div>\n\n        <div class=\"panel-footer\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-8 col-lg-9 left font-size-12\">\n                    {{objAchievement.provider}}\n                </div><!-- /col -->\n                <div class=\"col-xs-12 col-sm-4 col-lg-3 text-right font-size-12\">\n                    {{objAchievement.startDate}}\n                </div><!-- /col -->\n            </div><!-- /row -->\n        </div>\n    </div><!-- /panel -->\n</div><!-- /timeline-event -->\n\n<!-- =========================================================\n    Place in main app.component on generation.\n========================================================= -->\n<div id=\"modal-{{objAchievement.modalID}}\" class=\"modal fade padding-remove\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\" *ngIf=\"mtdDisabled_btnView() != 'disabled'\">\n    <div class=\"modal-dialog modal-lg\">\n        <div class=\"modal-content\">\n            <div class=\"modal-body\">\n                <img src=\"{{arrGlobals.strPublicAssets + objAchievement.imgSrc}}\" \n                    class = \"img-responsive\" \n                    alt = \"{{objAchievement.title}}\"\n                    *ngIf = \"objAchievement.imgSrc != null\"\n                />\n\n                <div *ngIf=\"getDescriptionFull() != null\" innerHTML=\"{{getDescriptionFull()}}\"></div>\n            </div><!-- /modal-body -->\n            <div class=\"modal-footer\">\n                <div class=\"pull-left\">\n                    {{objAchievement.title}}\n                </div>\n\n                <div class=\"pull-right\">\n                    <button type=\"button\" class=\"btn btn-default btn-sm\" data-dismiss=\"modal\">Close</button>\n                </div>\n            </div><!-- /modal-footer -->\n        </div><!-- /modal-content -->\n    </div><!-- /modal-dialog -->\n</div><!-- /modal -->"
+module.exports = "<section id=\"summary\" class=\"padding100 special-row\">\n    <div class=\"container\">\n        <h1 class=\"text-center\"><strong>Career</strong> Summary</h1>\n\n        <p class=\"lead\">\n            Since 2000, I've been supporting business partners and clients; managed systems and networks; and \n            developed many applications.  My IT career emphasis is in Software Engineering and Project Management.  \n            I've put together a timeline below that summarizes my experience in the IT domain.\n        </p>\n        \n        <!-- Timeline -->\n        <div class=\"row\">\n            <div class=\"col-xs-12 col-lg-12\">\n                <app-timeline></app-timeline>\n            </div><!-- /col -->\n        </div><!-- /row -->\n    </div><!-- /container -->\n</section>"
 
 /***/ },
 /* 634 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n    <div class=\"col-md-12\">\n        <div class=\"row\">\n            <div class=\"timeline timeline-line-dotted\">\n                <!-- =======================================================\n                    Today\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Web Programming Training</span>\n                </span>\n\n                <!-- Full Stack MEAN Developer -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement] = \"{\n                        'modalID': 'mean',\n                        'title': 'Full Stack MEAN Developer',\n                        'provider': 'Hong Kong University of Science & Technology',\n                        'type': 'certificate',\n                        'startDate': 'June 2016',\n                        'imgSrc': 'images/achievements/201606-fullstack.jpg',\n                        'socialLinks': {\n                            'website': 'https://www.cse.ust.hk/',\n                            'facebook': 'https://www.facebook.com/hkust/',\n                            'programDescription': 'https://www.coursera.org/specializations/full-stack/'\n                        },\n                        'description': 'Full Stack Web Development program taught by Hong Kong University of Science and Technology through the Coursera platform trains students on Front-End, Back-End, and Hybrid Mobile development using HTML/CSS/JS, AngularJS, NodeJS, MongoDB, and the Ionic Framework.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Advanced Java Programming -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement] = \"{\n                        'modalID': 'dvcjava',\n                        'title': 'Advanced Java Programming',\n                        'provider': 'Diablo Valley College, Advanced Technology Center',\n                        'type': 'certificate',\n                        'startDate': 'May 2016',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.dvc.edu/',\n                            'facebook': 'https://www.facebook.com/DVC.Vikings/'\n                        },\n                        'description': 'Program covers advanced topics in Java programming including multithreading, exception handling, serialization, reflection, model view controller architecture, java beans, servlets and database connectivity.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- AWS Certified Developer -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'awsdeveloper',\n                        'title': 'AWS Certified Developer',\n                        'type': 'certification',\n                        'provider': 'Amazon Web Services',\n                        'startDate': 'February 2016',\n                        'imgSrc': 'images/achievements/201602-aws-developer.jpg',\n                        'socialLinks': {\n                            'programDescription': 'https://aws.amazon.com/certification/certified-developer-associate/'\n                        },\n                        'description': 'Validates technical expertise in developing and maintaining applications on the AWS platform written for Amazon S3, Amazon DynamoDB, Amazon SQS, Amazon SNS, Amazon Simple Workflow Service, AWS Elastic Beanstalk, and AWS CloudFormation'\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2015\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">IT Management Training</span>\n                </span>\n\n                <!-- Web Project Manager at Novactive -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'pmnovactive',\n                        'title': 'Web Project Manager',\n                        'provider': 'Novactive',\n                        'type': 'position',\n                        'startDate': 'February 2015',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://novactive.us/'\n                        },\n                        'description': 'Develop Work Breakdown Structures (WBS); Technical Specifications for Project Requirements; oversee project development time and cost to stay within the allotted timeframe and budget.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- MSc IT Management -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'msitm',\n                        'title': 'Master of Science in IT Management',\n                        'type': 'certificate',\n                        'provider': 'Golden Gate University, Ageno School of Business',\n                        'startDate': 'April 2014',\n                        'imgSrc': 'images/achievements/201504-masters-itm.jpg',\n                        'socialLinks': {\n                            'website': 'http://ggu.edu/',\n                            'degreeDescription': 'http://www.ggu.edu/programs/information-technology-management/master-of-science-in-information-technology-management'\n                        },\n                        'description': 'The core curriculum provides grounding in the key topics of IT governance and frameworks such as ITIL and COBIT, enterprise architecture, IT finance, capital budgeting, compliance and portfolio, and program management. These skills are enhanced with a strong set of basic business knowledge and managerial skills in business dynamics, communication, leadership, problem solving, accounting and finance, and analytical skills (GGU.edu, 2013).'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Certified Scrum Master -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'scrummaster',\n                        'title': 'Certified Scrum Master',\n                        'type': 'certification',\n                        'provider': 'Scrum Alliance',\n                        'startDate': 'April 2014',\n                        'imgSrc': 'images/achievements/201404-scrum-csm.jpg',\n                        'socialLinks': {\n                            'website': 'https://www.scrumalliance.org/',\n                            'certificationDescription': 'https://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-csm/'\n                        },\n                        'description': 'Attained professional training and certification in Scrum Agile Project Management to provide continuous delivery of software with my project teams using best practices in Agile Project Management.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Project Management Professional -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'pmi-pmp',\n                        'title': 'Project Management Professional',\n                        'type': 'certification',\n                        'provider': 'Project Management Institute',\n                        'startDate': 'December 2013',\n                        'imgSrc': 'images/achievements/201312-pmp.jpg',\n                        'socialLinks': {\n                            'website': 'http://www.pmi.org/',\n                            'certificationDescription': 'http://www.pmi.org/certifications/types/project-management-pmp'\n                        },\n                        'description': 'To improve my knowledge and application in Project Management, I\\'ve taken professional training and certification in PMI\\'s Project Management Professional (PMP) certification to extend my capabilities by adding additional tools & techniques to my project management approach.'\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2010\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Technology Career at StagedHomes.com</span>\n                </span>\n\n                <!-- Directory of IT & Technology at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcDirectorofTechnology',\n                        'title': 'Director of IT & Technology',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'December 2010',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': \n                            'Develop digital product solutions to Home Stagers by creating web and mobile applications that are tailored to providing Home Staging education contents.\\n\n                            My responsibility includes managing the organization\\'s IT infrastructure; managing development and support personnel; and creating web and mobile applications aimed to solve business needs.'\n                    }\"\n                    [strFullDescription] = \"'\n                        <!-- Logo & Title -->\n                        <div class=\\'row\\'>\n                            <div class=\\'col-xs-12\\'>\n                                <div class=\\'media\\'>\n                                    <div class=\\'media-left\\'>\n                                        <a href=\\'\\'>\n                                            <img class=\\'media-object width-60p\\' src=\\'https:\\/\\/d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo-stagedhomes.png\\' alt=\\'StagedHomes.com\\'>\n                                        </a>\n                                    </div>\n                                    <div class=\\'media-body\\'>\n                                        <h3 class=\\'media-heading text-bold\\'>StagedHomes.com</h3>\n                                        <div class=\\'color-black\\'>Director of IT & Technology | 2010 - Present</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div><!-- /row -->\n\n                        <!-- Web Development -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Web Development</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Develop a web portal for our customers so that they may:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Log into their profile.</li>\n                                            <li>Modify their settings (customization).</li>\n                                            <li>Download the latest images from the classes they have taken with our trainers.</li>\n                                            <li>Upload Staged Property photos and photos of themselves for their profile.</li>\n                                            <li>Download documentations provided by our online website.</li>\n                                            <li>SEO enhanced website for our users so that their name can be found on search engines.</li>\n                                            <li>View a list of vendors where they can find extraordinary deals.</li>\n                                            <li>Receive leads from our website straight into their mailbox.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            I have also implemented and customized administration pages so that our staff can manage our \n                                            customers through our online website. Here\\'s a list of a few functions that I have implemented:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Modify customer data (for troubleshooting purposes).</li>\n                                            <li>Ability to download reports such as when customers are expiring, or a list of our customers, and much more.</li>\n                                            <li>Input classes which utilizes Google Maps API v3 as the Front End for our customers.</li>\n                                            <li>Input students who have graduated from our courses into our database through the use of an Excel Document or CSV format.</li>\n                                            <li>Input vendors and partners (with the ability to turn them off and on).</li>\n                                        </ul>\n                                    </div>\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n\n                        <!-- Systems Management -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Systems Management</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Provide IT support for all of StagedHomes:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Break/Fix issues that may arise.</li>\n                                            <li>Maintenance on servers (updates / configuration).</li>\n                                            <li>Provide support onsite or remote.</li>\n                                            <li>Install & Configure workstations for Business Partners.</li>\n                                            <li>Provide IT recommendations to management.</li>\n                                            <li>Responsible for Software and Hardware inventory and purchases.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            By utilizing a combination of <strong>Project Management</strong> and constantly evolving my understanding \n                                            of Information Systems, I am able to support the business strategies of Staged Homes through \n                                            my concentrated <strong>studies and experience in computer science</strong>. Technologies that I have used to \n                                            implement our integrated system:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Web Technologies: PHP, MySQL, HTML, CSS, JavaScript, AngularJS</li>\n                                            <li>Server Technologies: Amazon EC2, IIS, MySQL, Windows Server, Red Hat Linux, CentOS, VMware ESXi</li>\n                                            <li>Design Applications: Photoshop, InDesign, Illustrator, Adobe Acrobat, Paint.NET</li>\n                                            <li>Analytics, CMS, CRM, & API: Google Analytics, SalesForce.com, R Programming, WordPress, Google Maps API v3, OS Commerce, Authorize.net, RegOnline, Constant Contact, Hubspot</li>\n                                        </ul>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n                    '\"\n                ></app-timeline-item>\n\n                <!-- Bachelor of Science in Information Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bsit',\n                        'title': 'Bachelor of Science in Information Technology',\n                        'type': 'certificate',\n                        'provider': 'University of Phoenix, College of Information Systems & Technology',\n                        'startDate': 'June 2007',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.phoenix.edu/',\n                            'degreeDescription': 'http://www.phoenix.edu/programs/degree-programs/technology/bachelors/bsit.html'\n                        },\n                        'description': '\n                            I have studied at University of Phoenix under the Bachelor of Science In Information Technology degree \n                            program. Using the knowledge I have attained from the university: From using methodologies that provide \n                            effective project management, to developing Web and Software applications, I utilize the best practices in \n                            order to implement my work.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Lead Web Developer at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcLeadWebDev',\n                        'title': 'Lead Web Developer',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'January 2007',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': '\n                            Translating business requirements to web solutions written in HTML, CSS, JavaScript,\n                            PHP, and MySQL.  Worked with support to ensure our Accredited Staging Professionals \n                            (ASP&reg;) are provided help; and worked with my web developers and project stakeholders \n                            to code our next best website. \n                        '\n                    }\"\n                    [strFullDescription] = \"'\n                        <!-- Logo & Title -->\n                        <div class=\\'row\\'>\n                            <div class=\\'col-xs-12\\'>\n                                <div class=\\'media\\'>\n                                    <div class=\\'media-left\\'>\n                                        <a href=\\'\\'>\n                                            <img class=\\'media-object width-60p\\' src=\\'https:\\/\\/d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo-stagedhomes.png\\' alt=\\'StagedHomes.com\\'>\n                                        </a>\n                                    </div>\n                                    <div class=\\'media-body\\'>\n                                        <h3 class=\\'media-heading text-bold\\'>StagedHomes.com</h3>\n                                        <div class=\\'color-black\\'>Lead Web Developer | 2007 - 2010</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div><!-- /row -->\n\n                        <!-- Web Development -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Web Development</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Develop a web portal for our customers so that they may:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Log into their profile.</li>\n                                            <li>Modify their settings (customization).</li>\n                                            <li>Download the latest images from the classes they have taken with our trainers.</li>\n                                            <li>Upload Staged Property photos and photos of themselves for their profile.</li>\n                                            <li>Download documentations provided by our online website.</li>\n                                            <li>SEO enhanced website for our users so that their name can be found on search engines.</li>\n                                            <li>View a list of vendors where they can find extraordinary deals.</li>\n                                            <li>Receive leads from our website straight into their mailbox.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            I have also implemented and customized administration pages so that our staff can manage our \n                                            customers through our online website. Here\\'s a list of a few functions that I have implemented:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Modify customer data (for troubleshooting purposes).</li>\n                                            <li>Ability to download reports such as when customers are expiring, or a list of our customers, and much more.</li>\n                                            <li>Input classes which utilizes Google Maps API v3 as the Front End for our customers.</li>\n                                            <li>Input students who have graduated from our courses into our database through the use of an Excel Document or CSV format.</li>\n                                            <li>Input vendors and partners (with the ability to turn them off and on).</li>\n                                        </ul>\n                                    </div>\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n\n                        <!-- Systems Management -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Systems Management</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Provide IT support for all of StagedHomes:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Break/Fix issues that may arise.</li>\n                                            <li>Maintenance on servers (updates / configuration).</li>\n                                            <li>Provide support onsite or remote.</li>\n                                            <li>Install & Configure workstations for Business Partners.</li>\n                                            <li>Provide IT recommendations to management.</li>\n                                            <li>Responsible for Software and Hardware inventory and purchases.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            By utilizing a combination of <strong>Project Management</strong> and constantly evolving my understanding \n                                            of Information Systems, I am able to support the business strategies of Staged Homes through \n                                            my concentrated <strong>studies and experience in computer science</strong>. Technologies that I have used to \n                                            implement our integrated system:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Web Technologies: PHP, MySQL, HTML, CSS, JavaScript</li>\n                                            <li>Server Technologies: IIS, MySQL, Windows Server, Red Hat Linux, CentOS, VMware ESXi</li>\n                                            <li>Design Applications: Photoshop, InDesign, Illustrator, Adobe Acrobat, Paint.NET</li>\n                                            <li>Analytics, CMS, CRM, & API: Google Analytics, SalesForce.com, WordPress, Google Maps API v3, OS Commerce, Authorize.net, RegOnline, Constant Contact, Hubspot</li>\n                                        </ul>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n                    '\"\n                ></app-timeline-item>\n\n                <!-- Network Administrator at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcNetworkAdmin',\n                        'title': 'Network Administrator',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'August 2006',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': '\n                            Provide internal computer and network support for business partners.  Assisted with web \n                            development by updating our websites with updated Home Staging education contents provided\n                            by management.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- =======================================================\n                    Year 2005\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Many Years of Helping People with IT</span>\n                </span>\n\n                <!-- Help Desk Analyst at Vodafone -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'helpdesk',\n                        'title': 'Help Desk Analyst',\n                        'provider': 'Vodafone',\n                        'type': 'position',\n                        'startDate': 'September 2005',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.vodafone.com/',\n                            'facebook': 'https://www.facebook.com/VodafoneProject/'\n                        },\n                        'description': '\n                            My responsibilities include providing Desktop Support for our business partners at our Walnut Creek office, \n                            and updating our company intranet website.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Representative II at AT&T -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'attsupport2',\n                        'title': 'Technical Support Representative II',\n                        'provider': 'AT&T',\n                        'type': 'position',\n                        'startDate': 'September 2004',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.att.com/',\n                            'facebook': 'https://www.facebook.com/ATT'\n                        },\n                        'description': '\n                            Provide second tier technical assistance to DSL business and residential customers.\n                            Utilize advance tools to resolve technical DSL problems and troubleshoot connectivity \n                            problems. \n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Engineer at @Com Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'atcom',\n                        'title': 'Technical Support Engineer',\n                        'provider': '@Com Technology LLC',\n                        'type': 'position',\n                        'startDate': 'September 2003',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://atcomtechnology.com/'\n                        },\n                        'description': '\n                            Assist customers with their domain name registrations and web hosting products.  Troubleshoot \n                            technical issues with all aspects of web development: DNS, hosting, and script/code issues. \n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Analyst at Bank of America -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bofasupport',\n                        'title': 'Technical Support Analyst',\n                        'provider': 'Bank of America',\n                        'type': 'position',\n                        'startDate': 'January 2002',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.bankofamerica.com/',\n                            'facebook': 'https://www.facebook.com/BankofAmerica/'\n                        },\n                        'description': '\n                            Oversee Information Technology client needs by analyzing and providing solutions with various \n                            computer products that range from internal applications for our client to achieving remote \n                            access through their small to home office network. Helped troubleshoot problems with business \n                            partners and properly taking ownership of trouble tickets to help our user\\'s needs as far \n                            finding a resolution.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2001\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Early IT Career Years</span>\n                </span>\n\n                <!-- Associate of Applied Science in Computer Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'aasct',\n                        'title': 'Associate of Applied Science in Computer Technology',\n                        'type': 'certificate',\n                        'provider': 'Heald Institute of Technology',\n                        'startDate': 'June 2001',\n                        'imgSrc': null,\n                        'description': '\n                            Professionally trained in all foundational aspects of computer technology: building \n                            computers and networks from conception; installing, configuring, and troubleshooting \n                            servers; and programming software for desktop and developing web applications.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- A+ Certified Computer Technician -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'comptiaaplus',\n                        'title': 'A+ Certified Computer Technician',\n                        'type': 'certification',\n                        'provider': 'CompTIA',\n                        'startDate': 'February 2001',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.comptia.org/',\n                            'certificationDescription': 'https://certification.comptia.org/certifications/a'\n                        },\n                        'description': '\n                            CompTIA A+ certification validates foundation-level knowledge and skills necessary for a career in PC support.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Engineer at Verio -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bofasupport',\n                        'title': 'Technical Support Engineer',\n                        'provider': 'Verio',\n                        'type': 'position',\n                        'startDate': 'January 2001',\n                        'socialLinks': {\n                            'website': 'https://www.verio.com/'\n                        },\n                        'imgSrc': null,\n                        'description': '\n                            Provide technical answers and solutions for customers who have problems with all aspects \n                            of web hosting.  This includes domain name problems; webhosting problems; and (but not limited\n                            to) website configurations which incude server issues and website programming logic.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Telecommunications Specialist at NorthPoint Communications -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'northpoint',\n                        'title': 'Telecommunications Analyst',\n                        'provider': 'NorthPoint Communications',\n                        'type': 'position',\n                        'startDate': 'October 2000',\n                        'imgSrc': null,\n                        'description': '\n                            Provided provisioning support for telecommunicaton services (DSL / T1).  Was\n                            tasked to ensure any problems with\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Provisioning Specialist at Qwest Communications -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'qwest',\n                        'title': 'Provisioning Specialist',\n                        'provider': 'Qwest Communications',\n                        'type': 'position',\n                        'startDate': 'September 2000',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.centurylink.com/'\n                        },\n                        'description': '\n                            Input DSL / T1 orders delivered by the sales team to provision new \n                            telecommunication services for businesses.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- =======================================================\n                    Career Start\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">IT Career Start</span>\n                </span>\n\n            </div><!-- /timeline -->\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"timeline-point timeline-point-{{getTimeLinePointType()}}\" [ngSwitch]=\"objAchievement.type\">\n    <i class=\"fa fa-graduation-cap\" *ngSwitchCase=\"'certificate'\"></i>\n    <i class=\"fa fa-certificate\" *ngSwitchCase=\"'certification'\"></i>\n    <i class=\"fa fa-briefcase\" *ngSwitchCase=\"'position'\"></i>\n    <i class=\"fa fa-certificate\" *ngSwitchDefault></i>\n</div>\n\n<div class=\"timeline-event timeline-event-{{getModalType()}}\">\n    <div class=\"panel panel-default\">\n        <div class=\"panel-heading\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-11 col-lg-11\" style=\"vertical-align: middle;\">\n                    <h3 class=\"panel-title\"><strong>{{objAchievement.title}}</strong></h3>\n                </div>\n\n                <div class=\"col-xs-12 col-sm-1 col-lg-1\">\n                    <!-- Button for Modal Popup -->\n                    <span class=\"pull-right\">\n                        <a class=\"btn btn-{{getModalType()}} btn-xs color-white {{mtdDisabled_btnView()}}\" data-toggle=\"modal\" [attr.data-target]=\"'#modal-' + objAchievement.modalID\">\n                            View\n                        </a>\n                    </span> \n                </div><!-- /col -->\n            </div><!-- /row -->\n        </div><!-- /panel-heading -->\n        <div class=\"panel-body\" *ngIf=\"objAchievement.description != null\">\n            <div class=\"color-black\">{{objAchievement.description}}</div>\n            <ul id=\"social-links\" class=\"space-top-5 list-inline\" *ngIf=\"objAchievement.socialLinks != null\">\n                <li *ngIf=\"objAchievement.socialLinks.website != null\"><a href=\"{{objAchievement.socialLinks.website}}\" target=\"_blank\"><i class=\"fa fa-globe\" aria-hidden=\"true\"></i> Website</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.facebook != null\"><a href=\"{{objAchievement.socialLinks.facebook}}\" target=\"_blank\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i> Facebook</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.certificationDescription != null\"><a href=\"{{objAchievement.socialLinks.certificationDescription}}\" target=\"_blank\"><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Certification Information</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.programDescription != null\"><a href=\"{{objAchievement.socialLinks.programDescription}}\" target=\"_blank\"><i class=\"fa fa-star\" aria-hidden=\"true\"></i> Program Description</a></li>\n                <li *ngIf=\"objAchievement.socialLinks.degreeDescription != null\"><a href=\"{{objAchievement.socialLinks.degreeDescription}}\" target=\"_blank\"><i class=\"fa fa-graduation-cap\" aria-hidden=\"true\"></i> Degree Description</a></li>\n            </ul>\n        </div>\n\n        <div class=\"panel-footer\">\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-8 col-lg-9 left font-size-12\">\n                    {{objAchievement.provider}}\n                </div><!-- /col -->\n                <div class=\"col-xs-12 col-sm-4 col-lg-3 text-right font-size-12\">\n                    {{objAchievement.startDate}}\n                </div><!-- /col -->\n            </div><!-- /row -->\n        </div>\n    </div><!-- /panel -->\n</div><!-- /timeline-event -->\n\n<!-- =========================================================\n    Place in main app.component on generation.\n========================================================= -->\n<div id=\"modal-{{objAchievement.modalID}}\" class=\"modal fade padding-remove\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"true\" *ngIf=\"mtdDisabled_btnView() != 'disabled'\">\n    <div class=\"modal-dialog modal-lg\">\n        <div class=\"modal-content\">\n            <div class=\"modal-body\">\n                <img src=\"{{arrGlobals.strPublicAssets + objAchievement.imgSrc}}\" \n                    class = \"img-responsive\" \n                    alt = \"{{objAchievement.title}}\"\n                    *ngIf = \"objAchievement.imgSrc != null\"\n                />\n\n                <div *ngIf=\"getDescriptionFull() != null\" innerHTML=\"{{getDescriptionFull()}}\"></div>\n            </div><!-- /modal-body -->\n            <div class=\"modal-footer\">\n                <div class=\"pull-left\">\n                    {{objAchievement.title}}\n                </div>\n\n                <div class=\"pull-right\">\n                    <button type=\"button\" class=\"btn btn-default btn-sm\" data-dismiss=\"modal\">Close</button>\n                </div>\n            </div><!-- /modal-footer -->\n        </div><!-- /modal-content -->\n    </div><!-- /modal-dialog -->\n</div><!-- /modal -->"
 
 /***/ },
 /* 635 */
 /***/ function(module, exports) {
 
-module.exports = "<!-- Remove \"margin-footer\" if you use this on the middle of the page -->\n<section class=\"cover margin-footer parallax\" data-stellar-background-ratio=\"0.7\" style=\"background-image: url('https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/testimonials-bg.jpg');\">\n    <span class=\"overlay\"></span>\n\n    <div class=\"container\">\n        <div class=\"owl-carousel text-center\" data-plugin-options='{\"items\": 1, \"singleItem\": true, \"navigation\": true, \"pagination\": false, \"autoPlay\": true, \"transitionStyle\":\"fadeUp\"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->\n            <div class=\"testimonial\">\n                <p>\n                    I treasure my/our relationship with you and I love working with you as well. Thank you for all \n                    you do and all you invest in SHC with your time, talent, care, and dedication. You are a gem and \n                    I and we would be totally lost without you.\n                </p>\n                <p>\n                    Duane, Thank you for being one of my heroes...\n                </p>\n                <cite><strong>Barb Schwarz</strong>, CEO at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was very resourceful and highly motivated when working the Help Desk at Vodafone. All the internal customers loved how patient and personable he was over the phone when assisting them with their issues. Duane was able to handle multiple tasks and was always willing to work outside his job responsibilties. If he didn't know an answer he would do the research to find it. I highly recommmend him as a valued employee.\n                </p>\n                <cite><strong>Sharen Hamasaki</strong>, Sr. System Administrator at Vodafone</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Nandita Adhia</strong>, Software Configuration Manager at Vodafone</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Very Knowledgeable fast paced Technician. With outstanding Customer Service skills. An asset to any company.\n                </p>\n                <cite><strong>Carlos Robertson</strong>, Technical Support Representative II at AT&T Internet Services</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Felicia Vierra</strong>, Technical Support Analyst at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Ondrej Dobes</strong>, Team Lead at AT&T Internet Services</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is such a joy to work with!!! His positive, can-do attitude is always appreciated! He's the best!!!\n                </p>\n                <cite><strong>BJ Johnson</strong>, Director of Operations at IAHSP</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    You are definitely a hero, Duane! I'm so lucky to know and work with you. Your knowledge and expertise is \n                    invaluable to all the StagedHomes.com team. Thanks for always being there to help with our technical \n                    dilemmas!\n                </p>\n                <cite><strong>Lynne Baum</strong>, Accounting Manager at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is a great hire. His work ethics and professionalism make him well-liked by personnel and \n                    customers alike. His knowledge of network systems and hardware is a great asset to the company. His \n                    passion to learn and pick up new technologies quickly shows his great potential.\n                </p>\n                <cite><strong>Ivan Bueno</strong>, Lead Web Developer at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is enthusiastic about his work and always makes himself available to his colleagues. He's helpful, \n                    knowledgeable and a great problem solver. He's able to take on multiple projects at a time and goes out \n                    of his way to accomplish them in a timely manner. It was a real treat to work with Duane!\n                </p>\n                <cite><strong>Michelle Payne</strong>, Marketing Manager at StagedHomes.com</cite>\n            </div>\n        </div><!-- /owl-carousel -->\n    </div><!-- /container -->\n</section>"
+module.exports = "<div class=\"container-fluid\">\n    <div class=\"col-md-12\">\n        <div class=\"row\">\n            <div class=\"timeline timeline-line-dotted\">\n                <!-- =======================================================\n                    Today\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Web Programming Training</span>\n                </span>\n\n                <!-- Full Stack MEAN Developer -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement] = \"{\n                        'modalID': 'mean',\n                        'title': 'Full Stack MEAN Developer',\n                        'provider': 'Hong Kong University of Science & Technology',\n                        'type': 'certificate',\n                        'startDate': 'June 2016',\n                        'imgSrc': 'images/achievements/201606-fullstack.jpg',\n                        'socialLinks': {\n                            'website': 'https://www.cse.ust.hk/',\n                            'facebook': 'https://www.facebook.com/hkust/',\n                            'programDescription': 'https://www.coursera.org/specializations/full-stack/'\n                        },\n                        'description': 'Full Stack Web Development program taught by Hong Kong University of Science and Technology through the Coursera platform trains students on Front-End, Back-End, and Hybrid Mobile development using HTML/CSS/JS, AngularJS, NodeJS, MongoDB, and the Ionic Framework.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Advanced Java Programming -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement] = \"{\n                        'modalID': 'dvcjava',\n                        'title': 'Advanced Java Programming',\n                        'provider': 'Diablo Valley College, Advanced Technology Center',\n                        'type': 'certificate',\n                        'startDate': 'May 2016',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.dvc.edu/',\n                            'facebook': 'https://www.facebook.com/DVC.Vikings/'\n                        },\n                        'description': 'Program covers advanced topics in Java programming including multithreading, exception handling, serialization, reflection, model view controller architecture, java beans, servlets and database connectivity.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- AWS Certified Developer -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'awsdeveloper',\n                        'title': 'AWS Certified Developer',\n                        'type': 'certification',\n                        'provider': 'Amazon Web Services',\n                        'startDate': 'February 2016',\n                        'imgSrc': 'images/achievements/201602-aws-developer.jpg',\n                        'socialLinks': {\n                            'programDescription': 'https://aws.amazon.com/certification/certified-developer-associate/'\n                        },\n                        'description': 'Validates technical expertise in developing and maintaining applications on the AWS platform written for Amazon S3, Amazon DynamoDB, Amazon SQS, Amazon SNS, Amazon Simple Workflow Service, AWS Elastic Beanstalk, and AWS CloudFormation'\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2015\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">IT Management Training</span>\n                </span>\n\n                <!-- Web Project Manager at Novactive -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'pmnovactive',\n                        'title': 'Web Project Manager',\n                        'provider': 'Novactive',\n                        'type': 'position',\n                        'startDate': 'February 2015',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://novactive.us/'\n                        },\n                        'description': 'Develop Work Breakdown Structures (WBS); Technical Specifications for Project Requirements; oversee project development time and cost to stay within the allotted timeframe and budget.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- MSc IT Management -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'msitm',\n                        'title': 'Master of Science in IT Management',\n                        'type': 'certificate',\n                        'provider': 'Golden Gate University, Ageno School of Business',\n                        'startDate': 'April 2014',\n                        'imgSrc': 'images/achievements/201504-masters-itm.jpg',\n                        'socialLinks': {\n                            'website': 'http://ggu.edu/',\n                            'degreeDescription': 'http://www.ggu.edu/programs/information-technology-management/master-of-science-in-information-technology-management'\n                        },\n                        'description': 'The core curriculum provides grounding in the key topics of IT governance and frameworks such as ITIL and COBIT, enterprise architecture, IT finance, capital budgeting, compliance and portfolio, and program management. These skills are enhanced with a strong set of basic business knowledge and managerial skills in business dynamics, communication, leadership, problem solving, accounting and finance, and analytical skills (GGU.edu, 2013).'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Certified Scrum Master -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'scrummaster',\n                        'title': 'Certified Scrum Master',\n                        'type': 'certification',\n                        'provider': 'Scrum Alliance',\n                        'startDate': 'April 2014',\n                        'imgSrc': 'images/achievements/201404-scrum-csm.jpg',\n                        'socialLinks': {\n                            'website': 'https://www.scrumalliance.org/',\n                            'certificationDescription': 'https://www.scrumalliance.org/certifications/practitioners/certified-scrummaster-csm/'\n                        },\n                        'description': 'Attained professional training and certification in Scrum Agile Project Management to provide continuous delivery of software with my project teams using best practices in Agile Project Management.'\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Project Management Professional -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'pmi-pmp',\n                        'title': 'Project Management Professional',\n                        'type': 'certification',\n                        'provider': 'Project Management Institute',\n                        'startDate': 'December 2013',\n                        'imgSrc': 'images/achievements/201312-pmp.jpg',\n                        'socialLinks': {\n                            'website': 'http://www.pmi.org/',\n                            'certificationDescription': 'http://www.pmi.org/certifications/types/project-management-pmp'\n                        },\n                        'description': 'To improve my knowledge and application in Project Management, I\\'ve taken professional training and certification in PMI\\'s Project Management Professional (PMP) certification to extend my capabilities by adding additional tools & techniques to my project management approach.'\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2010\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Technology Career at StagedHomes.com</span>\n                </span>\n\n                <!-- Directory of IT & Technology at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcDirectorofTechnology',\n                        'title': 'Director of IT & Technology',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'December 2010',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': \n                            'Develop digital product solutions to Home Stagers by creating web and mobile applications that are tailored to providing Home Staging education contents.\\n\n                            My responsibility includes managing the organization\\'s IT infrastructure; managing development and support personnel; and creating web and mobile applications aimed to solve business needs.'\n                    }\"\n                    [strFullDescription] = \"'\n                        <!-- Logo & Title -->\n                        <div class=\\'row\\'>\n                            <div class=\\'col-xs-12\\'>\n                                <div class=\\'media\\'>\n                                    <div class=\\'media-left\\'>\n                                        <a href=\\'\\'>\n                                            <img class=\\'media-object width-60p\\' src=\\'https:\\/\\/d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo-stagedhomes.png\\' alt=\\'StagedHomes.com\\'>\n                                        </a>\n                                    </div>\n                                    <div class=\\'media-body\\'>\n                                        <h3 class=\\'media-heading text-bold\\'>StagedHomes.com</h3>\n                                        <div class=\\'color-black\\'>Director of IT & Technology | 2010 - Present</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div><!-- /row -->\n\n                        <!-- Web Development -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Web Development</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Develop a web portal for our customers so that they may:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Log into their profile.</li>\n                                            <li>Modify their settings (customization).</li>\n                                            <li>Download the latest images from the classes they have taken with our trainers.</li>\n                                            <li>Upload Staged Property photos and photos of themselves for their profile.</li>\n                                            <li>Download documentations provided by our online website.</li>\n                                            <li>SEO enhanced website for our users so that their name can be found on search engines.</li>\n                                            <li>View a list of vendors where they can find extraordinary deals.</li>\n                                            <li>Receive leads from our website straight into their mailbox.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            I have also implemented and customized administration pages so that our staff can manage our \n                                            customers through our online website. Here\\'s a list of a few functions that I have implemented:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Modify customer data (for troubleshooting purposes).</li>\n                                            <li>Ability to download reports such as when customers are expiring, or a list of our customers, and much more.</li>\n                                            <li>Input classes which utilizes Google Maps API v3 as the Front End for our customers.</li>\n                                            <li>Input students who have graduated from our courses into our database through the use of an Excel Document or CSV format.</li>\n                                            <li>Input vendors and partners (with the ability to turn them off and on).</li>\n                                        </ul>\n                                    </div>\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n\n                        <!-- Systems Management -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Systems Management</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Provide IT support for all of StagedHomes:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Break/Fix issues that may arise.</li>\n                                            <li>Maintenance on servers (updates / configuration).</li>\n                                            <li>Provide support onsite or remote.</li>\n                                            <li>Install & Configure workstations for Business Partners.</li>\n                                            <li>Provide IT recommendations to management.</li>\n                                            <li>Responsible for Software and Hardware inventory and purchases.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            By utilizing a combination of <strong>Project Management</strong> and constantly evolving my understanding \n                                            of Information Systems, I am able to support the business strategies of Staged Homes through \n                                            my concentrated <strong>studies and experience in computer science</strong>. Technologies that I have used to \n                                            implement our integrated system:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Web Technologies: PHP, MySQL, HTML, CSS, JavaScript, AngularJS</li>\n                                            <li>Server Technologies: Amazon EC2, IIS, MySQL, Windows Server, Red Hat Linux, CentOS, VMware ESXi</li>\n                                            <li>Design Applications: Photoshop, InDesign, Illustrator, Adobe Acrobat, Paint.NET</li>\n                                            <li>Analytics, CMS, CRM, & API: Google Analytics, SalesForce.com, R Programming, WordPress, Google Maps API v3, OS Commerce, Authorize.net, RegOnline, Constant Contact, Hubspot</li>\n                                        </ul>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n                    '\"\n                ></app-timeline-item>\n\n                <!-- Bachelor of Science in Information Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bsit',\n                        'title': 'Bachelor of Science in Information Technology',\n                        'type': 'certificate',\n                        'provider': 'University of Phoenix, College of Information Systems & Technology',\n                        'startDate': 'June 2007',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.phoenix.edu/',\n                            'degreeDescription': 'http://www.phoenix.edu/programs/degree-programs/technology/bachelors/bsit.html'\n                        },\n                        'description': '\n                            I have studied at University of Phoenix under the Bachelor of Science In Information Technology degree \n                            program. Using the knowledge I have attained from the university: From using methodologies that provide \n                            effective project management, to developing Web and Software applications, I utilize the best practices in \n                            order to implement my work.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Lead Web Developer at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcLeadWebDev',\n                        'title': 'Lead Web Developer',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'January 2007',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': '\n                            Translating business requirements to web solutions written in HTML, CSS, JavaScript,\n                            PHP, and MySQL.  Worked with support to ensure our Accredited Staging Professionals \n                            (ASP&reg;) are provided help; and worked with my web developers and project stakeholders \n                            to code our next best website. \n                        '\n                    }\"\n                    [strFullDescription] = \"'\n                        <!-- Logo & Title -->\n                        <div class=\\'row\\'>\n                            <div class=\\'col-xs-12\\'>\n                                <div class=\\'media\\'>\n                                    <div class=\\'media-left\\'>\n                                        <a href=\\'\\'>\n                                            <img class=\\'media-object width-60p\\' src=\\'https:\\/\\/d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo-stagedhomes.png\\' alt=\\'StagedHomes.com\\'>\n                                        </a>\n                                    </div>\n                                    <div class=\\'media-body\\'>\n                                        <h3 class=\\'media-heading text-bold\\'>StagedHomes.com</h3>\n                                        <div class=\\'color-black\\'>Lead Web Developer | 2007 - 2010</div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div><!-- /row -->\n\n                        <!-- Web Development -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Web Development</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Develop a web portal for our customers so that they may:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Log into their profile.</li>\n                                            <li>Modify their settings (customization).</li>\n                                            <li>Download the latest images from the classes they have taken with our trainers.</li>\n                                            <li>Upload Staged Property photos and photos of themselves for their profile.</li>\n                                            <li>Download documentations provided by our online website.</li>\n                                            <li>SEO enhanced website for our users so that their name can be found on search engines.</li>\n                                            <li>View a list of vendors where they can find extraordinary deals.</li>\n                                            <li>Receive leads from our website straight into their mailbox.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            I have also implemented and customized administration pages so that our staff can manage our \n                                            customers through our online website. Here\\'s a list of a few functions that I have implemented:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Modify customer data (for troubleshooting purposes).</li>\n                                            <li>Ability to download reports such as when customers are expiring, or a list of our customers, and much more.</li>\n                                            <li>Input classes which utilizes Google Maps API v3 as the Front End for our customers.</li>\n                                            <li>Input students who have graduated from our courses into our database through the use of an Excel Document or CSV format.</li>\n                                            <li>Input vendors and partners (with the ability to turn them off and on).</li>\n                                        </ul>\n                                    </div>\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n\n                        <!-- Systems Management -->\n                        <section>\n                            <div class=\\'row space-top-20\\'>\n                                <div class=\\'col-xs-12\\'>\n                                    <div class=\\'text-bold\\'>Systems Management</div>\n                                </div>\n                            </div><!-- /row -->\n                            \n                            <div class=\\'margin-left-20p\\'>\n                                <div class=\\'row space-top-20\\'>\n                                    <div class=\\'col-xs-12\\'>\n                                        <div>Provide IT support for all of StagedHomes:</div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Break/Fix issues that may arise.</li>\n                                            <li>Maintenance on servers (updates / configuration).</li>\n                                            <li>Provide support onsite or remote.</li>\n                                            <li>Install & Configure workstations for Business Partners.</li>\n                                            <li>Provide IT recommendations to management.</li>\n                                            <li>Responsible for Software and Hardware inventory and purchases.</li>\n                                        </ul>\n\n                                        <div class=\\'space-top-20\\'>\n                                            By utilizing a combination of <strong>Project Management</strong> and constantly evolving my understanding \n                                            of Information Systems, I am able to support the business strategies of Staged Homes through \n                                            my concentrated <strong>studies and experience in computer science</strong>. Technologies that I have used to \n                                            implement our integrated system:\n                                        </div>\n                                        <ul class=\\'row space-top-20\\'>\n                                            <li>Web Technologies: PHP, MySQL, HTML, CSS, JavaScript</li>\n                                            <li>Server Technologies: IIS, MySQL, Windows Server, Red Hat Linux, CentOS, VMware ESXi</li>\n                                            <li>Design Applications: Photoshop, InDesign, Illustrator, Adobe Acrobat, Paint.NET</li>\n                                            <li>Analytics, CMS, CRM, & API: Google Analytics, SalesForce.com, WordPress, Google Maps API v3, OS Commerce, Authorize.net, RegOnline, Constant Contact, Hubspot</li>\n                                        </ul>\n                                    </div><!-- /col -->\n                                </div><!-- /row -->\n                            </div><!-- /row -->\n                        </section>\n                    '\"\n                ></app-timeline-item>\n\n                <!-- Network Administrator at StagedHomes.com -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'shcNetworkAdmin',\n                        'title': 'Network Administrator',\n                        'provider': 'StagedHomes.com',\n                        'type': 'position',\n                        'startDate': 'August 2006',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.stagedhomes.com/'\n                        },\n                        'description': '\n                            Provide internal computer and network support for business partners.  Assisted with web \n                            development by updating our websites with updated Home Staging education contents provided\n                            by management.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- =======================================================\n                    Year 2005\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Many Years of Helping People with IT</span>\n                </span>\n\n                <!-- Help Desk Analyst at Vodafone -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'helpdesk',\n                        'title': 'Help Desk Analyst',\n                        'provider': 'Vodafone',\n                        'type': 'position',\n                        'startDate': 'September 2005',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.vodafone.com/',\n                            'facebook': 'https://www.facebook.com/VodafoneProject/'\n                        },\n                        'description': '\n                            My responsibilities include providing Desktop Support for our business partners at our Walnut Creek office, \n                            and updating our company intranet website.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Representative II at AT&T -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'attsupport2',\n                        'title': 'Technical Support Representative II',\n                        'provider': 'AT&T',\n                        'type': 'position',\n                        'startDate': 'September 2004',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.att.com/',\n                            'facebook': 'https://www.facebook.com/ATT'\n                        },\n                        'description': '\n                            Provide second tier technical assistance to DSL business and residential customers.\n                            Utilize advance tools to resolve technical DSL problems and troubleshoot connectivity \n                            problems. \n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Engineer at @Com Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'atcom',\n                        'title': 'Technical Support Engineer',\n                        'provider': '@Com Technology LLC',\n                        'type': 'position',\n                        'startDate': 'September 2003',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://atcomtechnology.com/'\n                        },\n                        'description': '\n                            Assist customers with their domain name registrations and web hosting products.  Troubleshoot \n                            technical issues with all aspects of web development: DNS, hosting, and script/code issues. \n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Analyst at Bank of America -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bofasupport',\n                        'title': 'Technical Support Analyst',\n                        'provider': 'Bank of America',\n                        'type': 'position',\n                        'startDate': 'January 2002',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.bankofamerica.com/',\n                            'facebook': 'https://www.facebook.com/BankofAmerica/'\n                        },\n                        'description': '\n                            Oversee Information Technology client needs by analyzing and providing solutions with various \n                            computer products that range from internal applications for our client to achieving remote \n                            access through their small to home office network. Helped troubleshoot problems with business \n                            partners and properly taking ownership of trouble tickets to help our user\\'s needs as far \n                            finding a resolution.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n\n                <!-- =======================================================\n                    Year 2001\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">Early IT Career Years</span>\n                </span>\n\n                <!-- Associate of Applied Science in Computer Technology -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'aasct',\n                        'title': 'Associate of Applied Science in Computer Technology',\n                        'type': 'certificate',\n                        'provider': 'Heald Institute of Technology',\n                        'startDate': 'June 2001',\n                        'imgSrc': null,\n                        'description': '\n                            Professionally trained in all foundational aspects of computer technology: building \n                            computers and networks from conception; installing, configuring, and troubleshooting \n                            servers; and programming software for desktop and developing web applications.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- A+ Certified Computer Technician -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'comptiaaplus',\n                        'title': 'A+ Certified Computer Technician',\n                        'type': 'certification',\n                        'provider': 'CompTIA',\n                        'startDate': 'February 2001',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'https://www.comptia.org/',\n                            'certificationDescription': 'https://certification.comptia.org/certifications/a'\n                        },\n                        'description': '\n                            CompTIA A+ certification validates foundation-level knowledge and skills necessary for a career in PC support.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Technical Support Engineer at Verio -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'bofasupport',\n                        'title': 'Technical Support Engineer',\n                        'provider': 'Verio',\n                        'type': 'position',\n                        'startDate': 'January 2001',\n                        'socialLinks': {\n                            'website': 'https://www.verio.com/'\n                        },\n                        'imgSrc': null,\n                        'description': '\n                            Provide technical answers and solutions for customers who have problems with all aspects \n                            of web hosting.  This includes domain name problems; webhosting problems; and (but not limited\n                            to) website configurations which incude server issues and website programming logic.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Telecommunications Specialist at NorthPoint Communications -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'northpoint',\n                        'title': 'Telecommunications Analyst',\n                        'provider': 'NorthPoint Communications',\n                        'type': 'position',\n                        'startDate': 'October 2000',\n                        'imgSrc': null,\n                        'description': '\n                            Provided provisioning support for telecommunicaton services (DSL / T1).  Was\n                            tasked to ensure any problems with\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- Provisioning Specialist at Qwest Communications -->\n                <app-timeline-item class=\"timeline-item\"\n                    [objAchievement]=\"{\n                        'modalID': 'qwest',\n                        'title': 'Provisioning Specialist',\n                        'provider': 'Qwest Communications',\n                        'type': 'position',\n                        'startDate': 'September 2000',\n                        'imgSrc': null,\n                        'socialLinks': {\n                            'website': 'http://www.centurylink.com/'\n                        },\n                        'description': '\n                            Input DSL / T1 orders delivered by the sales team to provision new \n                            telecommunication services for businesses.\n                        '\n                    }\"\n                ></app-timeline-item>\n\n                <!-- =======================================================\n                    Career Start\n                ======================================================= -->\n                <span class=\"timeline-label\">\n                    <span class=\"label label-primary\">IT Career Start</span>\n                </span>\n\n            </div><!-- /timeline -->\n        </div>\n    </div>\n</div>"
 
 /***/ },
 /* 636 */
+/***/ function(module, exports) {
+
+module.exports = "<!-- Remove \"margin-footer\" if you use this on the middle of the page -->\n<section class=\"cover margin-footer parallax\" data-stellar-background-ratio=\"0.7\" style=\"background-image: url('https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/testimonials-bg.jpg');\">\n    <span class=\"overlay\"></span>\n\n    <div class=\"container\">\n        <div class=\"owl-carousel text-center\" data-plugin-options='{\"items\": 1, \"singleItem\": true, \"navigation\": true, \"pagination\": false, \"autoPlay\": true, \"transitionStyle\":\"fadeUp\"}'><!-- transitionStyle: fade, backSlide, goDown, fadeUp,  -->\n            <div class=\"testimonial\">\n                <p>\n                    I treasure my/our relationship with you and I love working with you as well. Thank you for all \n                    you do and all you invest in SHC with your time, talent, care, and dedication. You are a gem and \n                    I and we would be totally lost without you.\n                </p>\n                <p>\n                    Duane, Thank you for being one of my heroes...\n                </p>\n                <cite><strong>Barb Schwarz</strong>, CEO at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was very resourceful and highly motivated when working the Help Desk at Vodafone. All the internal customers loved how patient and personable he was over the phone when assisting them with their issues. Duane was able to handle multiple tasks and was always willing to work outside his job responsibilties. If he didn't know an answer he would do the research to find it. I highly recommmend him as a valued employee.\n                </p>\n                <cite><strong>Sharen Hamasaki</strong>, Sr. System Administrator at Vodafone</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Nandita Adhia</strong>, Software Configuration Manager at Vodafone</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Very Knowledgeable fast paced Technician. With outstanding Customer Service skills. An asset to any company.\n                </p>\n                <cite><strong>Carlos Robertson</strong>, Technical Support Representative II at AT&T Internet Services</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Felicia Vierra</strong>, Technical Support Analyst at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane was always there to help resolve any desktop issues. He always goes above and beyond to make sure his customers are extremely satisfied with his resolution. I have seen Duane work diligently to help with issues. He is always patient with the customers and always makes them think that they are his only priority and works on resolving issues as quickly as possible. He is also very knowledgeable about the latest technology. He was a great pleasure to work with.\n                </p>\n                <cite><strong>Ondrej Dobes</strong>, Team Lead at AT&T Internet Services</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is such a joy to work with!!! His positive, can-do attitude is always appreciated! He's the best!!!\n                </p>\n                <cite><strong>BJ Johnson</strong>, Director of Operations at IAHSP</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    You are definitely a hero, Duane! I'm so lucky to know and work with you. Your knowledge and expertise is \n                    invaluable to all the StagedHomes.com team. Thanks for always being there to help with our technical \n                    dilemmas!\n                </p>\n                <cite><strong>Lynne Baum</strong>, Accounting Manager at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is a great hire. His work ethics and professionalism make him well-liked by personnel and \n                    customers alike. His knowledge of network systems and hardware is a great asset to the company. His \n                    passion to learn and pick up new technologies quickly shows his great potential.\n                </p>\n                <cite><strong>Ivan Bueno</strong>, Lead Web Developer at StagedHomes.com</cite>\n            </div>\n\n            <div class=\"testimonial\">\n                <p>\n                    Duane is enthusiastic about his work and always makes himself available to his colleagues. He's helpful, \n                    knowledgeable and a great problem solver. He's able to take on multiple projects at a time and goes out \n                    of his way to accomplish them in a timely manner. It was a real treat to work with Duane!\n                </p>\n                <cite><strong>Michelle Payne</strong>, Marketing Manager at StagedHomes.com</cite>\n            </div>\n        </div><!-- /owl-carousel -->\n    </div><!-- /container -->\n</section>"
+
+/***/ },
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59680,7 +59716,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 637 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59813,7 +59849,7 @@ exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
 /***/ },
-/* 638 */
+/* 639 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -59827,7 +59863,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 639 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59873,7 +59909,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 640 */
+/* 641 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59949,7 +59985,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 641 */
+/* 642 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59962,12 +59998,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isArray_1 = __webpack_require__(211);
 var isPromise_1 = __webpack_require__(340);
 var PromiseObservable_1 = __webpack_require__(332);
-var IteratorObservable_1 = __webpack_require__(642);
+var IteratorObservable_1 = __webpack_require__(643);
 var ArrayObservable_1 = __webpack_require__(330);
-var ArrayLikeObservable_1 = __webpack_require__(640);
+var ArrayLikeObservable_1 = __webpack_require__(641);
 var iterator_1 = __webpack_require__(207);
 var Observable_1 = __webpack_require__(20);
-var observeOn_1 = __webpack_require__(646);
+var observeOn_1 = __webpack_require__(647);
 var observable_1 = __webpack_require__(208);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
@@ -60071,7 +60107,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 642 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60234,7 +60270,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 643 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60305,7 +60341,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 644 */
+/* 645 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60459,7 +60495,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ },
-/* 645 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60583,7 +60619,7 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ },
-/* 646 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60594,7 +60630,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(37);
-var Notification_1 = __webpack_require__(637);
+var Notification_1 = __webpack_require__(638);
 /**
  * @see {@link Notification}
  *
@@ -60664,7 +60700,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 647 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60782,7 +60818,7 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ },
-/* 648 */
+/* 649 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60816,7 +60852,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 649 */
+/* 650 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -60847,7 +60883,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 650 */
+/* 651 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -60859,7 +60895,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 651 */
+/* 652 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -60871,7 +60907,7 @@ exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
 /***/ },
-/* 652 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60896,7 +60932,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 653 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60921,8 +60957,8 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ },
-/* 654 */,
-/* 655 */
+/* 655 */,
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {;
@@ -62239,15 +62275,15 @@ if (_global['navigator'] && _global['navigator'].geolocation) {
         'watchPosition'
     ]);
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56), __webpack_require__(617)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56), __webpack_require__(618)))
 
 /***/ },
-/* 656 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(342);
 
 
 /***/ }
-],[656]);
+],[657]);
 //# sourceMappingURL=main.map

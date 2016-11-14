@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+
+// Routing
+import { RouterModule } from '@angular/router';
+import { AppComponents, AppRoutes } from "./app.routes";
 
 // Global Variables
 import { GLOBALS } from "./shared/globals";
@@ -22,6 +26,8 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
 @NgModule({
     declarations: [
         AppComponent,
+        ...AppComponents,
+
         HeaderComponent,
         FooterComponent,
         
@@ -34,8 +40,13 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
             TestimonialsComponent,
             PortfolioComponent
     ], // declarations
-    imports:      [BrowserModule, FormsModule],
-    bootstrap:    [AppComponent],
+    imports: [
+        BrowserModule, 
+        FormsModule,
+        RouterModule,
+        RouterModule.forRoot(AppRoutes)
+    ],
+    bootstrap: [AppComponent],
 })
 export class AppModule {
     // Variables from external TS.

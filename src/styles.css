@@ -40,6 +40,11 @@ app-main div.tp-bannershadow.tp-shadow1 {
 /* Margins */
 .space-top-5 { margin-top: 5px; }
 .space-top-20 { margin-top: 20px }
+.space-top-40 { margin-top: 40px }
+.space-bottom-10 { margin-bottom: 10px; }
+.space-bottom-20 { margin-bottom: 20px; }
+.space-bottom-40 { margin-bottom: 40px; }
+.margin-0 { margin: 0px; }
 .margin-left-20p { margin-left: 20px; }
 .margin-right-5p { margin-right: 5px; }
 

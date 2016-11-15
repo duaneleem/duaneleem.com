@@ -56,13 +56,13 @@ import { Contact } from "./contact";
                             <h3>PROFESSIONAL TRAINING &amp; CERTIFICATIONS</h3>
 
                             <ul>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">Master of Science in IT Management</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">Full Stack Developer (MEAN Stack)</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">Advanced Java Programming</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">R Programming</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">Project Management Professional | PMP&reg;</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">Certified Scrum Master | CSM&reg;</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="#">IT Infrastructure Library | ITIL&reg;</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-msitm'">Master of Science in IT Management</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-mean'">Full Stack Developer (MEAN Stack)</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> Advanced Java Programming</li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> R Programming</li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-pmi-pmp'">Project Management Professional | PMP&reg;</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-scrummaster'">Certified Scrum Master | CSM&reg;</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> IT Infrastructure Library | ITIL&reg;</li>
                             </ul>
                         </div>
                         <!-- /FOOTER LOGO -->

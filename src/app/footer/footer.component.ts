@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Contact } from "./contact";
+// Send-Email Service
+import { SendEmailService } from "./send-email.service";
 
 @Component({
     selector: 'app-footer',
@@ -21,8 +22,6 @@ import { Contact } from "./contact";
                 <div class="container">
 
                     <div class="row">
-
-
                         <!-- FOOTER CONTACT INFO -->
                         <div class="column col-md-4">
                             <h3>CONTACT</h3>
@@ -75,24 +74,37 @@ import { Contact } from "./contact";
                             <form #footer="ngForm">
                                 <div class="row">
                                     <div class="form-group">
-                                        <div class="col-sm-12 col-md-6">
-                                            <input type="text" class="form-control" placeholder="Your Name" 
-                                                id="name"
-                                                name="name"
-                                                required
-                                                [(ngModel)]="objUserDetails.name"
-                                                #name="ngModel"
-                                            />
-                                        </div><!-- /col -->
-                                        <div class="col-sm-12 col-md-6">
-                                            <input type="email" class="form-control" placeholder="Email" />
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                <input type="text" class="form-control" placeholder="Your Name" 
+                                                    name="name" required
+                                                    [(ngModel)]="objUserDetails.strName"
+                                                />
+                                            </div><!-- /input-group -->
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
                                 </div><!-- /row -->
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                            <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                                <input type="email" class="form-control" placeholder="Email" 
+                                                    name="email" required
+                                                    [(ngModel)]="objUserDetails.strEmail"
+                                                />
+                                            </div><!-- /input-group -->
+                                        </div><!-- /col -->
+                                    </div><!-- /form-group -->
+                                </div><!-- /row -->
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <textarea class="form-control" rows="3" placeholder="Message"
+                                                name="message"
+                                                [(ngModel)]="objUserDetails.strMessage"
+                                            ></textarea>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->    
                                 </div><!-- /row -->
@@ -106,7 +118,7 @@ import { Contact } from "./contact";
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12 text-align-left">
-                                            <button type="submit" class="btn btn-success">Submit</button>
+                                            <button type="submit" class="btn btn-success" disabled>Submit</button>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
                                 </div><!-- /row -->
@@ -121,9 +133,22 @@ import { Contact } from "./contact";
             <!-- footer content -->
         </footer>
     `,
-    providers: []
+    providers: [SendEmailService]
 })
 
 export class FooterComponent {
-    objUserDetails = new Contact("Duane Leem", "duaneleem@alumni.ggu.edu", "Just a test");
-}
+    objUserDetails; // Store all user info to this object.
+    
+    constructor(private sendEmailService: SendEmailService) {
+        this.objUserDetails = this.sendEmailService.objSenderInfo;
+    } // constructor(private sendEmailService: SendEmailService)
+
+    // TODO: Method to send to REST endpoint.
+    mdSend() {
+        // TODO: Add CAPTCHA to objUserDetails.
+
+        // TODO: Disable submit button and indicate loading.
+
+        // TODO: Shoot objUserDetails to REST.
+    } // mdSend()
+} // class FooterComponent

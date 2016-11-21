@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// Send-Email Service
+// Service: Send-Email
 import { SendEmailService } from "./send-email.service";
 
 @Component({
@@ -137,7 +137,7 @@ import { SendEmailService } from "./send-email.service";
 })
 
 export class FooterComponent {
-    objUserDetails; // Store all user info to this object.
+    objUserDetails;
     
     constructor(private sendEmailService: SendEmailService) {
         this.objUserDetails = this.sendEmailService.objSenderInfo;
@@ -145,10 +145,18 @@ export class FooterComponent {
 
     // TODO: Method to send to REST endpoint.
     mdSend() {
+        // TODO: Disable submit button and indicate loading.
+        
         // TODO: Add CAPTCHA to objUserDetails.
 
-        // TODO: Disable submit button and indicate loading.
-
         // TODO: Shoot objUserDetails to REST.
+            // IF: successful...
+            //     - submit button change to green 
+            //     - make it say: Inquiry Sent
+            //     - keep disabled
+            // ELSE
+            //     - submit button change to red
+            //     - make it say: Send Error
+            //     - enable button
     } // mdSend()
 } // class FooterComponent

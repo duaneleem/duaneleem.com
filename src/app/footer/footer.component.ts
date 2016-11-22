@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 // Service: Send-Email
 import { SendEmailService } from "./send-email.service";
+
+// Enables jQuery
+declare var $:any;
 
 @Component({
     selector: 'app-footer',
@@ -71,16 +74,16 @@ import { SendEmailService } from "./send-email.service";
                         <div class="column col-md-4 text-right">
                             <h3>SEND ME AN EMAIL <i class="fa fa-heart" aria-hidden="true"></i></h3>
                             
-                            <form #footer="ngForm">
+                            <form #footerForm="ngForm">
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-sm-12 col-md-12">
                                             <div class="input-group">
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
                                                 <input type="text" class="form-control" placeholder="Your Name" 
                                                     name="name" required
                                                     [(ngModel)]="objUserDetails.strName"
                                                 />
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
                                             </div><!-- /input-group -->
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
@@ -89,11 +92,11 @@ import { SendEmailService } from "./send-email.service";
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <div class="input-group">
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                                                 <input type="email" class="form-control" placeholder="Email" 
                                                     name="email" required
                                                     [(ngModel)]="objUserDetails.strEmail"
                                                 />
+                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                                             </div><!-- /input-group -->
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
@@ -102,7 +105,7 @@ import { SendEmailService } from "./send-email.service";
                                     <div class="form-group">
                                         <div class="col-xs-12">
                                             <textarea class="form-control" rows="3" placeholder="Message"
-                                                name="message"
+                                                name="message" required
                                                 [(ngModel)]="objUserDetails.strMessage"
                                             ></textarea>
                                         </div><!-- /col -->
@@ -111,14 +114,17 @@ import { SendEmailService } from "./send-email.service";
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <div class="g-recaptcha" data-sitekey="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF"></div>
+                                            <re-captcha (captchaResponse)="mdCaptchaHandle($event)" site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF"></re-captcha>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->    
                                 </div><!-- /row -->
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12 text-align-left">
-                                            <button type="submit" class="btn btn-success" disabled>Submit</button>
+                                            <button id="footerBtnSubmit" type="submit" class="btn btn-success"
+                                                [disabled]="!footerForm.valid"
+                                                (click)="mdSend()"
+                                            >Submit</button>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
                                 </div><!-- /row -->
@@ -133,6 +139,16 @@ import { SendEmailService } from "./send-email.service";
             <!-- footer content -->
         </footer>
     `,
+    styles: [`
+        .ng-valid[required], .ng-valid.required  {
+            border-left: 5px solid #42A948; /* green */
+        }
+
+        .ng-invalid:not(form)  {
+            border-left: 5px solid #a94442; /* red */
+        }
+
+    `],
     providers: [SendEmailService]
 })
 
@@ -143,11 +159,14 @@ export class FooterComponent {
         this.objUserDetails = this.sendEmailService.objSenderInfo;
     } // constructor(private sendEmailService: SendEmailService)
 
-    // TODO: Method to send to REST endpoint.
-    mdSend() {
-        // TODO: Disable submit button and indicate "Please wait...".
+    // Send to REST endpoint.
+    mdSend(): void {
+        console.log(this.objUserDetails);
         
-        // TODO: Add CAPTCHA to objUserDetails.
+        // Disable submit button and indicate "Please wait...".
+        $('#footerBtnSubmit').text('Please Wait...');
+        $('#footerBtnSubmit').removeClass('btn-default').addClass('btn-info');
+        $("#footerBtnSubmit").prop('disabled', true);
 
         // TODO: Shoot objUserDetails to REST.
             // IF: successful...
@@ -159,4 +178,9 @@ export class FooterComponent {
             //     - make it say: Send Error
             //     - enable button
     } // mdSend()
+
+    // Handle the captcha response and save to objUserDetails.captchaResponse
+    mdCaptchaHandle(response: string): void {
+        this.objUserDetails.captchaResponse = response;
+    } // mdCaptchaHandle(response)
 } // class FooterComponent

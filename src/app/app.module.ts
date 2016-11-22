@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
+// Custom Modules
+import { ReCaptchaModule } from 'angular2-recaptcha';
+
 // Routing
 import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { RouterModule } from '@angular/router';
@@ -49,7 +52,8 @@ import { HeaderReturnComponent } from "./header/header-return.component";
         BrowserModule, 
         FormsModule,
         RouterModule,
-        RouterModule.forRoot(AppRoutes)
+        RouterModule.forRoot(AppRoutes),
+        ReCaptchaModule
     ],
     bootstrap: [AppComponent],
     providers: [

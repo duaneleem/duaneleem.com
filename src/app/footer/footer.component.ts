@@ -114,7 +114,7 @@ declare var $:any;
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <re-captcha (captchaResponse)="mdCaptchaHandle($event)" site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF"></re-captcha>
+                                            <re-captcha (captchaResponse)="mdCaptchaHandle($event)" site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF" required></re-captcha>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->    
                                 </div><!-- /row -->
@@ -122,7 +122,7 @@ declare var $:any;
                                     <div class="form-group">
                                         <div class="col-xs-12 text-align-left">
                                             <button id="footerBtnSubmit" type="submit" class="btn btn-success"
-                                                [disabled]="!footerForm.valid"
+                                                [disabled]="footerForm.invalid || this.objUserDetails.captchaResponse == null"
                                                 (click)="mdSend()"
                                             >Submit</button>
                                         </div><!-- /col -->

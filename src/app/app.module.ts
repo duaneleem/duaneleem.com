@@ -7,15 +7,12 @@ import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 import { RouterModule } from '@angular/router';
 import { AppComponents, AppRoutes } from "./app.routes";
 
-// Global Variables
-import { GLOBALS } from "./shared/globals";
-
 // Components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from "./header";
 import { FooterComponent } from "./footer/footer.component";
 
 // Homepage
+import { HeaderComponent } from "./header";
 import { MainComponent } from "./home/main/main.component";
 import { SummaryComponent } from "./home/summary/summary.component";
 import { AboutComponent } from "./home/summary/about/about.component";
@@ -24,22 +21,29 @@ import { TimelineComponent } from "./home/summary/timeline/timeline.component";
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
+// Support
+import { HeaderReturnComponent } from "./header/header-return.component";
+
 @NgModule({
     declarations: [
         AppComponent,
         ...AppComponents,
-
-        HeaderComponent,
-        FooterComponent,
         
         // Homepage
+        HeaderComponent,
         MainComponent, 
         SummaryComponent,
         AboutComponent,
         TimelineComponent,
             TimelineItemComponent,
             TestimonialsComponent,
-            PortfolioComponent
+            PortfolioComponent,
+        
+        // Support
+        HeaderReturnComponent,
+
+        // All other
+        FooterComponent
     ], // declarations
     imports: [
         BrowserModule, 
@@ -49,10 +53,12 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
     ],
     bootstrap: [AppComponent],
     providers: [
-        {provide: LocationStrategy, useClass: HashLocationStrategy}
+        {
+            provide: LocationStrategy, 
+            useClass: HashLocationStrategy
+        },
     ]
 })
 export class AppModule {
-    // Variables from external TS.
-    arrGlobals = GLOBALS;
+    
 }

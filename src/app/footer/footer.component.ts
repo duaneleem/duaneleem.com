@@ -145,7 +145,7 @@ export class FooterComponent {
 
     // TODO: Method to send to REST endpoint.
     mdSend() {
-        // TODO: Disable submit button and indicate loading.
+        // TODO: Disable submit button and indicate "Please wait...".
         
         // TODO: Add CAPTCHA to objUserDetails.
 

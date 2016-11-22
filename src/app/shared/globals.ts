@@ -1,3 +1,4 @@
-export const GLOBALS = {
-    strPublicAssets: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/"
-};
+export const GLOBALS = Object.freeze({
+    strPublicAssets: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/",
+    strLogo: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo.png"
+});

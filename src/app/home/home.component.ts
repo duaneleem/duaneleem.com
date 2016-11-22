@@ -3,13 +3,24 @@ import { Component, OnInit } from "@angular/core";
 @Component({
     selector: 'app-home',
     template: `
-        <app-main>Loading: Section Main...</app-main>
+        <!-- ===========================================================================================
+            Header
+        =========================================================================================== -->
+        <app-header>Loading Header...</app-header>
 
-        <app-summary>Loading: Summary...</app-summary>
+        
+        <!-- ===========================================================================================
+            Contents
+        =========================================================================================== -->
+        <div id="wrapper">
+            <app-main>Loading: Section Main...</app-main>
 
-        <app-portfolio>Loading: Portfolio...</app-portfolio>
+            <app-summary>Loading: Summary...</app-summary>
 
-        <app-testimonials>Loading: Testimonials...</app-testimonials>
+            <app-portfolio>Loading: Portfolio...</app-portfolio>
+
+            <app-testimonials>Loading: Testimonials...</app-testimonials>
+        </div><!-- /wrapper -->
     `
 })
 

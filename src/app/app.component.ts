@@ -1,5 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
+// Global Variables
+import { GLOBALS } from "./shared/globals";
+
 @Component({
     selector: 'app-root',
     templateUrl: 'app.component.html',
@@ -7,6 +10,9 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class AppComponent implements OnInit {
+    // Variables from external TS.
+    arrGlobals = GLOBALS;
+    
     ngOnInit() {
     }
 }

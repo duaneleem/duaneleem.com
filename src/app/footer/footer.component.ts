@@ -114,7 +114,11 @@ declare var $:any;
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-xs-12">
-                                            <re-captcha (captchaResponse)="mdCaptchaHandle($event)" site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF" required></re-captcha>
+                                            <re-captcha 
+                                                (captchaResponse)="mdCaptchaHandle($event)" 
+                                                (captchaExpired)="mdCaptchaExpired()"
+                                                site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF"
+                                            ></re-captcha>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->    
                                 </div><!-- /row -->
@@ -183,4 +187,8 @@ export class FooterComponent {
     mdCaptchaHandle(response: string): void {
         this.objUserDetails.captchaResponse = response;
     } // mdCaptchaHandle(response)
+
+    mdCaptchaExpired(): void {
+        this.objUserDetails.captchaResponse = null;
+    }
 } // class FooterComponent

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 // Custom Modules
 import { ReCaptchaModule } from 'angular2-recaptcha';
@@ -51,6 +52,8 @@ import { HeaderReturnComponent } from "./header/header-return.component";
     imports: [
         BrowserModule, 
         FormsModule,
+        HttpModule,
+        JsonpModule,
         RouterModule,
         RouterModule.forRoot(AppRoutes),
         ReCaptchaModule

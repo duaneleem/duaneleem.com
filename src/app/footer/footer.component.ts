@@ -74,7 +74,7 @@ declare var $:any;
                         <div class="column col-md-4 text-right">
                             <h3>SEND ME AN EMAIL <i class="fa fa-heart" aria-hidden="true"></i></h3>
                             
-                            <form #footerForm="ngForm">
+                            <form #footerForm="ngForm" (ngSubmit)="mdSend()">
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-sm-12 col-md-12">
@@ -126,8 +126,7 @@ declare var $:any;
                                     <div class="form-group">
                                         <div class="col-xs-12 text-align-left">
                                             <button id="footerBtnSubmit" type="submit" class="btn btn-success"
-                                                [disabled]="footerForm.invalid || this.objUserDetails.captchaResponse == null"
-                                                (click)="mdSend()"
+                                                [disabled]="footerForm.invalid || this.objUserDetails.googleResponse == null"
                                             >Submit</button>
                                         </div><!-- /col -->
                                     </div><!-- /form-group -->
@@ -157,38 +156,46 @@ declare var $:any;
 })
 
 export class FooterComponent {
-    objUserDetails;
+    private objUserDetails;
     
     constructor(private sendEmailService: SendEmailService) {
         this.objUserDetails = this.sendEmailService.objSenderInfo;
     } // constructor(private sendEmailService: SendEmailService)
 
     // Send to REST endpoint.
-    mdSend(): void {
-        console.log(this.objUserDetails);
+    mdSend() {
+        // console.log(JSON.stringify(this.objUserDetails));
         
         // Disable submit button and indicate "Please wait...".
         $('#footerBtnSubmit').text('Please Wait...');
         $('#footerBtnSubmit').removeClass('btn-default').addClass('btn-info');
         $("#footerBtnSubmit").prop('disabled', true);
 
-        // TODO: Shoot objUserDetails to REST.
-            // IF: successful...
-            //     - submit button change to green 
-            //     - make it say: Inquiry Sent
-            //     - keep disabled
-            // ELSE
-            //     - submit button change to red
-            //     - make it say: Send Error
-            //     - enable button
+        // Attempt to send email.
+        this.sendEmailService.mdSendData(this.objUserDetails)
+            .subscribe(data => {
+                if (data.sent === "yes") {
+                    // Success
+                    $('#footerBtnSubmit').text('Email Sent to Duane.  Thanks! :)');
+                    $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-success');
+                    $("#footerBtnSubmit").prop('disabled', true);
+                } else {
+                    // Something went wrong.
+                    $('#footerBtnSubmit').text('Please try again.');
+                    $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-danger');
+                    $("#footerBtnSubmit").prop('disabled', false);
+                } // else
+            }) // subscribe()
+        ; // sendEmailService.mdSendData()
     } // mdSend()
 
     // Handle the captcha response and save to objUserDetails.captchaResponse
-    mdCaptchaHandle(response: string): void {
-        this.objUserDetails.captchaResponse = response;
+    mdCaptchaHandle(strResponse: string): void {
+        this.objUserDetails.googleResponse = strResponse;
     } // mdCaptchaHandle(response)
 
+    // Handles expired captchas.
     mdCaptchaExpired(): void {
-        this.objUserDetails.captchaResponse = null;
+        this.objUserDetails.googleResponse = null;
     }
 } // class FooterComponent

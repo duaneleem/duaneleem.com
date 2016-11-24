@@ -4,7 +4,7 @@ import "rxjs/Rx";
 
 @Injectable()
 export class SendEmailService {
-    private strPostUrl: string = "http://localhost:3003/forms/duaneleem/footer";
+    private strPostUrl: string = "https://leemtek.com/forms/duaneleem/footer";
     
     // Details of my visitor.
     objSenderInfo = {

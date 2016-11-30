@@ -164,8 +164,6 @@ export class FooterComponent {
 
     // Send to REST endpoint.
     mdSend() {
-        // console.log(JSON.stringify(this.objUserDetails));
-        
         // Disable submit button and indicate "Please wait...".
         $('#footerBtnSubmit').text('Please Wait...');
         $('#footerBtnSubmit').removeClass('btn-default').addClass('btn-info');

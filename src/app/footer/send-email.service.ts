@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from "@angular/http";
-import "rxjs/Rx";
+import "rxjs/Rx"; // used for .map
 
 @Injectable()
 export class SendEmailService {

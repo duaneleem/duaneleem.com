@@ -6,8 +6,8 @@ import { GLOBALS } from "../../../../shared/globals";
 
 @Component({
     selector: 'app-timeline-item',
-    templateUrl: 'timeline-item.component.html',
-    styleUrls: ['timeline-item.component.css']
+    templateUrl: './timeline-item.component.html',
+    styleUrls: ['./timeline-item.component.css']
 })
 export class TimelineItemComponent implements AfterViewInit {
     // Pull data from calling source.

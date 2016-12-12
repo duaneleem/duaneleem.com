@@ -3,8 +3,8 @@ import { GLOBALS } from "../../../shared/globals";
 
 @Component({
     selector: 'app-timeline',
-    templateUrl: 'timeline.component.html',
-    styleUrls: ['timeline.component.css']
+    templateUrl: './timeline.component.html',
+    styleUrls: ['./timeline.component.css']
 })
 export class TimelineComponent {
     // Variables from external TS.

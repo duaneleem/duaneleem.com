@@ -1,4 +1,5 @@
 export const GLOBALS = Object.freeze({
     strPublicAssets: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/",
-    strLogo: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo.png"
+    strLogo: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/logo.png",
+    strImages: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images"
 });

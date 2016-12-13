@@ -1,7 +1,9 @@
-import { Component, OnInit } from "@angular/core";
-
-// Global Variables
+import { Component } from "@angular/core";
+import {Router, Event, NavigationEnd} from '@angular/router';
 import { GLOBALS } from "./shared/globals";
+
+// Google Analytics FN
+declare let ga:Function;
 
 @Component({
     selector: 'app-root',
@@ -9,10 +11,17 @@ import { GLOBALS } from "./shared/globals";
     styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
     // Variables from external TS.
     arrGlobals = GLOBALS;
     
-    ngOnInit() {
-    }
+    constructor(public router:Router) {
+        this.router.events.subscribe(
+            (event:Event) => {
+                if (event instanceof NavigationEnd) {
+                    ga('send', 'pageview', event.urlAfterRedirects);
+                }
+            }
+        ); // this.router.events.subscribe
+    } // constructor(public router:Router)
 }

@@ -48,7 +48,28 @@ import { Component, OnInit } from "@angular/core";
                 </div><!-- /row -->
             </section>
         </div><!-- /wrapper -->
-    `
+    `,
+    styles: [`
+        /* Add a BG to banner area */
+        #page-title {
+            background: 
+                linear-gradient( to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0) ), 
+                url("https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/return-wallpaper.jpg")
+            ; /* background */
+
+            background-size: 100% auto;
+        }
+
+        /* Page Title */
+        header#page-title h1 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #page-title > div > ul > li, i {
+            color: #fff;
+        }
+    `]
 })
 
 export class SupportComponent implements OnInit {

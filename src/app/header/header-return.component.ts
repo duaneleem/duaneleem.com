@@ -34,7 +34,8 @@ import { GLOBALS } from "../shared/globals";
 
             </div>
         </header>
-    `
+    `,
+    styles: [``]
 })
 
 export class HeaderReturnComponent {

@@ -9,6 +9,8 @@ declare var $:any;
 @Component({
     selector: 'app-footer',
     template: `
+        <div id="modal-section"></div>
+        
         <footer id="sectionFooter">
             <!-- copyright , scrollTo Top -->
             <div class="footer-bar">

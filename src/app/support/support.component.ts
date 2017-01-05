@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'app-support',
@@ -38,7 +38,7 @@ import { Component, OnInit } from "@angular/core";
 
                         <div>
                             <h2 class="space-bottom-10">ScreenConnect</h2>
-                            <p class="lead">Download links for StagedHomes &amp; LeemTek ScreenConnect Software</p>
+                            <p class="lead">Download links for Remote Support Software</p>
                             <ul class="list-inline">
                                 <li><a class="btn btn-primary" href="https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.exe"><i class="fa fa-windows" aria-hidden="true"></i> Windows</a></li>
                                 <li><a class="btn btn-primary" href="https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.pkg"><i class="fa fa-apple" aria-hidden="true"></i> Mac OS</a></li>
@@ -72,7 +72,6 @@ import { Component, OnInit } from "@angular/core";
     `]
 })
 
-export class SupportComponent implements OnInit {
-    ngOnInit() {
-    }
+export class SupportComponent {
+    
 }

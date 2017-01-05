@@ -1,19 +1,28 @@
-import { Component, AfterViewInit } from '@angular/core';
-declare var $:any; // Enables jQuery
-
+import { Component, AfterViewChecked } from '@angular/core';
 import { GLOBALS } from "../../shared/globals";
 
+declare var $:any; // Enables jQuery
+
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+    selector: 'app-portfolio',
+    templateUrl: './portfolio.component.html',
+    styles: [`
+        .item-box-desc > h4 {
+            font-size: smaller;
+        }
+
+        /* Included CSS is autogenerating additional padding-top.  This
+            will fix it. */
+        .modal {
+            padding-top: 0px;
+        }
+    `]
 })
-export class PortfolioComponent implements AfterViewInit {
-  private arrGlobals = GLOBALS;
+export class PortfolioComponent implements AfterViewChecked {
+    private arrGlobals = GLOBALS;
 
-  ngAfterViewInit() {
-        // Moves modal to #modal-section
-        // $(".modal").appendTo("#modal-section");
-    }
-
+    ngAfterViewChecked() {
+        
+    } // ngOnInit
 }
+

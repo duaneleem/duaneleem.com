@@ -18,10 +18,13 @@ app-main div.tp-bannershadow.tp-shadow1 {
     background-color: #e8eaee;
 }
 
+/* Logo Fix.  Usually width is 40px. */
+.logo-main { max-width: 267px; height: auto; }
+
 /* ============================================================
     Generic Styles
 ============================================================ */
-/* Width */
+/* Width & Height */
 .width-60p { width: 60px; }
 
 /* Font Sizes */

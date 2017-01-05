@@ -14,7 +14,7 @@ import { GLOBALS } from "../shared/globals";
 
                 <!-- Logo text or image -->
                 <a class="logo" href="/">
-                    <img src="{{ arrGlobals.strLogo }}" alt="Duane Leem" />
+                    <img src="{{ arrGlobals.strLogo }}" class="logo-main" alt="Duane Leem" />
                 </a>
 
                 <!-- Top Nav -->

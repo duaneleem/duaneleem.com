@@ -19,7 +19,11 @@ export class AppComponent {
         this.router.events.subscribe(
             (event:Event) => {
                 if (event instanceof NavigationEnd) {
-                    ga('send', 'pageview', event.urlAfterRedirects);
+                    // ga('send', 'pageview', event.urlAfterRedirects);
+
+                    // Updated as of 1/17/2017
+                    ga('set', 'page', event.urlAfterRedirects);
+                    ga('send', 'pageview');
                 }
             }
         ); // this.router.events.subscribe

@@ -8,7 +8,7 @@ import { ReCaptchaModule } from 'angular2-recaptcha';
 
 // Routing: Hashtag.
 // Enable these to use Hashtag routing.
-// import { HashLocationStrategy, LocationStrategy } from "@angular/common";
+import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 // Routing
 import { RouterModule } from '@angular/router';
@@ -66,14 +66,12 @@ import { HeaderReturnComponent } from "./header/header-return.component";
     /* ------------------------------------------------------------
         Enable the following for Hashtag routing.
     ------------------------------------------------------------ */
-    /*
-        providers: [
-            {
-                provide: LocationStrategy, 
-                useClass: HashLocationStrategy
-            },
-        ]
-    */
+    providers: [
+        {
+            provide: LocationStrategy, 
+            useClass: HashLocationStrategy
+        },
+    ]
     
 })
 export class AppModule {

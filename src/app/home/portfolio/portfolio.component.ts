@@ -19,7 +19,7 @@ declare var $:any; // Enables jQuery
     `]
 })
 export class PortfolioComponent implements AfterViewChecked {
-    private arrGlobals = GLOBALS;
+    arrGlobals = GLOBALS;
 
     ngAfterViewChecked() {
         

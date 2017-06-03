@@ -8,5 +8,5 @@ import { GLOBALS } from "../../../shared/globals";
 })
 export class TimelineComponent {
     // Variables from external TS.
-    private arrGlobals = GLOBALS;
+    arrGlobals = GLOBALS;
 }

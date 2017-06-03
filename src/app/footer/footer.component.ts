@@ -158,7 +158,7 @@ declare var $:any;
 })
 
 export class FooterComponent {
-    private objUserDetails;
+    objUserDetails;
     
     constructor(private sendEmailService: SendEmailService) {
         this.objUserDetails = this.sendEmailService.objSenderInfo;

@@ -15,7 +15,7 @@ export class TimelineItemComponent implements AfterViewInit {
     @Input() strFullDescription;
 
     // Variables from external TS.
-    private arrGlobals = GLOBALS;
+    arrGlobals = GLOBALS;
 
     private getDescriptionFull() {
         // Sanitize the HTML given by objAchievement.
@@ -32,7 +32,7 @@ export class TimelineItemComponent implements AfterViewInit {
     }
     
     // Retrieve modal type.
-    private getModalType(): string {
+    getModalType(): string {
         if(this.objAchievement.type == "position") {
             return "warning";
         } else {
@@ -41,7 +41,7 @@ export class TimelineItemComponent implements AfterViewInit {
     } // getModalType()
 
     // Retrieve timeline types.
-    private getTimeLinePointType(): string {
+    getTimeLinePointType(): string {
         if(this.objAchievement.type == "position") {
             return "warning";
         } else {
@@ -50,7 +50,7 @@ export class TimelineItemComponent implements AfterViewInit {
     } // getTimeLinePointType()
 
     // Disable if no image or description.
-    private mtdDisabled_btnView(): string {
+    mtdDisabled_btnView(): string {
         if(this.getDescriptionFull() == null && this.objAchievement.imgSrc == null) {
             return "hidden";
         } else {

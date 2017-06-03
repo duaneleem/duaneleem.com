@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from "./footer/footer.component";
 
 // Homepage
-import { HeaderComponent } from "./header";
+import { HeaderComponent } from "./header/header.component";
 import { MainComponent } from "./home/main/main.component";
 import { SummaryComponent } from "./home/summary/summary.component";
 import { AboutComponent } from "./home/summary/about/about.component";

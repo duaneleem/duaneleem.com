@@ -15,7 +15,3 @@ phases:
     commands:
       - echo Build started on `date`
       - ng build --${BUILD_ENV}
-artifacts:
-  files:
-    - 'dist/*'
-  discard-paths: yes

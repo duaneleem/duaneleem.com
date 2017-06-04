@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    S3_BUCKET: "web-duaneleem.com"
+    S3_BUCKET: "duaneleem.com"
     BUILD_ENV: "prod"
             
 phases:

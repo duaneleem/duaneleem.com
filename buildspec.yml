@@ -10,7 +10,8 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - sudo apt-get update -y
-      - sudo apt-get -y install nodejs
+      - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+      - sudo apt-get install -y nodejs
       - sudo apt-get -y install npm
       - sudo ln -s /usr/bin/nodejs /usr/bin/node
       - npm install npm -g

@@ -9,9 +9,9 @@ phases:
   install:
     commands:
       - echo Installing source NPM dependencies...
-      - apt-get update -y
-      - apt-get -y install nodejs
-      - apt-get -y install npm
+      - sudo apt-get update -y
+      - sudo apt-get -y install nodejs
+      - sudo apt-get -y install npm
       - npm install npm -g
       - npm install
       - npm install -g @angular/cli@1.1.0

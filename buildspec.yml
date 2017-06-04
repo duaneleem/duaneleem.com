@@ -17,5 +17,6 @@ phases:
       - ng build --${BUILD_ENV}
 artifacts:
   files:
-    - 'dist/**/*'
+    - '**/*'
+  base-directory: 'dist*'
   discard-paths: yes

@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  variables:
+    S3_BUCKET: "duaneleem.s3-website-us-west-1.amazonaws.com"
+    BUILD_ENV: "prod"
+            
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli@1.1.0
+  build:
+    commands:
+      - echo Build started on `date`
+      - ng build --env=${BUILD_ENV}
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - dist/*
+  discard-paths: yes
+  base-directory: 'dist*'

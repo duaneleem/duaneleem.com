@@ -9,10 +9,13 @@ phases:
   install:
     commands:
       - echo Installing source NPM dependencies...
+      - npm config delete registry
+      - npm config set registry "http://registry.npmjs.org"
       - npm install
       - npm install -g @angular/cli@1.1.0
   build:
     commands:
+      # Builds Angular application.
       - echo Build started on `date`
       - ng build --${BUILD_ENV}
   post_build:

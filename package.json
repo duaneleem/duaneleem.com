@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master"
+    "deploy": "ng build --prod && git add . && git commit -m 'Production build push.' && git push && git checkout gh-pages && git merge master && git push origin gh-pages && git checkout master"
   },
   "private": true,
   "dependencies": {

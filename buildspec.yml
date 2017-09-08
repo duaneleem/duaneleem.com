@@ -4,6 +4,7 @@ env:
     variables:
         S3_BUCKET: "duaneleem.com"
         BUILD_ENV: "prod"
+        CLOUDFRONT_ID: "E2YZJYD4J7BU65"
             
 phases:
     install:
@@ -33,6 +34,9 @@ phases:
         - echo S3 bucket "duaneleem.com" is cleared.
         # Copy dist folder to S3 bucket "duaneleem.com"
         - aws s3 cp dist s3://${S3_BUCKET} --recursive
+        # STEP: Clear CloudFront cache.
+        - aws configure set preview.cloudfront true
+        - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
         - echo Build completed on `date`
 artifacts:
     files:

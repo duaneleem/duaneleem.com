@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod && git add . && git commit -m 'Production rollout to gh-pages.' && git push && git subtree push --prefix dist origin gh-pages"
+    "deploy": "echo \"You're using DevOps techniques for this website.\" "
   },
   "private": true,
   "dependencies": {

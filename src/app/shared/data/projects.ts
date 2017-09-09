@@ -224,10 +224,10 @@ let objProjects = [
     // HairSalonStudio.info
     { 
         // Entry Info
-        id: "EASTBAYKARATEDOCOM", 
-        name: "EastBayKarate-Do.com",
+        id: "HAIRSALONSTUDIOINFO", 
+        name: "HairSalonStudio.info",
         date: "May 2015",
-        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/hairsalonstudio.jpg",
 
         // Model Info
         header: "Project: HairSalonStudio.info",
@@ -243,6 +243,88 @@ let objProjects = [
             </p>
         `
     }, // HairSalonStudio.info
+
+    // Home Staging Calculator
+    { 
+        // Entry Info
+        id: "HOMESTAGINGCALCULATOR", 
+        name: "Home Staging Calculator",
+        date: "May 2015",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg",
+
+        // Model Info
+        header: "Project: Home Staging Calculator",
+        title: "Cordova Mobile Application using Intel XDK",
+        url: "https://www.stagedhomes.com/public/calculator.php",
+        body: `
+            <p>
+                To help our Accredited Staging Professionals (ASP&reg;), I've taken our spreadsheet calculator and reprogrammed
+                it as a mobile application for both iOS and Android.  This will give our ASP&reg;'s a handy application they can
+                use to calculator their Return on Staging Investment (ROSI&reg;).
+            </p>
+            <p>
+                The new version of the Home Staging Calculator is redeveloped using the Ionic Framework to make use of the built
+                in support for Angular.
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android
+            </p>
+        `
+    }, // Home Staging Calculator
+
+    // AWS Certified Developer
+    { 
+        // Entry Info
+        id: "AWSCERTIFIEDDEVELOPER", 
+        name: "AWS Certified Developer",
+        date: "February 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201602-aws-developer.jpg"
+    }, // AWS Certified Developer
+
+    // Master of Science in IT Management
+    { 
+        // Entry Info
+        id: "MSCITMANAGEMENT", 
+        name: "Master of Science in IT Management",
+        date: "April 2014",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201504-masters-itm.jpg"
+    }, // Master of Science in IT Management
+
+    // Project Management Professional
+    { 
+        // Entry Info
+        id: "PROJECTMANAGEMENTPROFESSIONAL", 
+        name: "Project Management Professional",
+        date: "December 2013",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201312-pmp.jpg"
+    }, // Project Management Professional
+
+    // Certified Scrum Master
+    { 
+        // Entry Info
+        id: "CERTIFIEDSCRUMMASTER", 
+        name: "Certified Scrum Master",
+        date: "April 2014",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg"
+    }, // Certified Scrum Master
+
+    // MongoDB for Node.js Devs
+    { 
+        // Entry Info
+        id: "MONGODBFORNODEJSDEVS", 
+        name: "MongoDB for Node.js Devs",
+        date: "December 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201612-mongodb.png"
+    }, // MongoDB for Node.js Devs
+
+    // Full Stack Web Development
+    { 
+        // Entry Info
+        id: "FULLSTACKWEBDEVELOPMENT", 
+        name: "Full Stack Web Development",
+        date: "June 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201606-fullstack.jpg"
+    }, // Full Stack Web Development
 ];
 
 export const constObjApprovedDesignations = objArrayManagement.sortByKey(objProjects, "name");

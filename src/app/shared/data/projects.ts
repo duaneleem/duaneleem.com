@@ -191,6 +191,58 @@ let objProjects = [
             </p>
         `
     }, // GetRedBox.com
+
+    // EastBayKarate-Do.com
+    { 
+        // Entry Info
+        id: "EASTBAYKARATEDOCOM", 
+        name: "EastBayKarate-Do.com",
+        date: "October 2015",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg",
+
+        // Model Info
+        header: "Project: EastBayKarate-Do.com",
+        title: "Redesigned Website and New Back-End Technology (NodeJS/Express)",
+        url: "https://www.eastbaykarate-do.com/",
+        body: `
+            <p>
+                East Bay Karate-Do had an older design and requested a new design to be developed.  I created them
+                a responsive website using your usual Bootstrap, HTML/CSS/JS stack.  In addition, I've implemented
+                the website to using Jade (Express).  The results was greater overall control of the web application
+                and faster rendering by the Node server.
+            </p>
+            <p>
+                East Bay Karate-Do is a provider of Okinawa Uechi-Ryu Martial Arts, and also has fitness programs.
+                I'm also a proud karateka student at East Bay Karate-Do :)
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare
+            </p>
+        `
+    }, // EastBayKarate-Do.com
+
+    // HairSalonStudio.info
+    { 
+        // Entry Info
+        id: "EASTBAYKARATEDOCOM", 
+        name: "EastBayKarate-Do.com",
+        date: "May 2015",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ebkd.jpg",
+
+        // Model Info
+        header: "Project: HairSalonStudio.info",
+        title: "Redesigned Website and New Back-End Technology (NodeJS/Express)",
+        url: "http://www.hairsalonstudio.info/",
+        body: `
+            <p>
+                I helped my local hair salon with a new website using modern web technology.  I used Bootstrap for
+                the front-end to be responsive; and ExpressJS as the server component (using JADE as the view engine).
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, NodeJS/Express/Jade, Amazon AWS, CloudFlare
+            </p>
+        `
+    }, // HairSalonStudio.info
 ];
 
 export const constObjApprovedDesignations = objArrayManagement.sortByKey(objProjects, "name");

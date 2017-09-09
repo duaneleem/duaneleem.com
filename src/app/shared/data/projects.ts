@@ -4,9 +4,10 @@ let objProjects = [
     // Swords-to-Plowshares.org
     { 
         // Entry Info
-        id: "S2P", 
+        id: "SWORDSTOPLOWSHARESORG", 
         name: "Swords-to-Plowshares.org",
         date: "August 2017",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/swords-to-plowshares.jpg",
 
         // Model Info
         header: "Project: Swords-to-Plowshares.org | WordPress Development",
@@ -43,14 +44,15 @@ let objProjects = [
                 <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>
             </p>
         `
-    },
+    }, // Swords-to-Plowshares.org
 
     // StagedHomes.com
     { 
         // Entry Info
-        id: "SHCMAIN", 
+        id: "STAGEDHOMESCOM", 
         name: "StagedHomes.com",
         date: "September 2015",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg",
 
         // Model Info
         header: "Project: StagedHomes.com | Revamp",
@@ -72,7 +74,123 @@ let objProjects = [
                 Amazon AWS, Google Firebase, CloudFlare, PHP/MySQL
             </p>
         `
-    },
+    }, // StagedHomes.com
+
+    // IAHSP.com
+    { 
+        // Entry Info
+        id: "IAHSPCOM", 
+        name: "IAHSP.com",
+        date: "October 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahsp.jpg",
+
+        // Model Info
+        header: "Project: IAHSP.com | Revamp",
+        title: "New Design, Responsive, MEAN stack enabled.",
+        url: "https://iahsp.com",
+        body: `
+            <p>
+                IAHSP.com received a new make over using modern responsive technologies.  The website uses a 
+                combination of Javascript frameworks to help build its functionality.
+            </p>
+            <p>
+                We decided to implement the front end using Angular 2 to consume JSON objects from ExpressJS.  This
+                helps make our web application more scalable and maintainable.
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Angular, NodeJS/Express, Photoshop,
+                Sketch (UX/UI Design), Amazon AWS, CloudFlare, Google Cloud
+            </p>
+        `
+    }, // IAHSP.com
+
+    // IAHSPConExpo.com
+    { 
+        // Entry Info
+        id: "IAHSPCONEXPOCOM", 
+        name: "IAHSPConExpo.com",
+        date: "July 2017",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg",
+
+        // Model Info
+        header: "Project: IAHSPConExpo.com",
+        title: "New Responsive Website using Angular and Google Firebase",
+        url: "http://www.iahspconexpo.com/",
+        body: `
+            <p>
+                I built our IAHSP&reg; Convention Expo using modern web technologies as listed below.  Tested on
+                all major modern web browsers and with the help of GitHub Pages and Amazon AWS S3 web hosting, 
+                our website is served up and outputs fast!
+            </p>
+            <p>
+                I built the form using Angular error checking and when the form data submits, it sends the payload
+                as a JSON object to the Express REST backend to process the email submission.  I've architected
+                the website this way so that the only time the back-end server is used is when someone actually
+                submits an email.  The rest of the website processing is handled by GitHub pages and AWS S3.
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Sketch (UX/UI Design),
+                Amazon AWS, CloudFlare
+            </p>
+        `
+    }, // IAHSPConExpo.com
+
+    // Barb-Schwarz.com
+    { 
+        // Entry Info
+        id: "BARBSCHWARZCOM", 
+        name: "Barb-Schwarz.com",
+        date: "September 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/barbschwarz.jpg",
+
+        // Model Info
+        header: "Project: Barb-Schwarz.com | WordPress",
+        title: "New Website using WordPress",
+        url: "https://www.barb-schwarz.com/",
+        body: `
+            <p>
+                Barb wanted a new website that will enable her to communicate with everyone.  One of her requirements
+                was to have the ability to update the website.  She wants to convey her thoughts and would like to be
+                able to tell that to everyone on a daily basis.  She also wanted a blog in addition to this.
+            </p>
+            <p>
+                I put together a front-end webpage for her and coded that design into WordPress.  By using WordPress,
+                she can now update the website daily on her own and also manage her own blog.
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, WordPress, Amazon AWS,
+                CloudFlare, PHP/MySQL
+            </p>
+        `
+    }, // Barb-Schwarz.com
+
+    // GetRedBox.com
+    { 
+        // Entry Info
+        id: "GETREDBOXCOM", 
+        name: "GetRedBox.com",
+        date: "September 2016",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/getredbox.jpg",
+
+        // Model Info
+        header: "Project: GetRedBox.com",
+        title: "New Website using One Page Responsive Design",
+        url: "https://www.getredbox.com/",
+        body: `
+            <p>
+                I created GetRedBox.com as a one page responsive website using Bootstrap framework.  Rendering is fast;
+                compatible with modern web browsers; and takes advantage of GitHub pages to minimize hosting costs for 
+                the website owner.
+            </p>
+            <p>
+                GetRedBox.com is a local IT/Telecommunications provider in the San Francisco East Bay.  Visit their new
+                website today!
+            </p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, AngularJS, NodeJS/Express, Amazon AWS, CloudFlare
+            </p>
+        `
+    }, // GetRedBox.com
 ];
 
 export const constObjApprovedDesignations = objArrayManagement.sortByKey(objProjects, "name");

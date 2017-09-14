@@ -23,6 +23,8 @@ import { GLOBALS } from "../shared/globals";
                         <!-- Support Links -->
                         <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
                             <li class="active"><a href="/"><i class="fa fa-chevron-circle-left fa-lg" style="margin-right: 5px;" aria-hidden="true"></i>Return Home</a></li>
+                            <li class="visible-md visible-lg"><a>|</a></li>
+                            <li id="btn-github" class="visible-md visible-lg" onclick="window.open('https://github.com/duaneleem', '_blank')"></li>
                             <li id="btn-linkedin" class="visible-md visible-lg" onclick="window.open('http://www.linkedin.com/in/duaneleem', '_blank')"></li>
                             <li id="btn-googleResume" class="visible-md visible-lg" onclick="window.open('https://docs.google.com/document/d/1bvakr9gKH-lk7mX_VRstMJ-3Vv3tJLSQuiHWkOdnrUs/edit?usp=sharing', '_blank')"></li>
                             <li class="visible-xs visible-sm"><a href="http://www.linkedin.com/in/duaneleem" target="_blank"><i class="fa fa-external-link-square" aria-hidden="true"></i> LinkedIn</a></li>

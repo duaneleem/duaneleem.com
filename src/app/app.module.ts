@@ -12,13 +12,14 @@ import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 // Routing
 import { RouterModule } from '@angular/router';
-import { AppComponents, AppRoutes } from "./app.routes";
+import { AppRoutes } from "./app.routes";
 
 // Components
 import { AppComponent } from './app.component';
 import { FooterComponent } from "./footer/footer.component";
 
 // Homepage
+import { HomeComponent } from "./home/home.component";
 import { HeaderComponent } from "./header/header.component";
 import { MainComponent } from "./home/main/main.component";
 import { SummaryComponent } from "./home/summary/summary.component";
@@ -30,11 +31,12 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
 // Support
 import { HeaderReturnComponent } from "./header/header-return.component";
+import { SupportComponent } from "./support/support.component";
 
 @NgModule({
     declarations: [
         AppComponent,
-        ...AppComponents,
+        HomeComponent,
         
         // Homepage
         HeaderComponent,
@@ -47,6 +49,7 @@ import { HeaderReturnComponent } from "./header/header-return.component";
             PortfolioComponent,
         
         // Support
+        SupportComponent,
         HeaderReturnComponent,
 
         // All other

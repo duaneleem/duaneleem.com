@@ -7,7 +7,3 @@ export const AppRoutes: any = [
     { path: "support", component: SupportComponent }
 ];
  
-export const AppComponents: any = [
-    HomeComponent,
-    SupportComponent
-];

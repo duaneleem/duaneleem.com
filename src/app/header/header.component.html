@@ -17,9 +17,18 @@
                 <!-- Homepage -->
                 <ul class="nav nav-pills nav-main scroll-menu" id="topMain">
                     <li><a class="scrollTo" href="#wrapper">Home</a></li>
-                    <li><a id="linkSummary" class="scrollTo" href="#summary">Career Summary</a></li>
-                    <li><a id="linkPortfolio" class="scrollTo" href="#portfolio">Portfolio</a></li>
-                    <li><a class="scrollTo" href="#sectionFooter">Contact</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">
+                            About <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- Public Content -->
+                            <li><a id="linkSummary" class="scrollTo" href="#summary">Career Summary</a></li>
+                            <li><a id="linkPortfolio" class="scrollTo" href="#portfolio">Portfolio</a></li>
+                            <li><a class="scrollTo" href="#sectionFooter">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://blog.duaneleem.com">Knowledgebase</a></li>
                     <li class="visible-md visible-lg"><a>|</a></li>
                     <li id="btn-github" class="visible-md visible-lg" onclick="window.open('https://github.com/duaneleem', '_blank')"></li>
                     <li id="btn-linkedin" class="visible-md visible-lg" onclick="window.open('http://www.linkedin.com/in/duaneleem', '_blank')"></li>

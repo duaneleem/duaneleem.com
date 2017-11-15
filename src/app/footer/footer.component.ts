@@ -45,7 +45,7 @@ declare var $:any;
                                         <a href="tel:19255265229">Phone: 1-925-526-5229</a>
                                     </li>
                                     <li class="footer-sprite email">
-                                        <a href="mailto:DuaneLeem@alumni.ggu.edu">DuaneLeem@alumni.ggu.edu</a>
+                                        <a href="mailto:Duane@LeemTek.com">Duane@LeemTek.com</a>
                                     </li>
                                 </ul>
                             </address>

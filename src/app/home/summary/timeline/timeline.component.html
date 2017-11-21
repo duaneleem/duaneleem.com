@@ -3,7 +3,53 @@
         <div class="row">
             <div class="timeline timeline-line-dotted">
                 <!-- =======================================================
-                    Today
+                    Current
+                ======================================================= -->
+                <span class="timeline-label">
+                    <span class="label label-primary">Today</span>
+                </span>
+
+                <!-- Lead Web Developer at Yuvo -->
+                <app-timeline-item class="timeline-item"
+                    [objAchievement]="{
+                        'modalID': 'yuvodev',
+                        'title': 'Lead Web Developer',
+                        'provider': 'Yuvo',
+                        'type': 'position',
+                        'startDate': 'February 2017',
+                        'imgSrc': null,
+                        'socialLinks': {
+                            'website': 'https://duaneleem.com'
+                        },
+                        'description': '
+                            Engineer Chrome, Desktop, and Web applications written with MEAN Stack technology and work with
+                            our team across the globe.
+                        '
+                    }"
+                ></app-timeline-item>
+
+                <!-- Full Stack Developer at Red Box -->
+                <app-timeline-item class="timeline-item"
+                    [objAchievement]="{
+                        'modalID': 'redboxdev',
+                        'title': 'Full Stack Developer',
+                        'provider': 'Red Box Business Solutions',
+                        'type': 'position',
+                        'startDate': 'January 2017',
+                        'imgSrc': null,
+                        'socialLinks': {
+                            'website': 'https://getredbox.com'
+                        },
+                        'description': '
+                            Develop business web applications using MEAN (MongoDB, ExpressJS, Angular, NodeJS), LEMP (Linux, 
+                            NGINX, MySQL, PHP), WordPress, and Amazon Web Services platform.
+                        '
+                    }"
+                ></app-timeline-item>
+                
+                
+                <!-- =======================================================
+                    Web Programming Training
                 ======================================================= -->
                 <span class="timeline-label">
                     <span class="label label-primary">Web Programming Training</span>
@@ -25,6 +71,27 @@
                         'description': 'Configuration, JSON, schema design, querying, insertion of data, indexing and working with the Node.js driver using MongoDB.'
                     }"
                 ></app-timeline-item>
+
+                <!-- WordPress Developer at Changes Salon -->
+                <app-timeline-item class="timeline-item"
+                    [objAchievement]="{
+                        'modalID': 'changessalondev',
+                        'title': 'WordPress Developer',
+                        'provider': 'Changes Salon & Day Spa',
+                        'type': 'position',
+                        'startDate': 'November 2016',
+                        'imgSrc': null,
+                        'socialLinks': {
+                            'website': 'https://changessalon.com'
+                        },
+                        'description': '
+                            Re-engineer website to utilize Bootstrap as its front-end framework.  Deploy the website so that it takes advantage of AWS 
+                            scaling services using AWS S3, CloudFront, RDS Aurora, and SES.
+                        '
+                    }"
+                ></app-timeline-item>
+
+
 
                 <!-- Full Stack MEAN Developer -->
                 <app-timeline-item class="timeline-item"

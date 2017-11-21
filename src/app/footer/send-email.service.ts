@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http, Response, Headers } from "@angular/http";
 
 // rxjs
-import {Observable} from "rxjs/Observable";
-import "rxjs/Rx"; // used for .map
+import { Observable } from "rxjs/Observable";
+import "rxjs/add/operator/map";
 
 @Injectable()
 export class SendEmailService {

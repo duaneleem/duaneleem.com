@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { GLOBALS } from "../shared/globals";
+import { GLOBALS } from "../../shared/globals";
 
 @Component({
     selector: 'app-header-return',

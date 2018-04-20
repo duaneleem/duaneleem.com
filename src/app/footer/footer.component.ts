@@ -174,7 +174,7 @@ export class FooterComponent {
         // Attempt to send email.
         this.sendEmailService.mdSendData(this.objUserDetails)
             .subscribe(data => {
-                if (data.sent === "yes") {
+                if (data["sent"] === "yes") {
                     // Success
                     $('#footerBtnSubmit').text('Email Sent to Duane.  Thanks! :)');
                     $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-success');

@@ -1,6 +1,133 @@
-let objArrayManagement = require("../functions/array-management");
+export const projects_web_dev = [
+    // ChateauJudsonville.com
+    { 
+        // Entry Info
+        id: "chateaujudsonvillecom",
+        name: "ChateauJudsonville.com",
+        date: "May 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/chateaujudsonville.jpg",
 
-let objProjects = [
+        // Model Info
+        header: "Project: ChateauJudsonville.com | ReactJS Development",
+        title: "React Web Application",
+        url: "https://www.chateaujudsonville.com/",
+        body: `
+            <h5>About Chateau Judsonville</h5>
+
+            <p>
+                Our mission is to fully meet the needs of each of our Residents' while challenging them to the highest level of 
+                personal independence in the tasks of daily living.
+            </p>
+
+            <p>
+                We strive to enhance and enrich the lives of our Resident's by creating a safe and comfortable environment that 
+                tends and stimulates individuals emotionally, physically, mentally and spiritually.
+            </p>
+            
+            <h5>My Work</h5>
+            <p>
+                We developed Chateau Judsonville using React (a JavaScript library).  Each section of the website's React components 
+                were assigned to individual engineers.  I am responsible for the initial scaffolding of the React web application; developed 
+                the Google Cloud Function (serverless technology); and management of Amazon Web Services (CloudFront and S3 CDN hosting).
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                ReactJS, Google Firebase (Cloud Functions), AWS (CloudFront, S3)
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>,
+                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>,
+                <a href="https://www.linkedin.com/in/will-carpio-821b1815a/" target="_blank">Will Carpio</a>
+            </p>
+        `
+    }, // ChateauJudsonville.com
+    
+    // ScalpMED.com
+    { 
+        // Entry Info
+        id: "SCALPMEDCOM", 
+        type: "web-development",
+        name: "ScalpMED.com",
+        date: "November 2017",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/scalpmed.jpg",
+
+        // Model Info
+        header: "Project: ScalpMED.com | WordPress Development",
+        title: "AWS, WordPress, and WooCommerce Engineering",
+        url: "https://www.scalpmed.com/",
+        body: `
+            <h5>About ScalpMED</h5>
+
+            <p>Scalp Med<sup>®</sup> is a proven-effective regimen for MALE and FEMALE hair loss and thinning hair.
+            Scalp Med<sup>®</sup> uses an innovative, 2-step process not found in any other hair regrowth treatment. Our 
+            proprietary process combines NutriSol<sup>®</sup>, our own, multi-patented pretreatment technology, and 
+            Vitadil<sup>®</sup>, our clinical-strength Minoxidil-based treatment formula.<sup>††</sup></p>
+
+            <p>Read more at <a href="https://www.scalpmed.com/about/what-is-scalp-med/" target="_blank">ScalpMED.com</a></p>
+            
+            <h5>My Work</h5>
+            <p>
+                I redeveloped ScalpMED's entire e-commerce platform with WooCommerce and provided customization to the platform.  In addition
+                to this, I've also migrated their systems to Amazon Web Services.
+            </p>
+
+            <p>
+                I'm continuously improving their systems from a software development and hosted platform standpoint using Amazon Web Services to
+                scale their systems accordingly.  Check out our website at <a href="https://www.scalpmed.com">ScalpMED.com</a>
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                WordPress (Theme & Plugin Dev), WooCommerce, AWS (EC2, SES, RDS, CloudFront, S3)
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>
+            </p>
+        `
+    }, // ScalpMED.com
+
+    // IdealSolarCo.com
+    { 
+        // Entry Info
+        id: "IDEALSOLARCOCOM",
+        name: "IdealSolarCo.com",
+        date: "April 2017",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/idealsolarco.jpg",
+
+        // Model Info
+        header: "Project: IdealSolarCo.com",
+        title: "Angular Web Development",
+        url: "http://idealsolarco.com/",
+        body: `
+            <h4>New Website using One Page Responsive Design</h4>
+                                                
+            <h5>About Ideal Solar</h5>
+            <p>
+                Ideal Solar is a provider of professional electrical and solar implementations.
+            </p>
+            
+            <h5>My Work</h5>
+            <p>
+                I used Angular 4 to help build the front-end foundation to support the website's API consumption. For my design 
+                implementation, I used Bootstrap to help provide the basis of modern responsive design to the website.
+            </p>
+            <p>The backend technology I used was developed with NodeJS and implemented in Google Cloud Functions.</p>
+            <p>
+                Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Angular, NodeJS/Express, Google Cloud, CloudFlare
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>, 
+            </p>
+        `
+    }, // IdealSolarCo.com
+    
     // Swords-to-Plowshares.org
     { 
         // Entry Info
@@ -327,4 +454,49 @@ let objProjects = [
     }, // Full Stack Web Development
 ];
 
-export const constObjApprovedDesignations = objArrayManagement.sortByKey(objProjects, "name");
+export const projects_mobile_dev = [
+    // Home Staging Calculator
+    { 
+        // Entry Info
+        id: "SCALPMEDCOM",
+        name: "ScalpMED.com",
+        date: "November 2017",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/swords-to-plowshares.jpg",
+
+        // Model Info
+        header: "Project: ScalpMED.com | WordPress Development",
+        title: "AWS, WordPress, and WooCommerce Engineering",
+        url: "https://www.scalpmed.com/",
+        body: `
+            <h5>About ScalpMED</h5>
+
+            <p><strong>Scalp Med<sup>®</sup> is a proven-effective regimen for MALE and FEMALE hair loss and thinning hair.</strong> 
+            Scalp Med<sup>®</sup> uses an innovative, <strong>2-step process</strong> not found in any other hair regrowth treatment. Our 
+            <strong>proprietary process</strong> combines NutriSol<sup>®</sup>, our own, multi-patented pretreatment technology, and 
+            Vitadil<sup>®</sup>, our clinical-strength Minoxidil-based treatment formula.<sup>††</sup></p>
+
+            <p>Read more at <a href="https://www.scalpmed.com/about/what-is-scalp-med/" target="_blank">ScalpMED.com</a></p>
+            
+            <h5>My Work</h5>
+            <p>
+                I redeveloped ScalpMED's entire e-commerce platform with WooCommerce and provided customization to the platform.  In addition
+                to this, I've also migrated their systems to Amazon Web Services.
+            </p>
+
+            <p>
+                I'm continuously improving their systems from a software development and hosted platform standpoint using Amazon Web Services to
+                scale their systems accordingly.  Check out our website at <a href="https://www.scalpmed.com">ScalpMED.com</a>
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                WordPress (Theme & Plugin Dev), WooCommerce, AWS (EC2, SES, RDS, CloudFront, S3)
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>
+            </p>
+        `
+    } // Home Staging Calculator
+]

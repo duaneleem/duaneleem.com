@@ -94,7 +94,7 @@ export const projects_web_dev = [
     // IdealSolarCo.com
     { 
         // Entry Info
-        id: "IDEALSOLARCOCOM",
+        id: "idealsolarco",
         name: "IdealSolarCo.com",
         date: "April 2017",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/idealsolarco.jpg",
@@ -123,7 +123,8 @@ export const projects_web_dev = [
 
             <h5>Team Members</h5>
             <p>
-                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>, 
+                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>,
+                <a href="https://www.getredbox.com" target="_blank">Seana Fippin</a>
             </p>
         `
     }, // IdealSolarCo.com

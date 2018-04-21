@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { SeoService } from "../shared/seo.service";
 
 @Component({
     selector: 'app-support',
@@ -69,9 +70,25 @@ import { Component } from "@angular/core";
         #page-title > div > ul > li, i {
             color: #fff;
         }
-    `]
+    `],
+    providers: [SeoService]
 })
 
 export class SupportComponent {
-    
+    constructor(
+        private seoService: SeoService
+    ) {
+        seoService.setSeoTags({
+          // Main
+          main_title: "Customer Support | Duane Leem",
+          main_description: "I can provide remote Customer Support for issues that you may have. Visit this page to receive remote assistance.",
+  
+          // OpenGraph
+          og_locale: "en_US",
+          og_type: "website",
+          og_url: "https://duaneleem.com/#/support",
+          og_site_name: "Duane Leem",
+          og_image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/opengraph.jpg"
+        });
+    } // constructor()
 }

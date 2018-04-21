@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { projects_web_dev } from "../shared/data/projects";
+
 // Service: Send-Email
 import { SendEmailService } from "./send-email.service";
 
@@ -143,6 +145,35 @@ declare var $:any;
             </div>
             <!-- footer content -->
         </footer>
+
+        <!-- Modal -->
+        <div *ngFor="let project of arrProjects">
+            <div class="modal fade" id="{{ project.id }}" tabindex="-1" role="dialog" [attr.aria-labelledby]="project.id">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{{ project.header }}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Image -->
+                                <div class="col-xs-12 col-md-4">
+                                    <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
+                                </div><!-- /col -->
+
+                                <!-- Verbiage -->
+                                <div class="col-xs-12 col-md-8" [innerHTML]="project.body"></div>
+                            </div><!-- /row -->
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a type="button" class="btn btn-primary" href="{{ project.url }}" target="_blank">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal -->
+        </div>
     `,
     styles: [`
         .ng-valid[required], .ng-valid.required  {
@@ -158,6 +189,8 @@ declare var $:any;
 })
 
 export class FooterComponent {
+    arrProjects = projects_web_dev;
+    
     objUserDetails;
     
     constructor(private sendEmailService: SendEmailService) {
@@ -174,7 +207,7 @@ export class FooterComponent {
         // Attempt to send email.
         this.sendEmailService.mdSendData(this.objUserDetails)
             .subscribe(data => {
-                if (data.sent === "yes") {
+                if (data["sent"] === "yes") {
                     // Success
                     $('#footerBtnSubmit').text('Email Sent to Duane.  Thanks! :)');
                     $('#footerBtnSubmit').removeClass('btn-info').addClass('btn-success');

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers } from "@angular/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 // rxjs
 import { Observable } from "rxjs/Observable";
@@ -17,15 +17,15 @@ export class SendEmailService {
         googleResponse: null
     }; // objSenderInfo
     
-    constructor(private http: Http) {}
+    constructor(private http: HttpClient) {}
     
     // Send the email to REST API.
     mdSendData(objFinalSenderInfo: any) {
         const strBody = JSON.stringify(objFinalSenderInfo);
-        const headers = new Headers({ 'Content-Type': 'application/json' });
+        const headers = new HttpHeaders({ "Content-Type": "application/json" });
 
         return this.http.post(this.strPostUrl, strBody, { headers: headers })
             .map((data: Response) => data.json())
         ; // this.http.post()
-    }
-}
+    } // mdSendData()
+} // SendEmailService

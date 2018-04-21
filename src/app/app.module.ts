@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpClientModule } from "@angular/common/http";
 
 // Custom Modules
 import { ReCaptchaModule } from 'angular2-recaptcha';
@@ -12,7 +12,6 @@ import { HashLocationStrategy, LocationStrategy } from "@angular/common";
 
 // Routing
 import { RouterModule } from '@angular/router';
-import { AppRoutes } from "./app.routes";
 
 // Components
 import { AppComponent } from './app.component';
@@ -29,9 +28,12 @@ import { TimelineComponent } from "./home/summary/timeline/timeline.component";
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
 import { PortfolioComponent } from './home/portfolio/portfolio.component';
 
-// Support
-import { HeaderReturnComponent } from "./header/header-return.component";
-import { SupportComponent } from "./support/support.component";
+// Routes
+const AppRoutes: any = [
+    { path: "", component: HomeComponent },
+    { path: "home", component: HomeComponent },
+    { path: "support", loadChildren: "./support/support.module#SupportModule"}
+];
 
 @NgModule({
     declarations: [
@@ -47,10 +49,6 @@ import { SupportComponent } from "./support/support.component";
             TimelineItemComponent,
             TestimonialsComponent,
             PortfolioComponent,
-        
-        // Support
-        SupportComponent,
-        HeaderReturnComponent,
 
         // All other
         FooterComponent
@@ -58,8 +56,7 @@ import { SupportComponent } from "./support/support.component";
     imports: [
         BrowserModule, 
         FormsModule,
-        HttpModule,
-        JsonpModule,
+        HttpClientModule,
         RouterModule,
         RouterModule.forRoot(AppRoutes),
         ReCaptchaModule

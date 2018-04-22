@@ -11,7 +11,9 @@
         "assets",
         "favicon.ico",
         "CNAME",
-        "google92ba64556c8dfeb1.html"
+        "google92ba64556c8dfeb1.html",
+        "robots.txt",
+        "sitemap.xml"
       ],
       "index": "index.html",
       "main": "main.ts",

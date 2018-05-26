@@ -1,6 +1,6 @@
 import { Component, AfterViewChecked } from '@angular/core';
 import { GLOBALS } from "../../shared/globals";
-import { projects_web_dev } from "../../shared/data/projects";
+import { portfolioWork_webDev, portfolioWork_mobileDev, portfolioLearning_certifications, portfolioLearning_training } from "../../shared/data/projects";
 
 declare var $:any; // Enables jQuery
 
@@ -21,7 +21,10 @@ declare var $:any; // Enables jQuery
 })
 export class PortfolioComponent implements AfterViewChecked {
     arrGlobals = GLOBALS;
-    arrProjects = projects_web_dev;
+    arrProjects_webDev = portfolioWork_webDev;
+    arrProjects_mobileDev = portfolioWork_mobileDev;
+    arrProjects_certifications = portfolioLearning_certifications;
+    arrProjects_training = portfolioLearning_training;
 
     ngAfterViewChecked() {
         

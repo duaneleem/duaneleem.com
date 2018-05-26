@@ -1,4 +1,10 @@
-export const projects_web_dev = [
+/* ================================================
+    Format: Modal Description
+================================================ */
+/**
+ * Web Development projects.
+ */
+export const portfolioWork_webDev = [
     // ChateauJudsonville.com
     { 
         // Entry Info
@@ -398,8 +404,50 @@ export const projects_web_dev = [
                 Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android
             </p>
         `
-    }, // Home Staging Calculator
+    } // Home Staging Calculator
+];
 
+/**
+ * Mobile Development projects.
+ */
+export const portfolioWork_mobileDev = [
+    // Home Staging Calculator
+    { 
+        // Entry Info
+        id: "homestagingcalculator",
+        name: "Home Staging Calculator",
+        date: "May 2015",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/rosi-calculator.jpg",
+
+        // Model Info
+        header: "Project: Home Staging Calculator",
+        title: "Cordova Mobile Application using Intel XDK",
+        url: "https://stagedhomes.com/public/calculator.php",
+        body: `
+            <h5>About</h5>
+            <p>To help our Accredited Staging Professionals (ASP®), I've taken our spreadsheet calculator and reprogrammed it as a mobile application for both iOS and Android. This will give our ASP®'s a handy application they can use to calculator their Return on Staging Investment (ROSI®).</p>
+
+            <p>The new version of the Home Staging Calculator is redeveloped using the Ionic Framework to make use of the built in support for Angular.</p>
+
+            <h5>Technologies</h5>
+            <p>Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android</p>
+            
+        `
+    } // Home Staging Calculator
+];
+
+/**
+ * Combines work portfolio into one array.
+ */
+export const portfolioWork = portfolioWork_webDev.concat(portfolioWork_mobileDev);
+
+/* ================================================
+    Format: Image in Modal Only
+================================================ */
+/**
+ * Certifications
+ */
+export const portfolioLearning_certifications = [
     // AWS Certified Developer
     { 
         // Entry Info
@@ -434,8 +482,13 @@ export const projects_web_dev = [
         name: "Certified Scrum Master",
         date: "April 2014",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201404-scrum-csm.jpg"
-    }, // Certified Scrum Master
+    } // Certified Scrum Master
+];
 
+/**
+ * Professional training.
+ */
+export const portfolioLearning_training = [
     // MongoDB for Node.js Devs
     { 
         // Entry Info
@@ -455,49 +508,7 @@ export const projects_web_dev = [
     }, // Full Stack Web Development
 ];
 
-export const projects_mobile_dev = [
-    // Home Staging Calculator
-    { 
-        // Entry Info
-        id: "SCALPMEDCOM",
-        name: "ScalpMED.com",
-        date: "November 2017",
-        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/swords-to-plowshares.jpg",
-
-        // Model Info
-        header: "Project: ScalpMED.com | WordPress Development",
-        title: "AWS, WordPress, and WooCommerce Engineering",
-        url: "https://www.scalpmed.com/",
-        body: `
-            <h5>About ScalpMED</h5>
-
-            <p><strong>Scalp Med<sup>®</sup> is a proven-effective regimen for MALE and FEMALE hair loss and thinning hair.</strong> 
-            Scalp Med<sup>®</sup> uses an innovative, <strong>2-step process</strong> not found in any other hair regrowth treatment. Our 
-            <strong>proprietary process</strong> combines NutriSol<sup>®</sup>, our own, multi-patented pretreatment technology, and 
-            Vitadil<sup>®</sup>, our clinical-strength Minoxidil-based treatment formula.<sup>††</sup></p>
-
-            <p>Read more at <a href="https://www.scalpmed.com/about/what-is-scalp-med/" target="_blank">ScalpMED.com</a></p>
-            
-            <h5>My Work</h5>
-            <p>
-                I redeveloped ScalpMED's entire e-commerce platform with WooCommerce and provided customization to the platform.  In addition
-                to this, I've also migrated their systems to Amazon Web Services.
-            </p>
-
-            <p>
-                I'm continuously improving their systems from a software development and hosted platform standpoint using Amazon Web Services to
-                scale their systems accordingly.  Check out our website at <a href="https://www.scalpmed.com">ScalpMED.com</a>
-            </p>
-
-            <h5>Technologies Used</h5>
-            <p>
-                WordPress (Theme & Plugin Dev), WooCommerce, AWS (EC2, SES, RDS, CloudFront, S3)
-            </p>
-
-            <h5>Team Members</h5>
-            <p>
-                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>
-            </p>
-        `
-    } // Home Staging Calculator
-]
+/**
+ * Combines all learning achievements into one array.
+ */
+export const portfolioLearning = portfolioLearning_certifications.concat(portfolioLearning_training);

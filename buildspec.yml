@@ -14,7 +14,7 @@ phases:
         - sudo apt-get update -y
         - sudo apt-get install -y apt-transport-https
         # Install Angular CLI
-        - npm install -g @angular/cli@1.7.4
+        - npm install -g @angular/cli@6.0.5
         # Install node dependancies.
         - npm install
     build:

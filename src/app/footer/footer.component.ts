@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { projects_web_dev } from "../shared/data/projects";
+import { portfolioWork, portfolioLearning } from "../shared/data/projects";
 
 // Service: Send-Email
 import { SendEmailService } from "./send-email.service";
@@ -62,12 +62,12 @@ declare var $:any;
                             <h3>PROFESSIONAL TRAINING &amp; CERTIFICATIONS</h3>
 
                             <ul>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-msitm'">Master of Science in IT Management</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-mean'">Full Stack Developer (MEAN Stack)</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#MSCITMANAGEMENT'">Master of Science in IT Management</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#FULLSTACKWEBDEVELOPMENT'">Full Stack Developer (MEAN Stack)</a></li>
                                 <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> Advanced Java Programming</li>
                                 <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> R Programming</li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-pmi-pmp'">Project Management Professional | PMP&reg;</a></li>
-                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#modal-scrummaster'">Certified Scrum Master | CSM&reg;</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#PROJECTMANAGEMENTPROFESSIONAL'">Project Management Professional | PMP&reg;</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a data-toggle="modal" [attr.data-target]="'#CERTIFIEDSCRUMMASTER'">Certified Scrum Master | CSM&reg;</a></li>
                                 <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> IT Infrastructure Library | ITIL&reg;</li>
                             </ul>
                         </div>
@@ -146,8 +146,8 @@ declare var $:any;
             <!-- footer content -->
         </footer>
 
-        <!-- Modal -->
-        <div *ngFor="let project of arrProjects">
+        <!-- Modals: Portfolio Work -->
+        <div *ngFor="let project of arrPortfolioWork">
             <div class="modal fade" id="{{ project.id }}" tabindex="-1" role="dialog" [attr.aria-labelledby]="project.id">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -174,6 +174,32 @@ declare var $:any;
                 </div>
             </div><!-- /modal -->
         </div>
+
+        <!-- Modals: Portfolio: Learning -->
+        <div *ngFor="let project of arrPortfolioLearning">
+            <div class="modal fade" id="{{ project.id }}" tabindex="-1" role="dialog" [attr.aria-labelledby]="project.id"  style="margin-top: -115px;">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">{{ project.header }}</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- Image -->
+                                <div class="col-xs-12">
+                                    <img class="img-responsive" src="{{ project.image }}" alt="{{ project.name }}" />
+                                </div><!-- /col -->
+                            </div><!-- /row -->
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a type="button" class="btn btn-primary" href="{{ project.url }}" target="_blank">Visit Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /modal -->
+        </div>
     `,
     styles: [`
         .ng-valid[required], .ng-valid.required  {
@@ -189,7 +215,8 @@ declare var $:any;
 })
 
 export class FooterComponent {
-    arrProjects = projects_web_dev;
+    arrPortfolioWork = portfolioWork;
+    arrPortfolioLearning = portfolioLearning;
     
     objUserDetails;
     

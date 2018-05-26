@@ -27,8 +27,7 @@
             <!-- ======================================================================
                 Web Development
             ======================================================================= -->
-            <!-- Project: Swords-to-Plowshares.org -->
-            <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects">
+            <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects_webDev">
                 <div class="item-box">
                     <figure>
                         <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
@@ -45,200 +44,76 @@
                         <small class="styleColor">{{ project.date }}</small>
                     </div>
                 </div><!-- /item-box -->
-            </li>
+            </li><!-- .isotope-item -->
 
 
             <!-- ======================================================================
-                Mobile Development
+                Desktop & Mobile Development
             ======================================================================= -->
-            <!-- Project: Home Staging Calculator -->
-            <li class="isotope-item col-sm-6 col-md-3 mobile-development">
+            <li class="isotope-item col-sm-6 col-md-3 mobile-development" *ngFor="let project of arrProjects_mobileDev">
                 <div class="item-box">
                     <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-project-homestagingcalculator'">
+                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
                             <span class="overlay color2"></span>
                             <span class="inner">
                                 <span class="block fa fa-plus fsize20"></span>
                                 <strong>PROJECT</strong> DETAIL
                             </span>
                         </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/projects/rosi-calculator.jpg" style="width: 100%; height: auto; border: 0;" alt="Home Staging Calculator" />
+                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
                     </figure>
                     <div class="item-box-desc">
-                        <h4>Home Staging Calculator</h4>
-                        <small class="styleColor">May 2015</small>
+                        <h4>{{ project.name }}</h4>
+                        <small class="styleColor">{{ project.date }}</small>
                     </div>
                 </div><!-- /item-box -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="modal-project-homestagingcalculator" tabindex="-1" role="dialog" aria-labelledby="myModal-project-homestagingcalculator">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Project: Home Staging Calculator</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <!-- Image -->
-                                    <div class="col-xs-12 col-md-4">
-                                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/projects/rosi-calculator.jpg" alt="Home Staging Calculator" />
-                                    </div><!-- /col -->
-
-                                    <!-- Verbiage -->
-                                    <div class="col-xs-12 col-md-8">
-                                        <h4>Cordova Mobile Application using Intel XDK</h4>
-                                        <p>
-                                            To help our Accredited Staging Professionals (ASP&reg;), I've taken our spreadsheet calculator and reprogrammed
-                                            it as a mobile application for both iOS and Android.  This will give our ASP&reg;'s a handy application they can
-                                            use to calculator their Return on Staging Investment (ROSI&reg;).
-                                        </p>
-                                        <p>
-                                            The new version of the Home Staging Calculator is redeveloped using the Ionic Framework to make use of the built
-                                            in support for Angular.
-                                        </p>
-                                        <p>
-                                            Technologies used: HTML/CSS/JS, Bootstrap, jQuery, Intel XDK / Ionic Framework, Cordova, iOS, Android
-                                        </p>
-                                    </div><!-- /col -->
-                                </div><!-- /row -->
-                            </div>
-                            <div class="modal-footer">
-                                <a type="button" class="btn btn-default" data-dismiss="modal">Close</a>
-                                <a type="button" class="btn btn-primary" href="https://www.stagedhomes.com/public/calculator.php" target="_blank">Visit Website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
+            </li><!-- .isotope-item -->
 
 
             <!-- ======================================================================
                 Certifications
             ======================================================================= -->
-            <!-- AWS Certified Developer -->
-            <li class="isotope-item col-sm-6 col-md-3 certifications">
+            <li class="isotope-item col-sm-6 col-md-3 certifications" *ngFor="let project of arrProjects_certifications">
                 <div class="item-box">
                     <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-awsdeveloper'">
+                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
                             <span class="overlay color2"></span>
                             <span class="inner">
                                 <span class="block fa fa-plus fsize20"></span>
-                                <strong>CERTIFICATION</strong> DETAIL
+                                <strong>PROJECT</strong> DETAIL
                             </span>
                         </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201602-aws-developer.jpg" style="width: 100%; height: auto; border: 0;" alt="">
+                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
                     </figure>
                     <div class="item-box-desc">
-                        <h4>AWS Certified Developer</h4>
-                        <small class="styleColor">February 2016</small>
+                        <h4>{{ project.name }}</h4>
+                        <small class="styleColor">{{ project.date }}</small>
                     </div>
-                </div>
-            </li>
-
-            <!-- Master of Science in Information Technology Management -->
-            <li class="isotope-item col-sm-6 col-md-3 certifications">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-msitm'">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>DEGREE</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201504-masters-itm.jpg" style="width: 100%; height: auto; border: 0;" alt="Master of Science in Information Technology Management" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>Master of Science in IT Management</h4>
-                        <small class="styleColor">April 2014</small>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Project Management Professional -->
-            <li class="isotope-item col-sm-6 col-md-3 certifications">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-pmi-pmp'">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>CERTIFICATION</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201312-pmp.jpg" style="width: 100%; height: auto; border: 0;" alt="Project Management Professional PMP" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>Project Management Professional</h4>
-                        <small class="styleColor">December 2013</small>
-                    </div>
-                </div>
-            </li>
-
-            <!-- Certified Scrum Master -->
-            <li class="isotope-item col-sm-6 col-md-3 certifications">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-scrummaster'">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>CERTIFICATION</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201404-scrum-csm.jpg" style="width: 100%; height: auto; border: 0;" alt="Certified Scrum Master CSM" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>Certified Scrum Master</h4>
-                        <small class="styleColor">April 2014</small>
-                    </div>
-                </div>
-            </li>
+                </div><!-- /item-box -->
+            </li><!-- .isotope-item -->
             
 
             <!-- ======================================================================
                 Professional Training | Achievements
             ======================================================================= -->
-            <!-- MongoDB University -->
-            <li class="isotope-item col-sm-6 col-md-3 professional-training">
+            <li class="isotope-item col-sm-6 col-md-3 professional-training" *ngFor="let project of arrProjects_training">
                 <div class="item-box">
                     <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-mongodb-2016'">
+                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
                             <span class="overlay color2"></span>
                             <span class="inner">
                                 <span class="block fa fa-plus fsize20"></span>
-                                <strong>CERTIFICATE</strong> DETAIL
+                                <strong>PROJECT</strong> DETAIL
                             </span>
                         </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201612-mongodb.png" style="width: 100%; height: auto; border: 0;" alt="MongoDB for Node.js Developers">
+                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
                     </figure>
                     <div class="item-box-desc">
-                        <h4>MongoDB for Node.js Devs</h4>
-                        <small class="styleColor">December 2016</small>
+                        <h4>{{ project.name }}</h4>
+                        <small class="styleColor">{{ project.date }}</small>
                     </div>
                 </div><!-- /item-box -->
-            </li>
-
-            <!-- Full Stack Web Development -->
-            <li class="isotope-item col-sm-6 col-md-3 professional-training">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#modal-mean'">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>CERTIFICATE</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ arrGlobals.strImages }}/achievements/201606-fullstack.jpg" style="width: 100%; height: auto; border: 0;" alt="">
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>Full Stack Web Development</h4>
-                        <small class="styleColor">June 2016</small>
-                    </div>
-                </div><!-- /item-box -->
-            </li>
+            </li><!-- .isotope-item -->
         </ul>
     </div><!-- /row -->
 </section><!-- /container -->

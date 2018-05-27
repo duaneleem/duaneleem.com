@@ -89,6 +89,6 @@ export class SupportComponent {
           og_url: "https://duaneleem.com/#/support",
           og_site_name: "Duane Leem",
           og_image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/opengraph.jpg"
-        });
+        }); // seoService.setSeoTags()
     } // constructor()
 }

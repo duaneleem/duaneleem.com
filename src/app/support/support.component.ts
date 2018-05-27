@@ -70,6 +70,8 @@ import { SeoService } from "../shared/seo.service";
         #page-title > div > ul > li, i {
             color: #fff;
         }
+
+        #wrapper { background-color: #ffffff; }
     `],
     providers: [SeoService]
 })

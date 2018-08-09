@@ -3,17 +3,20 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "duaneleem.com": {
+    "duaneleem": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/duaneleem",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/assets",
@@ -30,6 +33,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -38,91 +47,85 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
+              "buildOptimizer": true
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "duaneleem.com:build"
+            "browserTarget": "duaneleem:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "duaneleem.com:build:production"
+              "browserTarget": "duaneleem:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "duaneleem.com:build"
+            "browserTarget": "duaneleem:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "src/test.ts",
-            "karmaConfig": "./karma.conf.js",
-            "scripts": [],
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.css"
             ],
+            "scripts": [],
             "assets": [
-              "src/assets",
               "src/favicon.ico",
-              "src/CNAME",
-              "src/google92ba64556c8dfeb1.html",
-              "src/robots.txt",
-              "src/sitemap.xml"
+              "src/assets"
             ]
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [],
-            "exclude": []
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     },
-    "duaneleem.com-e2e": {
-      "root": "",
-      "sourceRoot": "",
+    "duaneleem-e2e": {
+      "root": "e2e/",
       "projectType": "application",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "duaneleem.com:serve"
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "duaneleem:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "duaneleem:serve:production"
+            }
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [],
-            "exclude": []
+            "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "duaneleem.com",
-  "schematics": {
-    "@schematics/angular:component": {
-      "prefix": "app",
-      "styleext": "css"
-    },
-    "@schematics/angular:directive": {
-      "prefix": "app"
-    }
-  }
+  "defaultProject": "duaneleem"
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { portfolioWork, portfolioLearning } from "../shared/data/projects";
+import { portfolioWork, portfolioLearning } from "../../shared/data/projects";
 
 // Service: Send-Email
 import { SendEmailService } from "./send-email.service";

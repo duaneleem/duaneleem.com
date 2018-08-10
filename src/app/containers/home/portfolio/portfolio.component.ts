@@ -1,6 +1,6 @@
 import { Component, AfterViewChecked } from '@angular/core';
-import { GLOBALS } from "../../shared/globals";
-import { portfolioWork_webDev, portfolioWork_mobileDev, portfolioLearning_certifications, portfolioLearning_training } from "../../shared/data/projects";
+import { GLOBALS } from "../../../shared/globals";
+import { portfolioWork_webDev, portfolioWork_mobileDev, portfolioLearning_certifications, portfolioLearning_training } from "../../../shared/data/projects";
 
 declare var $:any; // Enables jQuery
 

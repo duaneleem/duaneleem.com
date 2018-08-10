@@ -2,7 +2,7 @@ import { Component, Input, AfterViewInit } from '@angular/core';
 declare var $:any; // Enables jQuery
 
 // Global Variables
-import { GLOBALS } from "../../../../shared/globals";
+import { GLOBALS } from "../../../../../shared/globals";
 
 @Component({
     selector: 'app-timeline-item',

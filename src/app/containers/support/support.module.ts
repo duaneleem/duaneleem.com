@@ -3,13 +3,13 @@ import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 
-import { AppModule } from "../app.module";
+import { AppModule } from "../../app.module";
 
 // Required for form
 import { FormsModule  } from '@angular/forms';
 import { ReCaptchaModule } from 'angular2-recaptcha';
 
-import { HeaderReturnModule } from "../header/Header-Return/header-return.module";
+import { HeaderReturnModule } from "../../components/header/Header-Return/header-return.module";
 
 import { SupportComponent } from "./support.component";
 

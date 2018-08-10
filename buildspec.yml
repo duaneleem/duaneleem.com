@@ -20,14 +20,14 @@ phases:
         # Install node dependancies.
         - npm install
         # Slack notification.
-        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed:\ install\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":thumbsup:\"}" $LT_SLACK_HOOK
+        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed - install.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     build:
         commands:
         # Builds Angular application.
         - echo Build started on `date`
         - ng build --${BUILD_ENV}
         # Slack notification.
-        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed:\ build\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":thumbsup:\"}" $LT_SLACK_HOOK
+        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed - build.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     post_build:
         commands:
         # Clear S3 bucket.

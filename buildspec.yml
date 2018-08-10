@@ -34,7 +34,7 @@ phases:
         - aws s3 rm s3://${S3_BUCKET} --recursive
         - echo S3 bucket "duaneleem.com" is cleared.
         # Copy dist folder to S3 bucket "duaneleem.com"
-        - aws s3 cp dist s3://${S3_BUCKET} --recursive
+        - aws s3 cp dist/duaneleem s3://${S3_BUCKET} --recursive
         # Clear CloudFront cache.
         - aws configure set preview.cloudfront true
         - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"

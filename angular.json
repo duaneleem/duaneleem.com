@@ -27,9 +27,31 @@
               "src/sitemap.xml"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./assets/plugins/owl-carousel/owl.carousel.css",
+              "./assets/plugins/owl-carousel/owl.theme.css",
+              "./assets/plugins/owl-carousel/owl.transitions.css",
+              "./assets/plugins/magnific-popup/magnific-popup.css",
+              "./assets/template/css/animate.css",
+              "./assets/template/css/superslides.css",
+
+              "./assets/plugins/slider.revolution.v4/css/settings.css",
+              
+              "./assets/css/timeline.css",
+
+              "./assets/template/css/essentials.css",
+              "./assets/template/css/layout.css",
+              "./assets/template/css/layout-responsive.css",
+              "./assets/template/css/color_scheme/lightgrey.css",
+
+              "./assets/css/header.css",
+              
               "src/styles.css"
             ],
             "scripts": [
+              "./assets/plugins/modernizr.min.js",
+              
               "./node_modules/jquery/dist/jquery.min.js",
               "./assets/plugins/jquery.easing.1.3.js",
               "./assets/plugins/jquery.cookie.js",

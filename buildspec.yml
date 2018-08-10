@@ -5,6 +5,8 @@ env:
         S3_BUCKET: "duaneleem.com"
         BUILD_ENV: "prod"
         CLOUDFRONT_ID: "E2YZJYD4J7BU65"
+    parameter-store:
+        LT_SLACK_HOOK: "/LeemTek/slack_general_hook"
             
 phases:
     install:
@@ -14,7 +16,7 @@ phases:
         - sudo apt-get update -y
         - sudo apt-get install -y apt-transport-https
         # Install Angular CLI
-        - npm install -g @angular/cli@6.0.5
+        - npm install -g @angular/cli@6.1.2
         # Install node dependancies.
         - npm install
     build:
@@ -33,6 +35,8 @@ phases:
         - aws configure set preview.cloudfront true
         - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
         - echo Build completed on `date`
+        # STEP: Notify via Slack of completion.
+        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed:\ post_build\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":thumbsup:\"}" $LT_SLACK_HOOK
 artifacts:
     files:
         - '**/*'

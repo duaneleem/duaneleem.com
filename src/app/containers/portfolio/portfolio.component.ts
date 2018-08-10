@@ -1,6 +1,11 @@
 import { Component } from "@angular/core";
 import { SeoService } from "../../shared/seo.service";
 
+import { GLOBALS } from "../../shared/globals";
+import { portfolioWork_webDev, portfolioWork_mobileDev, portfolioLearning_certifications, portfolioLearning_training } from "../../shared/data/projects";
+
+declare var $:any; // Enables jQuery
+
 @Component({
     selector: 'duaneleem-portfolio',
     templateUrl: "./portfolio.component.html",
@@ -9,6 +14,12 @@ import { SeoService } from "../../shared/seo.service";
 })
 
 export class PortfolioComponent {
+    arrGlobals = GLOBALS;
+    arrProjects_webDev = portfolioWork_webDev;
+    arrProjects_mobileDev = portfolioWork_mobileDev;
+    arrProjects_certifications = portfolioLearning_certifications;
+    arrProjects_training = portfolioLearning_training;
+    
     constructor(
         private seoService: SeoService
     ) {

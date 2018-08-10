@@ -18,10 +18,11 @@ const PORTFOLIO_ROUTES: Routes = [
     PortfolioComponent
   ],
   imports: [
-      RouterModule.forChild(PORTFOLIO_ROUTES),
+    CommonModule,
+    RouterModule.forChild(PORTFOLIO_ROUTES),
 
-      // Shared Modules
-      HeaderReturnModule
+    // Shared Modules
+    HeaderReturnModule
   ]
 })
 

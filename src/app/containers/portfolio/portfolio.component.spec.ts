@@ -1,10 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { PortfolioComponent } from './portfolio.component';
+import { RouterTestingModule } from "@angular/router/testing";
+import { PortfolioComponent } from "./portfolio.component";
 
 // Associated components.
 import { HeaderReturnComponent } from "../../components/header/Header-Return/header-return.component";
-import { SeoService } from "../../shared/seo.service";
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -19,7 +18,7 @@ describe('PortfolioComponent', () => {
         HeaderReturnComponent
       ],
       imports: [
-        SeoService
+        RouterTestingModule
       ]
     })
     .compileComponents();
@@ -31,7 +30,15 @@ describe('PortfolioComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create the app', () => {
+  it("should create the app", () => {
     expect(component).toBeTruthy();
+  });
+
+  // Check if H1 title is seen.
+  it("should render H1 header", () => {
+    let h1: HTMLElement = fixture.nativeElement.querySelector("#portfolio > h1 > strong");
+    component.title = "Portfolio";
+    fixture.detectChanges();
+    expect(h1.textContent).toContain(component.title);
   });
 });

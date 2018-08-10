@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import {Router, Event, NavigationEnd} from '@angular/router';
+import { Router, Event, NavigationEnd } from '@angular/router';
 import { GLOBALS } from "./shared/globals";
 
 // Google Analytics FN

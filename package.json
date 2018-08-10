@@ -25,10 +25,12 @@
     "@angular/platform-server": "^6.1.2",
     "@angular/router": "^6.1.2",
     "angular2-recaptcha": "^0.4.1",
+    "bootstrap": "^3.3.6",
     "core-js": "^2.5.1",
+    "jquery": "^2.2.3",
     "rxjs": "^6.2.2",
-    "zone.js": "^0.8.26",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "rxjs-compat": "^6.0.0-rc.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.6.5",

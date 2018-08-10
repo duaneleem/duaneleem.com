@@ -1,45 +1,141 @@
 <!-- ===========================================================================================
-    Header
+  Header
 =========================================================================================== -->
 <app-header-return>Loading Header...</app-header-return>
 
 
 <!-- ===========================================================================================
-    Contents
+  Contents
 =========================================================================================== -->
 <div id="wrapper">
-    <!-- PAGE TITLE / BREADCRUMB -->
-    <header id="page-title">
-        <div class="container">
-            <h1>Portfolio</h1>
+  <!-- PAGE TITLE / BREADCRUMB -->
+  <header id="page-title">
+    <div class="container">
+      <h1>Portfolio</h1>
 
-            <ul class="breadcrumb">
-                <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                <li class="active">Portfolio</li>
-            </ul>
-        </div>
-    </header>
-                
-    <section class="container space-top-40">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="space-bottom-40">
-                    <h2 class="space-bottom-10">Remote Support</h2>
-                    <p class="lead">URL for remote support assistance.</p>
-                    <ul class="list-inline">
-                        <li><a class="btn btn-primary" href="http://center.leemtek.com:8040/" target="_blank"><i class="fa fa-medkit" aria-hidden="true"></i> Remote Support</a></li>
-                    </ul>
-                </div>
+      <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="active">Portfolio</li>
+      </ul>
+    </div>
+  </header>
 
-                <div>
-                    <h2 class="space-bottom-10">ScreenConnect</h2>
-                    <p class="lead">Download links for Remote Support Software</p>
-                    <ul class="list-inline">
-                        <li><a class="btn btn-primary" href="https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.exe"><i class="fab fa-windows margin-right-10px"></i>Windows</a></li>
-                        <li><a class="btn btn-primary" href="https://d1xrp9zhb3ks3c.cloudfront.net/downloads/ScreenConnect.ClientSetup.pkg"><i class="fab fa-apple margin-right-10px"></i>Mac OS</a></li>
-                    </ul>
-                </div>
-            </div><!-- /col -->
-        </div><!-- /row -->
-    </section>
+  <section id="portfolio" class="container padding100">
+    <h1 class="text-center">
+      <strong>Portfolio</strong>
+      <span class="subtitle">A FEW OF THE PROJECTS I'VE COMPLETED :)</span>
+    </h1>
+
+    <p class="lead">
+      Thank you so much for viewing a few of my work that I've worked on. I really appreciate your time. I'm a believer in continuous
+      education and putting theory into practice. Listed below are some of my work and achievements I've done. For those
+      involved in the projects listed below, I am truly grateful for your contribution and I am glad you are a part of my
+      team :)
+    </p>
+
+    <ul class="nav nav-pills isotope-filter" data-sort-id="isotope-list" data-option-key="filter">
+      <li data-option-value="*" class="active"><a href="#">Show All</a></li>
+      <li data-option-value=".web-development"><a href="#">Web Development</a></li>
+      <li data-option-value=".mobile-development"><a href="#">Mobile Development</a></li>
+      <li data-option-value=".certifications"><a href="#">Certifications</a></li>
+      <li data-option-value=".professional-training"><a href="#">Professional Training</a></li>
+    </ul>
+
+    <div class="row">
+      <ul class="sort-destination isotope" data-sort-id="isotope-list">
+        <!-- ======================================================================
+          Web Development
+        ======================================================================= -->
+        <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects_webDev">
+          <div class="item-box">
+            <figure>
+              <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                <span class="overlay color2"></span>
+                <span class="inner">
+                  <span class="block fa fa-plus fsize20"></span>
+                  <strong>PROJECT</strong> DETAIL
+                </span>
+              </a>
+              <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}"
+              />
+            </figure>
+            <div class="item-box-desc">
+              <h4>{{ project.name }}</h4>
+              <small class="styleColor">{{ project.date }}</small>
+            </div>
+          </div><!-- /item-box -->
+        </li><!-- .isotope-item -->
+
+
+        <!-- ======================================================================
+          Desktop & Mobile Development
+        ======================================================================= -->
+        <li class="isotope-item col-sm-6 col-md-3 mobile-development" *ngFor="let project of arrProjects_mobileDev">
+          <div class="item-box">
+            <figure>
+              <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                <span class="overlay color2"></span>
+                <span class="inner">
+                  <span class="block fa fa-plus fsize20"></span>
+                  <strong>PROJECT</strong> DETAIL
+                </span>
+              </a>
+              <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
+            </figure>
+            <div class="item-box-desc">
+              <h4>{{ project.name }}</h4>
+              <small class="styleColor">{{ project.date }}</small>
+            </div>
+          </div><!-- /item-box -->
+        </li><!-- .isotope-item -->
+
+
+        <!-- ======================================================================
+          Certifications
+        ======================================================================= -->
+        <li class="isotope-item col-sm-6 col-md-3 certifications" *ngFor="let project of arrProjects_certifications">
+          <div class="item-box">
+            <figure>
+              <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                <span class="overlay color2"></span>
+                <span class="inner">
+                  <span class="block fa fa-plus fsize20"></span>
+                  <strong>PROJECT</strong> DETAIL
+                </span>
+              </a>
+              <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
+            </figure>
+            <div class="item-box-desc">
+              <h4>{{ project.name }}</h4>
+              <small class="styleColor">{{ project.date }}</small>
+            </div>
+          </div><!-- /item-box -->
+        </li><!-- .isotope-item -->
+
+
+        <!-- ======================================================================
+          Professional Training | Achievements
+        ======================================================================= -->
+        <li class="isotope-item col-sm-6 col-md-3 professional-training" *ngFor="let project of arrProjects_training">
+          <div class="item-box">
+            <figure>
+              <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                <span class="overlay color2"></span>
+                <span class="inner">
+                  <span class="block fa fa-plus fsize20"></span>
+                  <strong>PROJECT</strong> DETAIL
+                </span>
+              </a>
+              <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}"
+              />
+            </figure>
+            <div class="item-box-desc">
+              <h4>{{ project.name }}</h4>
+              <small class="styleColor">{{ project.date }}</small>
+            </div>
+          </div><!-- /item-box -->
+        </li><!-- .isotope-item -->
+      </ul>
+    </div><!-- /row -->
+  </section><!-- /container -->
 </div><!-- /wrapper -->

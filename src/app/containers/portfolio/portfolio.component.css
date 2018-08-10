@@ -19,3 +19,7 @@ header#page-title h1 {
 }
 
 #wrapper { background-color: #ffffff; }
+
+.item-box-desc > h4 {
+  font-size: smaller;
+}

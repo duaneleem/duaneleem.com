@@ -5,6 +5,8 @@ env:
         S3_BUCKET: "duaneleem.com"
         BUILD_ENV: "prod"
         CLOUDFRONT_ID: "E2YZJYD4J7BU65"
+    parameter-store:
+        LT_SLACK_HOOK: "/LeemTek/slack_general_hook"
             
 phases:
     install:
@@ -14,14 +16,18 @@ phases:
         - sudo apt-get update -y
         - sudo apt-get install -y apt-transport-https
         # Install Angular CLI
-        - npm install -g @angular/cli@6.0.5
+        - npm install -g @angular/cli@6.1.2
         # Install node dependancies.
         - npm install
+        # Slack notification.
+        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed:\ install\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":thumbsup:\"}" $LT_SLACK_HOOK
     build:
         commands:
         # Builds Angular application.
         - echo Build started on `date`
         - ng build --${BUILD_ENV}
+        # Slack notification.
+        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed:\ build\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":thumbsup:\"}" $LT_SLACK_HOOK
     post_build:
         commands:
         # Clear S3 bucket.
@@ -29,10 +35,12 @@ phases:
         - echo S3 bucket "duaneleem.com" is cleared.
         # Copy dist folder to S3 bucket "duaneleem.com"
         - aws s3 cp dist s3://${S3_BUCKET} --recursive
-        # STEP: Clear CloudFront cache.
+        # Clear CloudFront cache.
         - aws configure set preview.cloudfront true
         - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
         - echo Build completed on `date`
+        # Slack notification.
+        - curl -k -g -X POST -d "payload={\"text\":\"Code delivered to production and CloudFront cleared.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
 artifacts:
     files:
         - '**/*'

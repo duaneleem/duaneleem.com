@@ -11,36 +11,40 @@ env:
 phases:
     install:
         commands:
-        - echo Installing source NPM dependencies...
-        # Need https driver.
-        - sudo apt-get update -y
-        - sudo apt-get install -y apt-transport-https
-        # Install Angular CLI
-        - npm install -g @angular/cli@6.1.2
-        # Install node dependancies.
-        - npm install
-        # Slack notification.
-        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed - install.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            - echo Installing source NPM dependencies...
+            # Need https driver.
+            - sudo apt-get update -y
+            - sudo apt-get install -y apt-transport-https
+            # Install Angular CLI
+            - npm install -g @angular/cli@6.1.2
+            # Install node dependancies.
+            - npm install
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"Install phase is completed.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     build:
         commands:
-        # Builds Angular application.
-        - echo Build started on `date`
-        - ng build --${BUILD_ENV}
-        # Slack notification.
-        - curl -k -g -X POST -d "payload={\"text\":\"Phase Completed - build.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            # Builds Angular application.
+            - echo Build started on `date`
+            - ng build --${BUILD_ENV}
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"Build phase is completed.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     post_build:
         commands:
-        # Clear S3 bucket.
-        - aws s3 rm s3://${S3_BUCKET} --recursive
-        - echo S3 bucket "duaneleem.com" is cleared.
-        # Copy dist folder to S3 bucket "duaneleem.com"
-        - aws s3 cp dist/duaneleem s3://${S3_BUCKET} --recursive
-        # Clear CloudFront cache.
-        - aws configure set preview.cloudfront true
-        - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
-        - echo Build completed on `date`
-        # Slack notification.
-        - curl -k -g -X POST -d "payload={\"text\":\"Code delivered to production and CloudFront cleared.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            # Clear S3 bucket.
+            - aws s3 rm s3://${S3_BUCKET} --recursive
+            - echo S3 bucket "duaneleem.com" is cleared.
+            # Copy dist folder to S3 bucket "duaneleem.com"
+            - aws s3 cp dist/duaneleem s3://${S3_BUCKET} --recursive
+            # Clear CloudFront cache.
+            - aws configure set preview.cloudfront true
+            - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
+            - curl -k -g -X POST -d "payload={\"text\":\"CloudFront cleared.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            - echo Build completed on `date`
+            # Slack notification of completed post_build.
+            - curl -k -g -X POST -d "payload={\"text\":\"Post build phase is completed successfully.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+        finally:
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"AWS CodeBuild finished.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
 artifacts:
     files:
         - '**/*'

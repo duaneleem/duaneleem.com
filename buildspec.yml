@@ -41,7 +41,7 @@ phases:
             - curl -k -g -X POST -d "payload={\"text\":\"CloudFront cleared.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
             - echo Build completed on `date`
             # Slack notification of completed post_build.
-            - curl -k -g -X POST -d "payload={\"text\":\"Post build phase is completed successfully.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            - curl -k -g -X POST -d "payload={\"text\":\"Post build phase was completed successfully.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
         finally:
             # Slack notification.
             - curl -k -g -X POST -d "payload={\"text\":\"AWS CodeBuild finished.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK

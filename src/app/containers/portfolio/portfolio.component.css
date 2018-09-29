@@ -18,7 +18,10 @@ header#page-title h1 {
   color: #fff;
 }
 
-#wrapper { background-color: #ffffff; }
+#wrapper { 
+  background-color: #ffffff;
+  padding: 81px 0 0 0;
+}
 
 .item-box-desc > h4 {
   font-size: smaller;

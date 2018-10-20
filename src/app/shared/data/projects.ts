@@ -187,6 +187,7 @@ export const portfolioWork_webDev = [
         name: "StagedHomes.com",
         date: "September 2015",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/stagedhomes.jpg",
+        featured: true,
 
         // Model Info
         header: "Project: StagedHomes.com | Revamp",
@@ -217,6 +218,7 @@ export const portfolioWork_webDev = [
         name: "IAHSP.com",
         date: "October 2016",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahsp.jpg",
+        featured: true,
 
         // Model Info
         header: "Project: IAHSP.com | Revamp",
@@ -245,6 +247,7 @@ export const portfolioWork_webDev = [
         name: "IAHSPConExpo.com",
         date: "July 2017",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg",
+        featured: true,
 
         // Model Info
         header: "Project: IAHSPConExpo.com",

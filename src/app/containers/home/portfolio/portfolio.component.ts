@@ -22,12 +22,19 @@ declare var $:any; // Enables jQuery
 export class PortfolioComponent implements AfterViewChecked {
     arrGlobals = GLOBALS;
     arrProjects_webDev = portfolioWork_webDev;
-    arrProjects_mobileDev = portfolioWork_mobileDev;
-    arrProjects_certifications = portfolioLearning_certifications;
-    arrProjects_training = portfolioLearning_training;
 
-    ngAfterViewChecked() {
+    ngAfterViewChecked() { } // ngOnInit
+
+    featuredProjects =() => {
+        let featuredProjectsOnly = [];
+
+        for (let i = 0; i < portfolioWork_webDev.length; i++) {
+            if (portfolioWork_webDev[i].featured === true) {
+                featuredProjectsOnly.push(portfolioWork_webDev[i]);
+            } // if
+        } // for
         
-    } // ngOnInit
+        return featuredProjectsOnly;
+    }
 }
 

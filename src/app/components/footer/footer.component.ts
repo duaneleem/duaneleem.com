@@ -11,6 +11,8 @@ declare var $:any;
 @Component({
     selector: 'app-footer',
     template: `
+        <app-testimonials></app-testimonials>
+        
         <div id="modal-section"></div>
         
         <footer id="sectionFooter">

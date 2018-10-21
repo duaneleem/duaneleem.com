@@ -1,6 +1,5 @@
 import { Component, AfterViewChecked } from '@angular/core';
-import { GLOBALS } from "../../../shared/globals";
-import { portfolioWork_webDev, portfolioWork_mobileDev, portfolioLearning_certifications, portfolioLearning_training } from "../../../shared/data/projects";
+import { portfolioWork_webDev } from "../../../shared/data/projects";
 
 declare var $:any; // Enables jQuery
 
@@ -20,9 +19,7 @@ declare var $:any; // Enables jQuery
     `]
 })
 export class PortfolioComponent implements AfterViewChecked {
-    arrGlobals = GLOBALS;
-    arrProjects_webDev = portfolioWork_webDev;
-
+    constructor() {}
     ngAfterViewChecked() { } // ngOnInit
 
     featuredProjects =() => {
@@ -35,6 +32,6 @@ export class PortfolioComponent implements AfterViewChecked {
         } // for
         
         return featuredProjectsOnly;
-    }
+    } // featuredProjects()
 }
 

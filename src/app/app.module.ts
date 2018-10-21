@@ -21,8 +21,10 @@ import { SummaryComponent } from "./containers/home/summary/summary.component";
 import { AboutComponent } from "./containers/home/summary/about/about.component";
 import { TimelineComponent } from "./containers/home/summary/timeline/timeline.component";
     import { TimelineItemComponent } from "./containers/home/summary/timeline/timeline-item/timeline-item.component";
-import { TestimonialsComponent } from './containers/home/testimonials/testimonials.component';
 import { PortfolioComponent } from "./containers/home/portfolio/portfolio.component";
+
+// Shared
+import { SharedModule } from "./shared/shared.module";
 
 // Routes
 const AppRoutes: any = [
@@ -44,8 +46,7 @@ const AppRoutes: any = [
         AboutComponent,
         TimelineComponent,
             TimelineItemComponent,
-            TestimonialsComponent,
-            PortfolioComponent,
+        PortfolioComponent,
 
         // All other
         FooterComponent
@@ -56,7 +57,12 @@ const AppRoutes: any = [
         HttpClientModule,
         RouterModule,
         RouterModule.forRoot(AppRoutes),
-        ReCaptchaModule
+        ReCaptchaModule,
+
+        SharedModule
+    ],
+    exports: [
+        
     ],
     bootstrap: [AppComponent],
     providers: []

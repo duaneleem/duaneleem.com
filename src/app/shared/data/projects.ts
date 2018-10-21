@@ -142,6 +142,7 @@ export const portfolioWork_webDev = [
         name: "Swords-to-Plowshares.org",
         date: "August 2017",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/swords-to-plowshares.jpg",
+        featured: true,
 
         // Model Info
         header: "Project: Swords-to-Plowshares.org | WordPress Development",

@@ -19,8 +19,6 @@ import { SeoService } from "../../shared/seo.service";
             <app-summary>Loading: Summary...</app-summary>
 
             <app-portfolio>Loading: Portfolio...</app-portfolio>
-
-            <app-testimonials>Loading: Testimonials...</app-testimonials>
         </div><!-- /wrapper -->
     `,
     providers: [SeoService]

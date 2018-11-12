@@ -10,93 +10,13 @@
         education and putting theory into practice.  Listed below are some of my work and achievements I've done.  For those involved in the projects
         listed below, I am truly grateful for your contribution and I am glad you are a part of my team :)    
     </p>
-    
-    <ul class="nav nav-pills isotope-filter" data-sort-id="isotope-list" data-option-key="filter">
-        <li data-option-value="*" class="active"><a href="#">Show All</a></li>
-        <li data-option-value=".web-development"><a href="#">Web Development</a></li>
-        <li data-option-value=".mobile-development"><a href="#">Mobile Development</a></li>
-        <li data-option-value=".certifications"><a href="#">Certifications</a></li>
-        <li data-option-value=".professional-training"><a href="#">Professional Training</a></li>
-    </ul>
 
     <div class="row">
         <ul class="sort-destination isotope" data-sort-id="isotope-list">
-            <!-- TODO: Iterate through objProjects -->
-            
-            
             <!-- ======================================================================
-                Web Development
+                Featured Projects
             ======================================================================= -->
-            <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects_webDev">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>PROJECT</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>{{ project.name }}</h4>
-                        <small class="styleColor">{{ project.date }}</small>
-                    </div>
-                </div><!-- /item-box -->
-            </li><!-- .isotope-item -->
-
-
-            <!-- ======================================================================
-                Desktop & Mobile Development
-            ======================================================================= -->
-            <li class="isotope-item col-sm-6 col-md-3 mobile-development" *ngFor="let project of arrProjects_mobileDev">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>PROJECT</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>{{ project.name }}</h4>
-                        <small class="styleColor">{{ project.date }}</small>
-                    </div>
-                </div><!-- /item-box -->
-            </li><!-- .isotope-item -->
-
-
-            <!-- ======================================================================
-                Certifications
-            ======================================================================= -->
-            <li class="isotope-item col-sm-6 col-md-3 certifications" *ngFor="let project of arrProjects_certifications">
-                <div class="item-box">
-                    <figure>
-                        <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
-                            <span class="overlay color2"></span>
-                            <span class="inner">
-                                <span class="block fa fa-plus fsize20"></span>
-                                <strong>PROJECT</strong> DETAIL
-                            </span>
-                        </a>
-                        <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}" />
-                    </figure>
-                    <div class="item-box-desc">
-                        <h4>{{ project.name }}</h4>
-                        <small class="styleColor">{{ project.date }}</small>
-                    </div>
-                </div><!-- /item-box -->
-            </li><!-- .isotope-item -->
-            
-
-            <!-- ======================================================================
-                Professional Training | Achievements
-            ======================================================================= -->
-            <li class="isotope-item col-sm-6 col-md-3 professional-training" *ngFor="let project of arrProjects_training">
+            <li class="isotope-item col-sm-6 col-md-3" *ngFor="let project of featuredProjects()">
                 <div class="item-box">
                     <figure>
                         <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
@@ -115,6 +35,12 @@
                 </div><!-- /item-box -->
             </li><!-- .isotope-item -->
         </ul>
+    </div><!-- /row -->
+
+    <div class="row space-top-40">
+        <div class="col-lg-12 text-center">
+            <a class="btn btn-warning" href="/portfolio">View Portfolio</a>
+        </div><!-- /col -->
     </div><!-- /row -->
 </section><!-- /container -->
 <!-- /PORTFOLIO -->

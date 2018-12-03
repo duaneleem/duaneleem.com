@@ -5,6 +5,50 @@
  * Web Development projects.
  */
 export const portfolioWork_webDev = [
+    // OrtaBrothers.com
+    { 
+        // Entry Info
+        id: "ortabrotherscom",
+        name: "OrtaBrothers.com",
+        date: "August 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ortabrothers.jpg",
+
+        // Model Info
+        header: "Project: OrtaBrothers.com | ReactJS Development",
+        title: "React Web Application",
+        url: "https://www.OrtaBrothers.com/software-engineers",
+        body: `
+            <h5>About Orta Brothers Carpet Cleaning</h5>
+
+            <p>
+                Orta Brothers Carpet Cleaning Inc is owned by Isaias Orta. A long time bay area resident with family 
+                roots in Conccord,CA. We are a local carpet cleaning company servicing all of Contra Costa County 
+                and the surrounding areas... <a href="https://www.ortabrothers.com" target="_blank">Read More</a>
+            </p>
+            
+            <h5>My Work</h5>
+            <p>
+                We developed Orta Brothers using React (a JavaScript library).  Each section of the website's React components 
+                were assigned to individual engineers.  I am responsible for the overall development and management of the 
+                project delivery; developed the Google Cloud Functions (serverless technology); and management of Amazon Web 
+                Services (CloudFront and S3 CDN hosting) implementation.
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                ReactJS, Google Firebase (Cloud Functions), AWS (CloudFront, S3, CodeBuild, CodePipeline), CloudFlare
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>,
+                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>,
+                <a href="https://www.linkedin.com/in/carlo-bilbao/" target="_blank">Carlo Anthony</a>,
+                <a href="https://www.linkedin.com/in/will-carpio-821b1815a/" target="_blank">Will Carpio</a>
+            </p>
+        `
+    }, // OrtaBrothers.com
+    
     // ChateauJudsonville.com
     { 
         // Entry Info
@@ -16,7 +60,7 @@ export const portfolioWork_webDev = [
         // Model Info
         header: "Project: ChateauJudsonville.com | ReactJS Development",
         title: "React Web Application",
-        url: "https://www.chateaujudsonville.com/",
+        url: "https://www.chateaujudsonville.com/software-engineers",
         body: `
             <h5>About Chateau Judsonville</h5>
 

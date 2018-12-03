@@ -5,6 +5,50 @@
  * Web Development projects.
  */
 export const portfolioWork_webDev = [
+    // OrtaBrothers.com
+    { 
+        // Entry Info
+        id: "ortabrotherscom",
+        name: "OrtaBrothers.com",
+        date: "August 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/ortabrothers.jpg",
+
+        // Model Info
+        header: "Project: OrtaBrothers.com | ReactJS Development",
+        title: "React Web Application",
+        url: "https://www.OrtaBrothers.com/software-engineers",
+        body: `
+            <h5>About Orta Brothers Carpet Cleaning</h5>
+
+            <p>
+                Orta Brothers Carpet Cleaning Inc is owned by Isaias Orta. A long time bay area resident with family 
+                roots in Conccord,CA. We are a local carpet cleaning company servicing all of Contra Costa County 
+                and the surrounding areas... <a href="https://www.ortabrothers.com" target="_blank">Read More</a>
+            </p>
+            
+            <h5>My Work</h5>
+            <p>
+                We developed Orta Brothers using React (a JavaScript library).  Each section of the website's React components 
+                were assigned to individual engineers.  I am responsible for the overall development and management of the 
+                project delivery; developed the Google Cloud Functions (serverless technology); and management of Amazon Web 
+                Services (CloudFront and S3 CDN hosting) implementation.
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                ReactJS, Google Firebase (Cloud Functions), AWS (CloudFront, S3, CodeBuild, CodePipeline), CloudFlare
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.linkedin.com/in/derrick-leem/" target="_blank">Derrick Leem</a>,
+                <a href="https://www.linkedin.com/in/gtumbaga/" target="_blank">Gabe Tumbaga</a>,
+                <a href="https://www.linkedin.com/in/carlo-bilbao/" target="_blank">Carlo Anthony</a>,
+                <a href="https://www.linkedin.com/in/will-carpio-821b1815a/" target="_blank">Will Carpio</a>
+            </p>
+        `
+    }, // OrtaBrothers.com
+    
     // ChateauJudsonville.com
     { 
         // Entry Info
@@ -16,7 +60,7 @@ export const portfolioWork_webDev = [
         // Model Info
         header: "Project: ChateauJudsonville.com | ReactJS Development",
         title: "React Web Application",
-        url: "https://www.chateaujudsonville.com/",
+        url: "https://www.chateaujudsonville.com/software-engineers",
         body: `
             <h5>About Chateau Judsonville</h5>
 
@@ -50,6 +94,58 @@ export const portfolioWork_webDev = [
             </p>
         `
     }, // ChateauJudsonville.com
+
+    // ScalpMED.com
+    { 
+        // Entry Info
+        id: "changessaloncom", 
+        type: "web-development",
+        name: "ChangesSalon.com",
+        date: "April 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/changessalon.jpg",
+
+        // Model Info
+        header: "Project: ChangesSalon.com | WordPress Development",
+        title: "AWS and WordPress Engineering",
+        url: "https://www.scalpmed.com/",
+        body: `
+            <h5>About Changes Salon</h5>
+
+            <p>
+                Changes Salon & Day Spa is a unique venue to relax, de-stress and get gorgeous. At Changes, we are 
+                dedicated to providing the most innovative beauty and wellness services in a beautiful and relaxing 
+                environment. With 18 hair stations, 11 treatment rooms, a semi-private pedicure room with a 16 foot 
+                water wall, Aqua Terra relaxation room, men’s and women’s locker rooms with steam lounges and 60 
+                talented team members we will meet all your salon and spa needs. Centrally located at the corner 
+                of Lincoln and N. Broadway in Downtown Walnut Creek, visit us and find out why Changes has been 
+                voted The Best of The East Bay over 50 times.
+            </p>
+
+            <p>Read more at <a href="https://changessalon.com/" target="_blank">ChangesSalon.com</a></p>
+            
+            <h5>My Work</h5>
+            <p>
+                Changes website was originally a non-CMS website.  It wasn't a standard website and could only be updated by
+                a developer.  I've redeveloped their website to a mobile responsive site and re-created it as a WordPress
+                theme.  I've changed the look of the website and also have given them abilities to manage their site.
+            </p>
+
+            <p>
+                I've also developed some of their online forms as Angular applications to process form submissions such as
+                their job applications form.
+            </p>
+
+            <h5>Technologies Used</h5>
+            <p>
+                WordPress (Theme & Plugin Dev), AWS (EC2, SES, RDS, CloudFront, S3), Angular, Google Cloud Functions
+            </p>
+
+            <h5>Team Members</h5>
+            <p>
+                <a href="https://www.facebook.com/FeliciaJPulley" target="_blank">Felicia Pulley</a>
+            </p>
+        `
+    }, // ScalpMED.com
     
     // ScalpMED.com
     { 

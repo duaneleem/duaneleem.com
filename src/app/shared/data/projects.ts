@@ -5,6 +5,49 @@
  * Web Development projects.
  */
 export const portfolioWork_webDev = [
+    // WarriorTrading.com
+    { 
+        // Entry Info
+        id: "warriortradingcom",
+        name: "WarriorTrading.com",
+        date: "August 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/warriortrading.jpg",
+
+        // Model Info
+        header: "WarriorTrading.com | Software Engineering",
+        title: "Full Stack Development",
+        url: "https://www.warrior-trading.com",
+        body: `
+            <h5>About Warrior Trading</h5>
+
+            <p>
+                Our Mission is to Create 50,000 Freedom Traders That Can Live Their Life With Freedom & Independence by 2020
+            </p>
+            
+            <h5>My Work</h5>
+
+            <p>
+                I'm responsible for performance improvements and engineering WordPress for scalability, reliability, and
+                high availability.  I'm also responsible for developing and implementing WordPress themes and plugins
+                to ensure our websites are optimal in security and performance.
+            </p>
+
+            <p>A few of the projects I've completed:</p>
+
+            <table class="table table-bordered">
+                <tr><th>Projects</th></tr>
+                <tr><td>Automated Backups and Version Control of Custom WordPress Theme & Plugins</td></tr>
+                <tr><td>Develop WordPress Plugin for Clearing Cookies</td></tr>
+                <tr><td>Offload Assets to CloudFront CDN</td></tr>
+            </table>
+
+            <h5>Technologies Used</h5>
+            <p>
+                WordPress, PHP, Jenkins, GitHub, AWS (CloudFront, S3, CodeBuild, CodePipeline, RDS), CloudFlare
+            </p>
+        `
+    }, // OrtaBrothers.com
+    
     // OrtaBrothers.com
     { 
         // Entry Info

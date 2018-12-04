@@ -24,7 +24,7 @@ export class PortfolioComponent {
         seoService.setSeoTags({
           // Main
           main_title: "Portfolio | Duane Leem",
-          main_description: "I can provide remote Customer Support for issues that you may have. Visit this page to receive remote assistance.",
+          main_description: "Check out some of my completed work and professional training I've done!",
   
           // OpenGraph
           og_locale: "en_US",

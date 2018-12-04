@@ -16,7 +16,7 @@ export const portfolioWork_webDev = [
         // Model Info
         header: "WarriorTrading.com | Software Engineering",
         title: "Full Stack Development",
-        url: "https://www.warrior-trading.com",
+        url: "https://www.warriortrading.com",
         body: `
             <h5>About Warrior Trading</h5>
 
@@ -32,10 +32,8 @@ export const portfolioWork_webDev = [
                 to ensure our websites are optimal in security and performance.
             </p>
 
-            <p>A few of the projects I've completed:</p>
-
             <table class="table table-bordered">
-                <tr><th>Projects</th></tr>
+                <tr class="active"><th>Projects</th></tr>
                 <tr><td>Automated Backups and Version Control of Custom WordPress Theme & Plugins</td></tr>
                 <tr><td>Develop WordPress Plugin for Clearing Cookies</td></tr>
                 <tr><td>Offload Assets to CloudFront CDN</td></tr>
@@ -43,7 +41,7 @@ export const portfolioWork_webDev = [
 
             <h5>Technologies Used</h5>
             <p>
-                WordPress, PHP, Jenkins, GitHub, AWS (CloudFront, S3, CodeBuild, CodePipeline, RDS), CloudFlare
+                WordPress, PHP, JWT, Jenkins, GitHub, AWS (CloudFront, S3, EKS, RDS), CloudFlare
             </p>
         `
     }, // OrtaBrothers.com

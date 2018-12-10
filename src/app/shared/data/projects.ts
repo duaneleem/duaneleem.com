@@ -14,11 +14,53 @@ export const portfolioWork_webDev = [
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/warriortrading.jpg",
 
         // Model Info
-        header: "WarriorTrading.com | Software Engineering",
-        title: "Full Stack Development",
+        header: "WarriorTrading.com | DevOps Engineering",
+        title: "DevOps Engineering",
         url: "https://www.warriortrading.com",
         body: `
             <h5>About Warrior Trading</h5>
+
+            <p>
+                Our Mission is to Create 50,000 Freedom Traders That Can Live Their Life With Freedom & Independence by 2020
+            </p>
+            
+            <h5>My Work</h5>
+
+            <p>
+                I'm responsible for performance improvements and engineering WordPress for scalability, reliability, and
+                high availability.  I'm also responsible for developing and implementing WordPress themes and plugins
+                to ensure our websites are optimal in security and performance.
+            </p>
+
+            <table class="table table-bordered">
+                <tr class="active"><th>Projects</th></tr>
+                <tr><td>Continously monitor web performance and security.</td></tr>
+                <tr><td>Automated Backups and Version Control of Custom WordPress Theme & Plugins</td></tr>
+                <tr><td>Develop WordPress Plugin for Clearing Cookies</td></tr>
+                <tr><td>Offload Assets to CloudFront CDN</td></tr>
+            </table>
+
+            <h5>Technologies Used</h5>
+            <p>
+                WordPress, PHP, JWT, Jenkins, GitHub, AWS (CloudFront, S3, EKS, RDS), CloudFlare
+            </p>
+        `
+    }, // WarriorTrading.com
+
+    // WarriorTradingNews.com
+    { 
+        // Entry Info
+        id: "warriortradingnewscom",
+        name: "WarriorTradingNews.com",
+        date: "August 2018",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/warriortradingnews.jpg",
+
+        // Model Info
+        header: "WarriorTradingNews.com | DevOps Engineering",
+        title: "Full Stack Development",
+        url: "https://www.warriortrading.com",
+        body: `
+            <h5>About Warrior Trading News</h5>
 
             <p>
                 Our Mission is to Create 50,000 Freedom Traders That Can Live Their Life With Freedom & Independence by 2020
@@ -44,7 +86,7 @@ export const portfolioWork_webDev = [
                 WordPress, PHP, JWT, Jenkins, GitHub, AWS (CloudFront, S3, EKS, RDS), CloudFlare
             </p>
         `
-    }, // OrtaBrothers.com
+    }, // WarriorTradingNews.com
     
     // OrtaBrothers.com
     { 

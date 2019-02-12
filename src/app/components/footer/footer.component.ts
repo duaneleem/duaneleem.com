@@ -212,6 +212,10 @@ declare var $:any;
             border-left: 5px solid #a94442; /* red */
         }
 
+        /* 
+         * Included CSS is autogenerating additional padding-top.  This will fix it. 
+         */
+        .modal { padding-top: 0px; }
     `],
     providers: [SendEmailService]
 })

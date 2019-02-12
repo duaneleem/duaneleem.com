@@ -12,9 +12,10 @@ declare var $:any; // Enables jQuery
         }
 
         /* Included CSS is autogenerating additional padding-top.  This
-            will fix it. */
+         * will fix it.
+         */
         .modal {
-            padding-top: 0px;
+            padding-top: 0px !important;
         }
     `]
 })

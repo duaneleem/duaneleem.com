@@ -12,6 +12,7 @@ export const portfolioWork_webDev = [
         name: "WarriorTrading.com",
         date: "August 2018",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/warriortrading.jpg",
+        featured: true,
 
         // Model Info
         header: "WarriorTrading.com | DevOps Engineering",
@@ -42,7 +43,7 @@ export const portfolioWork_webDev = [
 
             <h5>Technologies Used</h5>
             <p>
-                WordPress, PHP, JWT, Jenkins, GitHub, AWS (CloudFront, S3, EKS, RDS), CloudFlare
+                WordPress, PHP, JavaScript, Jenkins, GitHub, AWS (CloudFront, EC2, S3, CloudWatch, EKS, RDS, Lambda), CloudFlare, Jira
             </p>
         `
     }, // WarriorTrading.com
@@ -83,7 +84,7 @@ export const portfolioWork_webDev = [
 
             <h5>Technologies Used</h5>
             <p>
-                WordPress, PHP, JWT, Jenkins, GitHub, AWS (CloudFront, S3, EKS, RDS), CloudFlare
+                WordPress, PHP, Javascript, JWT, Jenkins, GitHub, AWS (CloudFront, S3, CloudWatch, EKS, RDS, Lambda), CloudFlare
             </p>
         `
     }, // WarriorTradingNews.com
@@ -178,7 +179,7 @@ export const portfolioWork_webDev = [
         `
     }, // ChateauJudsonville.com
 
-    // ScalpMED.com
+    // ChangesSalon.com
     { 
         // Entry Info
         id: "changessaloncom", 
@@ -228,7 +229,7 @@ export const portfolioWork_webDev = [
                 <a href="https://www.facebook.com/FeliciaJPulley" target="_blank">Felicia Pulley</a>
             </p>
         `
-    }, // ScalpMED.com
+    }, // ChangesSalon.com
     
     // ScalpMED.com
     { 
@@ -427,7 +428,6 @@ export const portfolioWork_webDev = [
         name: "IAHSPConExpo.com",
         date: "July 2017",
         image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/projects/iahspconexpo.jpg",
-        featured: true,
 
         // Model Info
         header: "Project: IAHSPConExpo.com",
@@ -631,6 +631,15 @@ export const portfolioWork = portfolioWork_webDev.concat(portfolioWork_mobileDev
  * Certifications
  */
 export const portfolioLearning_certifications = [
+    // AWS Certified DevOps Engineer
+    { 
+        // Entry Info
+        id: "AWSCERTIFIEDDEVOPSENGINEER2019", 
+        name: "AWS Certified DevOps Engineer",
+        date: "February 2019",
+        image: "https://d1xrp9zhb3ks3c.cloudfront.net/web/duaneleem/images/achievements/201902-aws-devops-engineer.png"
+    }, // AWS Certified Developer
+    
     // AWS Certified Developer
     { 
         // Entry Info

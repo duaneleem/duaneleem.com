@@ -212,6 +212,7 @@ declare var $:any;
             border-left: 5px solid #a94442; /* red */
         }
 
+        .modal { padding-top: 0px; }
     `],
     providers: [SendEmailService]
 })

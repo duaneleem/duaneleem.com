@@ -10,13 +10,6 @@ declare var $:any; // Enables jQuery
         .item-box-desc > h4 {
             font-size: smaller;
         }
-
-        /* Included CSS is autogenerating additional padding-top.  This
-         * will fix it.
-         */
-        .modal {
-            padding-top: 0px !important;
-        }
     `]
 })
 export class PortfolioComponent implements AfterViewChecked {

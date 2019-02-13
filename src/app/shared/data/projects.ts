@@ -34,8 +34,9 @@ export const portfolioWork_webDev = [
             </p>
 
             <p>
-                I also aim to automate processes of software delivery to assist my colleagues with maintaining and improving our
-                web infrastructure using DevOps principles that enable us to continuously be proactive in our IT endeavors.
+                My personal mission at Warrior Trading is to aim for automated processes of software delivery to assist my colleagues 
+                with maintaining and improving our web infrastructure using DevOps principles that enable us to continuously be proactive in 
+                our IT endeavors.
             </p>
 
             <table class="table table-bordered">
@@ -81,8 +82,9 @@ export const portfolioWork_webDev = [
             </p>
 
             <p>
-                I also aim to automate processes of software delivery to assist my colleagues with maintaining and improving our
-                web infrastructure using DevOps principles that enable us to continuously be proactive in our IT endeavors.
+                My personal mission at Warrior Trading is to aim for automated processes of software delivery to assist my colleagues 
+                with maintaining and improving our web infrastructure using DevOps principles that enable us to continuously be proactive in 
+                our IT endeavors.
             </p>
 
             <table class="table table-bordered">

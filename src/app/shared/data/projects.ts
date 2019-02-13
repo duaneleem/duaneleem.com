@@ -33,6 +33,11 @@ export const portfolioWork_webDev = [
                 to ensure our websites are optimal in security and performance.
             </p>
 
+            <p>
+                I also aim to automate processes of software delivery to assist my colleagues with maintaining and improving our
+                web infrastructure using DevOps principles that enable us to continuously be proactive in our IT endeavors.
+            </p>
+
             <table class="table table-bordered">
                 <tr class="active"><th>Projects</th></tr>
                 <tr><td>Continously monitor web performance and security.</td></tr>
@@ -73,6 +78,11 @@ export const portfolioWork_webDev = [
                 I'm responsible for performance improvements and engineering WordPress for scalability, reliability, and
                 high availability.  I'm also responsible for developing and implementing WordPress themes and plugins
                 to ensure our websites are optimal in security and performance.
+            </p>
+
+            <p>
+                I also aim to automate processes of software delivery to assist my colleagues with maintaining and improving our
+                web infrastructure using DevOps principles that enable us to continuously be proactive in our IT endeavors.
             </p>
 
             <table class="table table-bordered">

@@ -1,8 +1,10 @@
+
+import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 // rxjs
-import { Observable } from "rxjs/Observable";
+import { Observable } from "rxjs";
 import "rxjs/add/operator/map";
 
 @Injectable()
@@ -24,8 +26,8 @@ export class SendEmailService {
         const strBody = JSON.stringify(objFinalSenderInfo);
         const headers = new HttpHeaders({ "Content-Type": "application/json" });
 
-        return this.http.post(this.strPostUrl, strBody, { headers: headers })
-            .map((data: Response) => data.json())
+        return this.http.post(this.strPostUrl, strBody, { headers: headers }).pipe(
+            map((data: Response) => data.json()))
         ; // this.http.post()
     } // mdSendData()
 } // SendEmailService

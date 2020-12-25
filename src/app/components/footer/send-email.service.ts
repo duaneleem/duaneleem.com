@@ -4,8 +4,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 // rxjs
-import { Observable } from "rxjs";
-import "rxjs/add/operator/map";
+// import { Observable } from "rxjs";
+// import "rxjs/add/operator/map";
 
 @Injectable()
 export class SendEmailService {

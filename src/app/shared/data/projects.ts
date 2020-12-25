@@ -41,15 +41,19 @@ export const portfolioWork_webDev = [
 
             <table class="table table-bordered">
                 <tr class="active"><th>Projects</th></tr>
+                <tr><td>Develop automations and deploy safely to Kubernetes using DevOps practices.</td></tr>
+                <tr><td>Engineer Kubernetes containers to scale based on demand and security requirements.</td></tr>
+                <tr><td>Create a multi-environment platform for engineering tests.</td></tr>
                 <tr><td>Continously monitor web performance and security.</td></tr>
-                <tr><td>Automated Backups and Version Control of Custom WordPress Theme & Plugins</td></tr>
+                <tr><td>Automated Backups and Git Version Control of Custom WordPress Theme & Plugins</td></tr>
+                <tr><td>Integrate GatsbyJS as part of WordPress</td></tr>
                 <tr><td>Develop WordPress Plugin for Clearing Cookies</td></tr>
                 <tr><td>Offload Assets to CloudFront CDN</td></tr>
             </table>
 
             <h5>Technologies Used</h5>
             <p>
-                WordPress, PHP, JavaScript, Jenkins, GitHub, AWS (CloudFront, EC2, S3, CloudWatch, EKS, RDS, Lambda), CloudFlare, Jira
+                Kubernetes, Docker, Ansible, Jenkins, GitHub, AWS (CloudFront, EC2, S3, CloudWatch, EKS, RDS, Lambda), CloudFlare, Jira, WordPress, PHP, JavaScript
             </p>
         `
     }, // WarriorTrading.com

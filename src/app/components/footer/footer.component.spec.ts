@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 // Modules
@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
@@ -23,7 +23,7 @@ describe('FooterComponent', () => {
       ],
     }).compileComponents();
   }));
-  it(`should create the app`, async(() => {
+  it(`should create the app`, waitForAsync(() => {
     const fixture = TestBed.createComponent(FooterComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();

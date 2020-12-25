@@ -1,10 +1,10 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { HeaderReturnComponent } from './header-return.component';
 
 describe('HeaderReturnComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [
         HeaderReturnComponent
@@ -15,7 +15,7 @@ describe('HeaderReturnComponent', () => {
     }).compileComponents();
   }));
 
-  it('should create the app', async(() => {
+  it('should create the app', waitForAsync(() => {
     const fixture = TestBed.createComponent(HeaderReturnComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();

@@ -1,0 +1,113 @@
+<!-- ===========================================================================================
+  Header
+=========================================================================================== -->
+<app-header-return>Loading Header...</app-header-return>
+
+
+<!-- ===========================================================================================
+  Contents
+=========================================================================================== -->
+<div id="wrapper">
+  <!-- PAGE TITLE / BREADCRUMB -->
+  <header id="page-title">
+    <div class="container">
+      <h1>Portfolio</h1>
+
+      <ul class="breadcrumb">
+        <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="active">Portfolio</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+    Software Engineering
+  ======================================================================= -->
+  <section id="portfolio-webdev" class="padding100">
+    <div class="container">
+      <h1 class="text-center">
+        <strong>Software Engineering</strong>
+        <span class="subtitle">WEB APPLICATIONS I'VE DEVELOPED THROUGHOUT MY CAREER</span>
+      </h1>
+  
+      <p class="lead">
+        I've worked on many web applications throughout my career.  I'm excited to share the work and the technologies I've used to build
+        these professional web applications.
+      </p>
+  
+      <div class="row">
+        <ul class="sort-destination isotope" data-sort-id="isotope-list">
+          <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects_webDev;">
+            <div class="item-box">
+              <figure>
+                <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                  <span class="overlay color2"></span>
+                  <span class="inner">
+                    <span class="block fa fa-plus fsize20"></span>
+                    <strong>PROJECT</strong> DETAIL
+                  </span>
+                </a>
+                <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}"
+                />
+              </figure>
+              <div class="item-box-desc">
+                <h4>{{ project.name }}</h4>
+                <small class="styleColor">{{ project.date }}</small>
+              </div>
+            </div><!-- /item-box -->
+          </li><!-- .isotope-item -->
+          <div class="clearfix"></div>
+        </ul>
+      </div><!-- /row -->
+    </div>
+  </section><!-- /container -->
+
+  <!-- ======================================================================
+    Professional Training
+  ======================================================================= -->
+  <section id="portfolio-webdev" class="padding100 special-row">
+    <div class="container">
+      <h1 class="text-center">
+        <strong>Professional Training</strong>
+        <span class="subtitle">I'M A STRONG BELIEVER IN PERPETUAL LEARNING IN THE INDUSTRY OF TECHNOLOGY</span>
+      </h1>
+  
+      <p class="lead">
+        I believe in the power of education and continuous learning to help improve my skillset and help give my organizations 
+        the edge to remain competitive in this era of information technology. I've been in the IT domain since 2000 and
+        have been doing Software Engineering since 2006. Listed below are a few of my professional certificates and degrees that
+        helped me in my career.
+      </p>
+  
+      <div class="row">
+        <ul class="sort-destination isotope" data-sort-id="isotope-list">
+          <li class="isotope-item col-sm-6 col-md-3 web-development" *ngFor="let project of arrProjects_certifications">
+            <div class="item-box">
+              <figure>
+                <a class="item-hover" data-toggle="modal" [attr.data-target]="'#' + project.id">
+                  <span class="overlay color2"></span>
+                  <span class="inner">
+                    <span class="block fa fa-plus fsize20"></span>
+                    <strong>PROJECT</strong> DETAIL
+                  </span>
+                </a>
+                <img class="img-responsive" src="{{ project.image }}" style="width: 100%; height: auto; border: 0;" alt="{{ project.name }}"
+                />
+              </figure>
+              <div class="item-box-desc">
+                <h4>{{ project.name }}</h4>
+                <small class="styleColor">{{ project.date }}</small>
+              </div>
+            </div><!-- /item-box -->
+          </li><!-- .isotope-item -->
+        </ul>
+      </div><!-- /row -->
+    </div>
+  </section><!-- /container -->
+
+  <!-- ======================================================================
+    Testimonials
+  ======================================================================= -->
+  
+
+</div><!-- /wrapper -->

@@ -5,34 +5,48 @@ env:
         S3_BUCKET: "duaneleem.com"
         BUILD_ENV: "prod"
         CLOUDFRONT_ID: "E2YZJYD4J7BU65"
+    parameter-store:
+        LT_SLACK_HOOK: "/LeemTek/slack_general_hook"
             
 phases:
     install:
+        runtime-versions:
+            nodejs: 10
         commands:
-        - echo Installing source NPM dependencies...
-        # Need https driver.
-        - sudo apt-get update -y
-        - sudo apt-get install -y apt-transport-https
-        # Install Angular CLI
-        - npm install -g @angular/cli@6.0.5
-        # Install node dependancies.
-        - npm install
+            - echo Installing source NPM dependencies...
+            # Need https driver.
+            - sudo apt-get update -y
+            - sudo apt-get install -y apt-transport-https
+            # Install Angular CLI
+            - npm install -g @angular/cli@^11.0.5
+            # Install node dependancies.
+            - npm install
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"Install phase is completed.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     build:
         commands:
-        # Builds Angular application.
-        - echo Build started on `date`
-        - ng build --${BUILD_ENV}
+            # Builds Angular application.
+            - echo Build started on `date`
+            - ng build --${BUILD_ENV}
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"Build phase is completed.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
     post_build:
         commands:
-        # Clear S3 bucket.
-        - aws s3 rm s3://${S3_BUCKET} --recursive
-        - echo S3 bucket "duaneleem.com" is cleared.
-        # Copy dist folder to S3 bucket "duaneleem.com"
-        - aws s3 cp dist s3://${S3_BUCKET} --recursive
-        # STEP: Clear CloudFront cache.
-        - aws configure set preview.cloudfront true
-        - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
-        - echo Build completed on `date`
+            # Clear S3 bucket.
+            - aws s3 rm s3://${S3_BUCKET} --recursive
+            - echo S3 bucket "duaneleem.com" is cleared.
+            # Copy dist folder to S3 bucket "duaneleem.com"
+            - aws s3 cp dist/duaneleem s3://${S3_BUCKET} --recursive
+            # Clear CloudFront cache.
+            - aws configure set preview.cloudfront true
+            - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
+            - curl -k -g -X POST -d "payload={\"text\":\"CloudFront cleared.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+            - echo Build completed on `date`
+            # Slack notification of completed post_build.
+            - curl -k -g -X POST -d "payload={\"text\":\"Post build phase was completed successfully.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
+        finally:
+            # Slack notification.
+            - curl -k -g -X POST -d "payload={\"text\":\"AWS CodeBuild finished.\", \"channel\":\"#leemtek-devops\", \"username\":\"AWS CodeBuild | DuaneLeem.com\", \"icon_emoji\":\":white_check_mark:\"}" $LT_SLACK_HOOK
 artifacts:
     files:
         - '**/*'

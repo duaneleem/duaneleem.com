@@ -504,7 +504,8 @@ ul.star-rated,
 ul.list-style-none {
 	clear:both;
 	display:inline-block;
-	margin:; padding:0;
+	/* margin:;  */
+	padding:0;
 	list-style:none;
 }
 

@@ -15,8 +15,8 @@ phases:
         commands:
             - echo Installing source NPM dependencies...
             # Need https driver.
-            - sudo apt-get update -y
-            - sudo apt-get install -y apt-transport-https
+            - apt-get update -y
+            - apt-get install -y apt-transport-https
             # Install Angular CLI
             - npm install -g @angular/cli@^11.0.5
             # Install node dependancies.

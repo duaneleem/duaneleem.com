@@ -30,8 +30,8 @@ import { SharedModule } from "./shared/shared.module";
 const AppRoutes: any = [
     { path: "", component: HomeComponent },
     { path: "home", component: HomeComponent },
-    { path: "support", loadChildren: "./containers/support/support.module#SupportModule"},
-    { path: "portfolio", loadChildren: "./containers/portfolio/portfolio.module#PortfolioModule"}
+    { path: "support", loadChildren: () => import('./containers/support/support.module').then(m => m.SupportModule)},
+    { path: "portfolio", loadChildren: () => import('./containers/portfolio/portfolio.module').then(m => m.PortfolioModule)}
 ];
 
 @NgModule({

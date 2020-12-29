@@ -30,8 +30,8 @@ export class HomeComponent implements OnInit {
     ) {
         seoService.setSeoTags({
           // Main
-          main_title: "Duane Leem | Software Engineer",
-          main_description: "Duane is a LAMP / MEAN Developer, Certified Project Management Professional, and has a Master's Degree in Information Technology Management.",
+          main_title: "Duane Leem | DevOps Engineer",
+          main_description: "Duane is a DevOps Engineer, Certified Project Management Professional, and has a Master's Degree in Information Technology Management.",
   
           // OpenGraph
           og_locale: "en_US",

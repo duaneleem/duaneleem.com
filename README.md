@@ -2,6 +2,17 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.14.
 
+
+## Contributing
+I am always open for help with the following with this project:
+
+- Updating from Angular 11 to 12
+- Updating any of the Node/Angular dependencies
+- Better documentation
+
+If you are able to assist with any of the following, I welcome all pull requests to this project.
+
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

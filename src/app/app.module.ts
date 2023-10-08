@@ -56,7 +56,7 @@ const AppRoutes: any = [
         FormsModule,
         HttpClientModule,
         RouterModule,
-        RouterModule.forRoot(AppRoutes, { relativeLinkResolution: 'legacy' }),
+        RouterModule.forRoot(AppRoutes, {}),
         ReCaptchaModule,
 
         SharedModule

@@ -35,3 +35,5 @@ Thumbs.db
 # other
 /other
 debug.log
+
+/.angular/cache

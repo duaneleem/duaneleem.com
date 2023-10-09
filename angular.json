@@ -13,10 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "angular2-recaptcha"
-            ],
-            "aot": true,
             "outputPath": "dist/duaneleem",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -80,7 +76,13 @@
 
               "./assets/template/js/scripts.js",
               "./assets/js/custom.js"
-            ]
+            ],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -100,12 +102,12 @@
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
             }
-          }
+          },
+          "defaultConfiguration": ""
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -182,6 +184,5 @@
         }
       }
     }
-  },
-  "defaultProject": "duaneleem"
+  }
 }

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 
 // Custom Modules
-import { ReCaptchaModule } from 'angular2-recaptcha';
+// import { ReCaptchaModule } from 'angular2-recaptcha';
 
 // Routing
 import { RouterModule } from '@angular/router';
@@ -56,8 +56,8 @@ const AppRoutes: any = [
         FormsModule,
         HttpClientModule,
         RouterModule,
-        RouterModule.forRoot(AppRoutes, { relativeLinkResolution: 'legacy' }),
-        ReCaptchaModule,
+        RouterModule.forRoot(AppRoutes, {}),
+        // ReCaptchaModule,
 
         SharedModule
     ],

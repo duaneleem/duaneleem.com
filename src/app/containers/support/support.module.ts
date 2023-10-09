@@ -7,7 +7,6 @@ import { AppModule } from "../../app.module";
 
 // Required for form
 import { FormsModule  } from '@angular/forms';
-import { ReCaptchaModule } from 'angular2-recaptcha';
 
 import { HeaderReturnModule } from "../../components/header/Header-Return/header-return.module";
 
@@ -26,7 +25,6 @@ const SUPPORT_ROUTES: Routes = [
       HttpClientModule,
       CommonModule,
       FormsModule,
-      ReCaptchaModule,
 
       RouterModule.forChild(SUPPORT_ROUTES),
 

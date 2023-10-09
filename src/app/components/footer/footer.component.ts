@@ -54,7 +54,7 @@ declare var $:any;
                                 </ul>
                             </address>
 
-                            <div><a class="toTop" href="#topNav" routerLink="/support"><i class="fa fa-medkit fa-lg" aria-hidden="true" style="margin: 0px 10px 0px 2px;"></i>Remote Assistance</a></div>
+                            <!-- <div><a class="toTop" href="#topNav" routerLink="/support"><i class="fa fa-medkit fa-lg" aria-hidden="true" style="margin: 0px 10px 0px 2px;"></i>Remote Assistance</a></div> -->
                         </div>
                         <!-- /FOOTER CONTACT INFO -->
 
@@ -77,67 +77,15 @@ declare var $:any;
 
 
                         <!-- FOOTER LATEST POSTS -->
-                        <div class="column col-md-4 text-right">
-                            <h3>SEND ME AN EMAIL <i class="fa fa-heart" aria-hidden="true"></i></h3>
-                            
-                            <form #footerForm="ngForm" (ngSubmit)="mdSend()">
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-sm-12 col-md-12">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Your Name" 
-                                                    name="name" required
-                                                    [(ngModel)]="objUserDetails.strName"
-                                                />
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                                            </div><!-- /input-group -->
-                                        </div><!-- /col -->
-                                    </div><!-- /form-group -->
-                                </div><!-- /row -->
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <div class="input-group">
-                                                <input type="email" class="form-control" placeholder="Email" 
-                                                    name="email" required
-                                                    [(ngModel)]="objUserDetails.strEmail"
-                                                />
-                                                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                            </div><!-- /input-group -->
-                                        </div><!-- /col -->
-                                    </div><!-- /form-group -->
-                                </div><!-- /row -->
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <textarea class="form-control" rows="3" placeholder="Message"
-                                                name="message" required
-                                                [(ngModel)]="objUserDetails.strMessage"
-                                            ></textarea>
-                                        </div><!-- /col -->
-                                    </div><!-- /form-group -->    
-                                </div><!-- /row -->
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-xs-12">
-                                            <re-captcha 
-                                                (captchaResponse)="mdCaptchaHandle($event)" 
-                                                (captchaExpired)="mdCaptchaExpired()"
-                                                site_key="6LcU1QgUAAAAACY95UPy4l8YyiJol5-U0CbdU_RF"
-                                            ></re-captcha>
-                                        </div><!-- /col -->
-                                    </div><!-- /form-group -->    
-                                </div><!-- /row -->
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-xs-12 text-align-left">
-                                            <button id="footerBtnSubmit" type="submit" class="btn btn-success"
-                                                [disabled]="footerForm.invalid || this.objUserDetails.googleResponse == null"
-                                            >Submit</button>
-                                        </div><!-- /col -->
-                                    </div><!-- /form-group -->
-                                </div><!-- /row -->
-                            </form>
+                        <div class="column col-md-4">
+                            <h3>CONNECT WITH DUANE <i class="fa fa-heart" aria-hidden="true"></i></h3>
+
+                            <ul>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="https://blog.duaneleem.com/contact-duane/">Contact Form</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a href="https://blog.duaneleem.com/book-an-appointment/">Book an Appointment</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a target="_blank" href="http://www.linkedin.com/in/duaneleem">LinkedIn</a></li>
+                                <li><i class="fa fa-caret-right text-white margin-right-5p" aria-hidden="true"></i> <a target="_blank" href="https://github.com/duaneleem">GitHub</a></li>
+                            </ul>
                         </div>
                         <!-- /FOOTER LATEST POSTS -->
 
